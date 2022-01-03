@@ -20,7 +20,7 @@ I will show you three of the in more detail.
 ### RandomPet
 
 Do you want also this cool names, like when you start a docker container? Or don't want to set a name for your k8s
-cluster or virtual machines? Then this function is definitly for you.
+cluster or virtual machines? Then this function is definitely for you.
 
 Just call the function `NewRandomPet` and you will get a random pet name! Simplez!
 
