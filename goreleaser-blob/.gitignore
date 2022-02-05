@@ -1,0 +1,6 @@
+**/.terraform.lock.hcl
+**/auth.json
+dist/
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/.terraform
