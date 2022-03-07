@@ -14,12 +14,12 @@ builds:
       - linux
       - darwin
 
-project_name: goreleaser-buildpack
+project_name: goreleaser-brew-fish
 
 rigs:
   - rig:
       owner: dirien
-      name: goreleaser-fish-food
+      name: goreleaser-rig
     homepage: "https://github.com/dirien/quick-bites"
     description: "Different type of projects, not big enough to warrant a separate repo."
     license: "Apache License 2.0"
@@ -27,10 +27,7 @@ rigs:
 brews:
   - tap:
       owner: dirien
-      name: goreleaser-homebrew
-    commit_author:
-      name: dirien
-      email: engin.diri@mail.schwarz
+      name: goreleaser-tap
     folder: Formula
     homepage: "https://github.com/dirien/quick-bites"
     description: "Different type of projects, not big enough to warrant a separate repo."
