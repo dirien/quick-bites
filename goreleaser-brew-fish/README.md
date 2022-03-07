@@ -1,20 +1,60 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# GoReleaser: How To Distribute Your Binaries With Homebrew or GoFish
+This article is going to be a quick bite (or drink)! We going to discover, how fast we can create a Homebrew or GoFish deployment of our binaries with the help of GoReleaser.
+But first, let us take a look into the concepts of the two package managers:
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Homebrew 🍺
+The Missing Package Manager for macOS (or Linux)
+This statement is not from me, but from the official Homebrew website. Homebrew is similar to other packages managers, apt-get, aptitude, or dpkg. I will not go in this article into the details of Homebrew but some terms are important to understand, as we going to use them in our .gorleaser.yaml file:
+Tap: A Git repository of packages.
+Formula: A software package. When we want to install new programs or libraries, we install a formula.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## GoFish 🐠
+GoFish, the Package Manager 🐠
+GoFish is a cross-platform systems package manager, bringing the ease of use of Homebrew to Linux and Windows.
+Same as we Homebrew, I am not going into detail of GoFish but we need also here some understanding of the GoFish terminology:
+Rig: A git repository containing fish food.
+Food: The package definition
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## The example code
+For each package manager, you should create its own GitHub repository. You can name it as you please, but i prefer to add the meaning of the repository.
+- **goreleaser-rig** for GoFish
+- **goreleaser-tap** for Homebrew
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Add following snippet for GoFish support, to your existing **.goreleaser.yaml**:
+```yaml
+...
+rigs:
+- rig:
+  owner: dirien
+  name: goreleaser-rig
+  homepage: "https://github.com/dirien/quick-bites"
+  description: "Different type of projects, not big enough to warrant a separate repo."
+  license: "Apache License 2.0"
+...
+```  
+And for Homebrew, add this little snippet:
+```yaml
+...
+brews:
+- tap:
+  owner: dirien
+  name: goreleaser-tap
+  folder: Formula
+  homepage: "https://github.com/dirien/quick-bites"
+  description: "Different type of projects, not big enough to warrant a separate repo."
+  license: "Apache License 2.0"
+  ...
+```
+
+That's all. You can now run the release process and will see this in your logs:
+
+```shell
+• homebrew tap formula
+ • pushing                   formula=Formula/goreleaser-brew-fish.rb repo=dirien/goreleaser-tap
+• gofish fish food cookbook
+ • pushing                   food=Food/goreleaser-brew-fish.lua repo=dirien/goreleaser-rig
+```
+
+
+# The End
+Now you can distribute this tap or rig repositories and everybody can install your projects via this package manager.
