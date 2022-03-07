@@ -1,0 +1,37 @@
+# This is an example .goreleaser.yml file with some sensible defaults.
+# Make sure to check the documentation at https://goreleaser.com
+before:
+  hooks:
+    # You may remove this if you don't use go modules.
+    - go mod tidy
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goarch:
+      - amd64
+      - arm64
+    goos:
+      - linux
+      - darwin
+
+project_name: goreleaser-buildpack
+
+rigs:
+  - rig:
+      owner: dirien
+      name: goreleaser-fish-food
+    homepage: "https://github.com/dirien/quick-bites"
+    description: "Different type of projects, not big enough to warrant a separate repo."
+    license: "Apache License 2.0"
+
+brews:
+  - tap:
+      owner: dirien
+      name: goreleaser-homebrew
+    commit_author:
+      name: dirien
+      email: engin.diri@mail.schwarz
+    folder: Formula
+    homepage: "https://github.com/dirien/quick-bites"
+    description: "Different type of projects, not big enough to warrant a separate repo."
+    license: "Apache License 2.0"
