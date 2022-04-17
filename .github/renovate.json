@@ -3,7 +3,9 @@
     "config:base",
     ":semanticCommits",
     ":semanticCommitTypeAll(chore)",
-    ":gitSignOff"
+    ":gitSignOff",
+    "group:all",
+    "schedule:nonOfficeHours"
   ],
   "postUpdateOptions": [
     "gomodTidy",
@@ -13,19 +15,12 @@
   "labels": [
     "dependencies"
   ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ]
-    }
-  ],
-  "assigneesFromCodeOwners": true,
-  "assignAutomerge": true,
   "automerge": true,
   "automergeStrategy": "squash",
-  "automergeType": "pr"
+  "automergeType": "pr",
+  "assigneesFromCodeOwners": true,
+  "assignAutomerge": true,
+  "major": {
+    "enabled": false
+  }
 }
