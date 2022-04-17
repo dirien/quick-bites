@@ -7,9 +7,10 @@
 
 Different type of projects, not big enough to warrant a separate repo.
 
-- [Pulumi Random Provider](/pulumi-random-provider)
+- [Quick Bites of Pulumi: Pulumi Random Provider](/pulumi-random-provider)
 - [How to use GoReleaser with Cloud Native Storage](/goreleaser-blob)
 - [GoReleaser: How To Distribute Your Binaries With Homebrew or GoFish](/goreleaser-brew-fish)
+- [Quick Bites of Pulumi: Stack References](/pulumi-stackreference)
 
 Notes:
 

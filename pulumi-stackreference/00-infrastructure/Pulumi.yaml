@@ -1,0 +1,3 @@
+name: 00-infrastructure
+runtime: nodejs
+description: A minimal DigitalOcean TypeScript Pulumi program
