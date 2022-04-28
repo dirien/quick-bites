@@ -1,0 +1,10 @@
+config:
+  oci:fingerprint:
+    secure: AAABAKWBU8aIUr78KRnIbmtw8rswmp34kzPcP6vhVyYJar9RPFfp2g4YY139fgfnRex0+zBhlY4yxXjSGEcVbcgVjTVW0C9uvWut8zFUuw==
+  oci:privateKeyPath:
+    secure: AAABAJ5Q+pv5Io8LJfsG0av9YbAhbD+Ux/CHAxS/CN+J5V7mXOxti2YA5CAmS+oI9JegV7HGptZKB+qGDweUYl2XBLSp1LanyniRdJjQrZK8xMwGPdq3SptBZNS3Fwm+eGRW7wLB5aJDj9jDYr/DbW7mf/uxmAU=
+  oci:region: eu-frankfurt-1
+  oci:tenancyOcid:
+    secure: AAABAGTlgrl31yAnQosT7ExiaiC0YtRAxqafkB+hWIHU5deF8+FrG3pKFJ/DH3rbVTPmcncYaIPSGxYxkvvd5E43trEQoDAzzgOsM/kyznRrI0flwJxsVFypgKSOwrv14EMlMrnfFny5QsaTzNlY
+  oci:userOcid:
+    secure: AAABAEAOFRRVbLGd8owxVXfZ7GtJ02FnsfXSsz2eC9whhNqI9it5lE8kGTLlfiWs2XNjgxssTPs2CYnFIsq6/7tMqtZ+RRhFmiT9WLeY1WP7yJce1lLpJwKG6/JU2j/64cumV3Ep58xi2P+5
