@@ -11,6 +11,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [How to use GoReleaser with Cloud Native Storage](/goreleaser-blob)
 - [GoReleaser: How To Distribute Your Binaries With Homebrew or GoFish](/goreleaser-brew-fish)
 - [Quick Bites of Pulumi: Stack References](/pulumi-stackreference)
+- [Pulumi OCI Provider: How to create a Minecraft ARM instance](/pulumi-oci)
 
 Notes:
 
