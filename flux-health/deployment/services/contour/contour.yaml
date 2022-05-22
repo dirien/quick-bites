@@ -1,0 +1,18 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: contour
+spec:
+  releaseName: contour
+  install:
+    createNamespace: true
+  targetNamespace: contour
+  chart:
+    spec:
+      chart: contour
+      sourceRef:
+        kind: HelmRepository
+        name: contour
+        namespace: contour
+      version: "7.7.0"
+  interval: 10m0s

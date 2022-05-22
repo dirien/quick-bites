@@ -1,0 +1,37 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: quick-bites-services
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  path: ./flux-health/deployment/services
+  prune: true
+  healthChecks:
+  - apiVersion: apps/v1
+    kind: DaemonSet
+    name: contour-envoy
+    namespace: contour
+  sourceRef:
+    kind: GitRepository
+    name: quick-bites
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: sock-shop
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  path: ./flux-health/deployment/applications/sock-shop
+  prune: true
+  dependsOn:
+  - name: quick-bites-services
+  healthChecks:
+  - apiVersion: helm.toolkit.fluxcd.io/v2beta1
+    kind: HelmRelease
+    name: contour
+    namespace: contour
+  sourceRef:
+    kind: GitRepository
+    name: quick-bites

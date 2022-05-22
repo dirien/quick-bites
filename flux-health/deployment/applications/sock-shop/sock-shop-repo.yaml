@@ -1,0 +1,9 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: sock-shop
+spec:
+  interval: 1m
+  ref:
+    branch: master
+  url: https://github.com/dirien/microservices-demo.git
