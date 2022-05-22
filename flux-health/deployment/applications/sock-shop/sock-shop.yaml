@@ -1,0 +1,30 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: sock-shop
+spec:
+  releaseName: sock-shop
+  install:
+    createNamespace: true
+  targetNamespace: sock-shop
+  chart:
+    spec:
+      chart: ./deploy/kubernetes/helm-chart/
+      sourceRef:
+        kind: GitRepository
+        name: sock-shop
+        namespace: flux-system
+  interval: 1m0s
+  values:
+    shipping:
+      resources:
+        limits:
+          cpu: 300m
+          memory: 1000Mi
+        requests:
+          cpu: 300m
+          memory: 1000Mi
+    ingress:
+      annotations:
+        kubernetes.io/ingress.class: contour
+      host: sock-shop.ediri.online
