@@ -106,12 +106,14 @@ spec:
     name: quick-bites
 ```
 
-Now combine this with health assessment, and we have a perfect way to ensusre that the current Kusomization will be
-appliend when all the dependencies are healthy.
+Now combine this with health assessment, and we have a perfect way to ensure that the current `Kustomization` will be
+applied when all the dependencies are healthy.
 
 ## Demo
 
-For this little demo, we will create a kind cluster and install the Flux via the Helm chart:
+### Installation
+
+For this demo, we will create a `kind` cluster and install `FluxCD` via the Helm chart:
 
 ```bash
 kind create cluster --name flux-health
@@ -173,3 +175,7 @@ We can delete the cluster with:
 kind delete cluster --name flux-health
 ```
 
+## Conclusion
+
+Using health checks is a great way to ensure that the current `Kustomization` will be applied when the actual service is up and running,
+and not only that the Kubernetes objects are deployed.
