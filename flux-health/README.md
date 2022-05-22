@@ -14,7 +14,20 @@ too.
 To enabled health checking just set `spec.wait` and `spec.timeout`. This will be valid for all the reconciled resources.
 
 ```yaml
-TODO
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: quick-bites-services
+  namespace: flux-system
+spec:
+  interval: 5m0s
+  path: ./flux-health/deployment/services
+  prune: true
+  wait: true
+  timeout: 2m
+  sourceRef:
+    kind: GitRepository
+    name: quick-bites
 ```
 
 If you want to check the only certain resources, you need to list them under `spec.healthChecks`.
@@ -30,7 +43,23 @@ Following types can be referenced by health check entries:
   with [kstatus](https://github.com/kubernetes-sigs/cli-utils/tree/master/pkg/kstatus)
 
 ```yaml
-TODO
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: quick-bites-services
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  path: ./flux-health/deployment/services
+  prune: true
+  healthChecks:
+    - apiVersion: apps/v1
+      kind: DaemonSet
+      name: contour-envoy
+      namespace: contour
+  sourceRef:
+    kind: GitRepository
+    name: quick-bites
 ```
 
 After applying the `Kustomization` resource, the controller tries to verify if the rollout completed successfully.
@@ -56,7 +85,25 @@ With the field `spec.dependsOn` we can bring this deployments into an order. The
 applied only after the dependencies are ready.
 
 ```yaml
-TODO
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: sock-shop
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  path: ./flux-health/deployment/applications/sock-shop
+  prune: true
+  dependsOn:
+  - name: quick-bites-services
+  healthChecks:
+  - apiVersion: helm.toolkit.fluxcd.io/v2beta1
+    kind: HelmRelease
+    name: contour
+    namespace: contour
+  sourceRef:
+    kind: GitRepository
+    name: quick-bites
 ```
 
 Now combine this with health assessment, and we have a perfect way to ensusre that the current Kusomization will be
@@ -96,15 +143,33 @@ helm repo update
 helm upgrade -i flux2 fluxcd-community/flux2 --create-namespace --namespace flux-system
 ```
 
-I created a `bootstrap` folder, to create the `GitRepository` and `Kustomization` objects.
+Install Metallb, so we have a load balancer:
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml
+kubectl apply -f https://kind.sigs.k8s.io/examples/loadbalancer/metallb-configmap.yaml
+```
+
+> If you want to try this demo with a cloud provider, you may need this step.
+
+Next we boostrap our cluster with the actual deployment, for this I created a `bootstrap` folder, to apply
+the `GitRepository` and `Kustomization` objects.
 
 ```bash
 kubectl apply -f bootstrap/
-kustomization.kustomize.toolkit.fluxcd.io/quick-bites created
-gitrepository.source.toolkit.fluxcd.io/quick-bites created
+kustomization.kustomize.toolkit.fluxcd.io/quick-bites-services unchanged
+kustomization.kustomize.toolkit.fluxcd.io/sock-shop configured
+gitrepository.source.toolkit.fluxcd.io/quick-bites unchanged
 ```
 
-<pic>
+You can see in the pictures, how the `Kustomization` wait for the health check to be ready and the `sock-shop` has
 
+### Housekeeping
 
+We can delete the cluster with:
+
+```bash
+kind delete cluster --name flux-health
+```
 

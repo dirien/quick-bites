@@ -6,5 +6,5 @@ metadata:
 spec:
   interval: 30s
   ref:
-    branch: flux-health
+    branch: main
   url: https://github.com/dirien/quick-bites
