@@ -96,6 +96,14 @@ helm repo update
 helm upgrade -i flux2 fluxcd-community/flux2 --create-namespace --namespace flux-system
 ```
 
+I created a `bootstrap` folder, to create the `GitRepository` and `Kustomization` objects.
+
+```bash
+kubectl apply -f bootstrap/
+kustomization.kustomize.toolkit.fluxcd.io/quick-bites created
+gitrepository.source.toolkit.fluxcd.io/quick-bites created
+```
+
 <pic>
 
 

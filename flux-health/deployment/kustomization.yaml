@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - services
-  - applications
+  - applications/kustomization.yaml
