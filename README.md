@@ -13,6 +13,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Quick Bites of Pulumi: Stack References](/pulumi-stackreference)
 - [Pulumi OCI Provider: How to create a Minecraft ARM instance](/pulumi-oci)
 - [Quick Bites of FluxCD: Health assessment](/flux-health)
+- [Running faasd on Azure Arm-based Virtual Machines](/pulumi-faasd-arm)
 
 Notes:
 
