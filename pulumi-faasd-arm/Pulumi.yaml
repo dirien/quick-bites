@@ -1,0 +1,189 @@
+name: pulumi-faasd-arm
+runtime: yaml
+description: A minimal Azure Native Pulumi YAML program
+
+variables:
+  sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIBq1WoJOr81nYCdrbkmcGtdVtkshDU36IKpNMg3MBi4dk408ITluFCYykZcVCqbJWCRvwr9iOjKajtMJpErHevUdpUD/ViOyW68KgwZrjVQLfp6VpAGzbdyFcBzM1jqOjSBhdPRCJfA5jKZJPncVWDsL/c0IarI1+lYds3Mf5OARd+46evm4aPOPcSHRnIDm4ylY2Wo/Lsd+EHCt9Ya7XpB3u15uaagnI/5VM5Oy4vSoDl6tU8cONrT+ofEdCojVR79SJFDBr+GdM5dQxgz4CngQLrX+QcTAAlyvvlthCwLIH44+/orbvAgyA0Q0Jcw56sWI1M59F2adKhiJNCwx++u1GGfVKGvrFH7CjiPVTFUSAmUF+GdCwzoy9GpWBP/eXiKudi5OcbVA4Ze4Isy8gAwUAINrjbK52HPh54Euk1JvxkTYUx2zBKaw3YlSulCu7xsRpVULneiOjUWR/Sp4CQK30RtFtWA0drUlO/OtRm23rvxfsVb3Qhcw604bztBM= dirien@SIT-SMBP1766"
+  adminUsername: ubuntu
+
+  cloudConfig:
+    Fn::ToBase64: |
+      #cloud-config
+        users:
+          - default
+        package_update: true
+        packages:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg-agent
+          - software-properties-common
+          - runc
+          - debian-keyring 
+          - debian-archive-keyring
+          - apt-transport-https
+        # Enable ipv4 forwarding, required on CIS hardened machines
+        write_files:
+          - path: /etc/sysctl.d/enabled_ipv4_forwarding.conf
+            content: |
+              net.ipv4.conf.all.forwarding=1
+          - path: /tmp/Caddyfile
+            content: |
+              {
+                acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+              }
+              faasd-ui.ediri.online {
+                reverse_proxy http://127.0.0.1:8080
+              }
+        runcmd:
+          - curl -sLSf https://github.com/containerd/containerd/releases/download/v1.6.4/containerd-1.6.4-linux-arm64.tar.gz > /tmp/containerd.tar.gz && tar -xvf /tmp/containerd.tar.gz -C /usr/local/bin/ --strip-components=1
+          - curl -SLfs https://raw.githubusercontent.com/containerd/containerd/v1.6.4/containerd.service | tee /etc/systemd/system/containerd.service
+          - systemctl daemon-reload && systemctl start containerd
+          - systemctl enable containerd
+          - mkdir -p /opt/cni/bin
+          - curl -sSL https://github.com/containernetworking/plugins/releases/download/v1.1.1/cni-plugins-linux-arm64-v1.1.1.tgz | tar -xz -C /opt/cni/bin
+          - mkdir -p /go/src/github.com/openfaas/
+          - cd /go/src/github.com/openfaas/ && git clone --depth 1 --branch 0.16.1 https://github.com/openfaas/faasd
+          - curl -fSLs "https://github.com/openfaas/faasd/releases/download/0.16.1/faasd-arm64" --output "/usr/local/bin/faasd" && chmod a+x "/usr/local/bin/faasd"
+          - cd /go/src/github.com/openfaas/faasd/ && /usr/local/bin/faasd install
+          - systemctl status -l containerd --no-pager
+          - journalctl -u faasd-provider --no-pager
+          - systemctl status -l faasd-provider --no-pager
+          - systemctl status -l faasd --no-pager
+          - curl -sSLf https://cli.openfaas.com | sh
+          - sleep 60 && journalctl -u faasd --no-pager
+          - cat /var/lib/faasd/secrets/basic-auth-password | /usr/local/bin/faas-cli login --password-stdin
+          - curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+          - curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+          - apt update
+          - apt install caddy
+          - cp /tmp/Caddyfile /etc/caddy/Caddyfile
+          - systemctl restart caddy
+
+resources:
+
+  faasdRg:
+    type: azure-native:resources:ResourceGroup
+    properties:
+      resourceGroupName: faasd_rg
+      tags:
+        name: faasd-arm-demo
+
+  faasdVnet:
+    type: azure-native:network:VirtualNetwork
+    properties:
+      virtualNetworkName: faasd_vnet
+      addressSpace:
+        addressPrefixes:
+          - 10.0.0.0/16
+      resourceGroupName: ${faasdRg.name}
+      subnets:
+        - addressPrefix: 10.0.0.0/24
+          name: faasd_snet
+
+  faasdSG:
+    type: azure-native:network:NetworkSecurityGroup
+    properties:
+      networkSecurityGroupName: faasd_sg
+      resourceGroupName: ${faasdRg.name}
+      securityRules:
+      - access: Allow
+        destinationAddressPrefix: '*'
+        destinationPortRange: '22'
+        direction: Inbound
+        name: ssh_in
+        priority: 130
+        protocol: 'Tcp'
+        sourceAddressPrefix: '*'
+        sourcePortRange: '*'
+      - access: Allow
+        destinationAddressPrefix: '*'
+        destinationPortRange: '80'
+        direction: Inbound
+        name: 80_in
+        priority: 131
+        protocol: 'Tcp'
+        sourceAddressPrefix: '*'
+        sourcePortRange: '*'
+      - access: Allow
+        destinationAddressPrefix: '*'
+        destinationPortRange: '8080'
+        direction: Inbound
+        name: 8080_in
+        priority: 132
+        protocol: 'Tcp'
+        sourceAddressPrefix: '*'
+        sourcePortRange: '*'
+      - access: Allow
+        destinationAddressPrefix: '*'
+        destinationPortRange: '443'
+        direction: Inbound
+        name: 443_in
+        priority: 133
+        protocol: 'Tcp'
+        sourceAddressPrefix: '*'
+        sourcePortRange: '*'
+
+  faasdPublicIP:
+    type: azure-native:network:PublicIPAddress
+    properties:
+      publicIpAddressName: faasd_pip
+      publicIPAddressVersion: ipv4
+      publicIPAllocationMethod: Static
+      resourceGroupName: ${faasdRg.name}
+      sku:
+        name: Basic
+
+  faasdNic:
+    type: azure-native:network:NetworkInterface
+    properties:
+      networkInterfaceName: faasd_nic
+      enableAcceleratedNetworking: true
+      ipConfigurations:
+        - name: ipconfig1
+          publicIPAddress:
+            id: ${faasdPublicIP.id}
+          subnet:
+            id: ${faasdVnet.subnets[0].id}
+      resourceGroupName: ${faasdRg.name}
+      networkSecurityGroup:
+        id: ${faasdSG.id}
+
+  faasd:
+    type: azure-native:compute:VirtualMachine
+    properties:
+      priority: Spot
+      evictionPolicy: Deallocate
+      hardwareProfile:
+        vmSize: Standard_D2pls_v5
+      networkProfile:
+        networkInterfaces:
+          - id: ${faasdNic.id}
+            primary: true
+      osProfile:
+        adminUsername: ${adminUsername}
+        computerName: faasd
+        linuxConfiguration:
+          disablePasswordAuthentication: true
+          ssh:
+            publicKeys:
+              - keyData: '${sshPublicKey}'
+                path: /home/${adminUsername}/.ssh/authorized_keys
+      resourceGroupName: ${faasdRg.name}
+      storageProfile:
+        imageReference:
+          offer: 0001-com-ubuntu-server-arm-preview-focal
+          publisher: Canonical
+          sku: 20_04-lts
+          version: latest
+        osDisk:
+          createOption: FromImage
+          diskSizeGB: 30
+          managedDisk:
+            storageAccountType: Standard_LRS
+          name: faasd-osdisk
+      userData: ${cloudConfig}
+      vmName: faasd
+
+outputs:
+  faasdIP: ${faasdPublicIP.ipAddress}
