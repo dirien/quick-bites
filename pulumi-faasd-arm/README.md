@@ -6,18 +6,18 @@ request access to the preview by filling out [this form](https://aka.ms/arm64vms
 I applied, and got accepted for the preview. Since then, I play with different use-cases to discover the potential from
 Arm-based virtual machines.
 
-While thinking about all the possible use-cases, instantly OpenFaaS come into my mind. Because with `faasd?, the little
+While thinking about all the possible use-cases, instantly OpenFaaS come into my mind. Because with `faasd`, the little
 brother of OpenFaaS, we have an option to run OpenFaaS just like on Kubernetes, the same API, same UI, CLI and
 ecosystem, but without the complexity and stress of running Kubernetes.
 
-You can use `faasd? to deploy containers, which conform to the OpenFaaS serverless workload definition. Or you can:
+You can use `faasd` to deploy containers, which conform to the OpenFaaS serverless workload definition. Or you can:
 
 - Deploy a microservice
 - Get a HTTP API for any binary or CLI through the use of the Classic Watchdog
 - Deploy a function written in any language from our templates or the template store
 
-Question would be: What sort of use-cases might work well for `faasd??
-`faasd? works well for the same kinds of use-cases as OpenFaaS on Kubernetes, but is much simpler to manage.
+Question would be: What sort of use-cases might work well for `faasd`?
+`faasd` works well for the same kinds of use-cases as OpenFaaS on Kubernetes, but is much simpler to manage.
 
 Some ideas out of my head:
 
