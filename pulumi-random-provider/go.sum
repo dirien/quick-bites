@@ -118,8 +118,8 @@ github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4/go.mod h1:
 github.com/pulumi/pulumi-random/sdk/v4 v4.7.0 h1:DXpysZIBkTnDz3Y6x6bFCnptz6XhJnnmyNfpfOXzMJQ=
 github.com/pulumi/pulumi-random/sdk/v4 v4.7.0/go.mod h1:czSwj+jZnn/VWovMpTLUs/RL/ZS4PFHRdmlXrkvHqeI=
 github.com/pulumi/pulumi/sdk/v3 v3.31.1/go.mod h1:hGo/+AL1L4sPL9Ukd/i5bNFM3WHs3dHcA+GKEW7M3RA=
-github.com/pulumi/pulumi/sdk/v3 v3.33.1 h1:CCJdxK91D0ycuAIBV94xmCZQXeoSdRmKwe3rEvjtrVg=
-github.com/pulumi/pulumi/sdk/v3 v3.33.1/go.mod h1:hGo/+AL1L4sPL9Ukd/i5bNFM3WHs3dHcA+GKEW7M3RA=
+github.com/pulumi/pulumi/sdk/v3 v3.33.2 h1:v6ftYjGyoRPJvgyqo6TkQEGIoeFrYFKASJkGLEQcdEU=
+github.com/pulumi/pulumi/sdk/v3 v3.33.2/go.mod h1:hGo/+AL1L4sPL9Ukd/i5bNFM3WHs3dHcA+GKEW7M3RA=
 github.com/rivo/uniseg v0.2.0 h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rogpeppe/go-internal v1.8.1 h1:geMPLpDpQOgVyCg5z5GoRwLHepNdb71NXb67XFkP+Eg=
