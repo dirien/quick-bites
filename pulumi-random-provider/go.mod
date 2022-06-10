@@ -3,8 +3,8 @@ module pulumi-random-provider
 go 1.17
 
 require (
-	github.com/pulumi/pulumi-random/sdk/v4 v4.7.0
-	github.com/pulumi/pulumi/sdk/v3 v3.33.2
+	github.com/pulumi/pulumi-random/sdk/v4 v4.8.0
+	github.com/pulumi/pulumi/sdk/v3 v3.34.1
 )
 
 require (
