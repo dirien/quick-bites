@@ -3,7 +3,7 @@ module goreleaser-blob
 go 1.17
 
 require (
-	github.com/charmbracelet/bubbles v0.12.0
+	github.com/charmbracelet/bubbles v0.13.0
 	github.com/charmbracelet/bubbletea v0.22.0
 	github.com/charmbracelet/lipgloss v0.5.0
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
