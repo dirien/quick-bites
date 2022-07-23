@@ -1,0 +1,10 @@
+{
+    "name": "pulumi-scaleway-quickstart",
+    "devDependencies": {
+        "@types/node": "18"
+    },
+    "dependencies": {
+        "@jaxxstorm/pulumi-scaleway": "0.3.0",
+        "@pulumi/pulumi": "3.36.0"
+    }
+}
