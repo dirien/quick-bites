@@ -14,6 +14,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Pulumi OCI Provider: How to create a Minecraft ARM instance](/pulumi-oci)
 - [Quick Bites of FluxCD: Health assessment](/flux-health)
 - [Running faasd on Azure Arm-based Virtual Machines](/pulumi-faasd-arm)
+- [How to write custom policies for Trivy](/trivy-custom-policy)
 
 Notes:
 
