@@ -5,6 +5,6 @@
     },
     "dependencies": {
         "@jaxxstorm/pulumi-scaleway": "0.3.0",
-        "@pulumi/pulumi": "3.36.0"
+        "@pulumi/pulumi": "3.37.2"
     }
 }
