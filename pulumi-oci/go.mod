@@ -1,6 +1,6 @@
 module pulumi-oci
 
-go 1.18
+go 1.19
 
 require (
 	github.com/pulumi/pulumi-oci/sdk v0.1.1
