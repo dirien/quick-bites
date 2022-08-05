@@ -15,6 +15,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Quick Bites of FluxCD: Health assessment](/flux-health)
 - [Running faasd on Azure Arm-based Virtual Machines](/pulumi-faasd-arm)
 - [How to write custom policies for Trivy](/trivy-custom-policy)
+- [How to enable the Cilium Hubble UI in a Civo k3s cluster](/pulumi-civo-cilium-hubble)
 
 Notes:
 
