@@ -1,0 +1,29 @@
+name: pulumi-civo-cilium-hubble
+runtime: yaml
+description: Enable Hubble UI on a Civo cluster
+
+variables:
+  region: FRA1
+
+resources:
+  civo-firewall:
+    type: civo:Firewall
+    properties:
+      name: MyCivoFirewall
+      region: ${region}
+
+  civo-k3s-cluster:
+    type: civo:KubernetesCluster
+    properties:
+      name: MyCivoCluster
+      region: ${region}
+      firewallId: ${civo-firewall.id}
+      cni: cilium
+      pools:
+        nodeCount: 2
+        size: g4s.kube.medium
+
+outputs:
+  kubeconfig:
+    Fn::Secret:
+      ${civo-k3s-cluster.kubeconfig}
