@@ -16,6 +16,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Running faasd on Azure Arm-based Virtual Machines](/pulumi-faasd-arm)
 - [How to write custom policies for Trivy](/trivy-custom-policy)
 - [How to enable the Cilium Hubble UI in a Civo k3s cluster](/pulumi-civo-cilium-hubble)
+- [How to monitor Cilium on your Civo k3s cluster with Prometheus](/pulumi-civo-cilium-prometheusu)
 
 Notes:
 

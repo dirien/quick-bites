@@ -1,0 +1,60 @@
+name: pulumi-civo-cilium-prometheus
+runtime: yaml
+description: Enable Prometheus monitoring of the Cilium CNI
+
+variables:
+  region: FRA1
+  kube-prometheus-version: 39.6.0
+
+resources:
+  civo-firewall:
+    type: civo:Firewall
+    properties:
+      name: MyCivoFirewall
+      region: ${region}
+
+  civo-k3s-cluster:
+    type: civo:KubernetesCluster
+    properties:
+      name: MyCivoCluster
+      region: ${region}
+      firewallId: ${civo-firewall.id}
+      cni: cilium
+      pools:
+        nodeCount: 2
+        size: g4s.kube.medium
+
+  k8s-provider:
+    type: pulumi:providers:kubernetes
+    properties:
+      kubeconfig: ${civo-k3s-cluster.kubeconfig}
+      enableServerSideApply: true
+
+  monitoring-namespace:
+    type: kubernetes:core/v1:Namespace
+    properties:
+      metadata:
+        name: monitoring
+    options:
+      provider: ${k8s-provider}
+
+  kube-prometheus-stack:
+    type: kubernetes:helm.sh/v3:Release
+    properties:
+      name: kube-prometheus-stack
+      namespace: ${monitoring-namespace.metadata.name}
+      chart: kube-prometheus-stack
+      version: ${kube-prometheus-version}
+      repositoryOpts:
+        repo: https://prometheus-community.github.io/helm-charts
+      values:
+        prometheus:
+          prometheusSpec:
+            serviceMonitorSelectorNilUsesHelmValues: false
+    options:
+      provider: ${k8s-provider}
+
+outputs:
+  kubeconfig:
+    Fn::Secret:
+      ${civo-k3s-cluster.kubeconfig}

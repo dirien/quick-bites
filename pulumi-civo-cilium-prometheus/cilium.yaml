@@ -1,0 +1,32 @@
+hubble:
+  metrics:
+    enabled:
+      - dns
+      - drop
+      - tcp
+      - flow
+      - port-distribution
+      - icmp
+      - http
+    serviceMonitor:
+      enabled: true
+  tls:
+    enabled: false
+  relay:
+    enabled: true
+  ui:
+    enabled: true
+
+prometheus:
+  enabled: true
+  serviceMonitor:
+    enabled: true
+
+operator:
+  prometheus:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+
+
+
