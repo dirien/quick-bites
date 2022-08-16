@@ -3,7 +3,7 @@ module pulumi-oci
 go 1.19
 
 require (
-	github.com/pulumi/pulumi-oci/sdk v0.1.1
+	github.com/pulumi/pulumi-oci/sdk v0.2.0
 	github.com/pulumi/pulumi/sdk/v3 v3.37.2
 )
 
