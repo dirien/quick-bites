@@ -1,5 +1,5 @@
 import * as pulumi from "@pulumi/pulumi";
-import * as scaleway from "@jaxxstorm/pulumi-scaleway";
+import * as scaleway from "@pulumiverse/scaleway";
 
 const kapsule = new scaleway.KubernetesCluster("pulumi-kapsule", {
       name: "pulumi-kapsule",

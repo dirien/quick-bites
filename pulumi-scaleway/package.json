@@ -4,7 +4,7 @@
         "@types/node": "18.0.6"
     },
     "dependencies": {
-        "@jaxxstorm/pulumi-scaleway": "0.3.0",
-        "@pulumi/pulumi": "3.38.0"
+        "@pulumi/pulumi": "3.38.0",
+        "@pulumiverse/scaleway": "0.4.0"
     }
 }
