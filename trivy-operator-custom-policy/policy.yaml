@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: trivy-operator-policies-config
+  namespace: trivy-system
+data:
+  policy.ED001.kinds: "*"
+  policy.ED001.rego: |
+    package builtin.trivyoperator.policy.k8s.custom
+        
+    import future.keywords.in
+    import data.lib.kubernetes
+    import data.lib.result
+    
+    default allowedRegistries = ["quay.io","ghcr.io","gcr.io"]
+    
+    __rego_metadata__ := {
+      "id": "ED001",
+      "title": "Allowed container registry checks",
+      "severity": "CRITICAL",
+      "description": "The usage of non approved container registries is not permitted",
+    }
+    
+    __rego_input__ := {
+      "combine": false,
+      "selector": [{"type": "kubernetes"}],
+    }
+    
+    allowedRegistry(image) {
+      registry := allowedRegistries[_]
+      startswith(image, registry)
+    }
+    
+    deny[res] {
+      container := kubernetes.containers[_]
+      not allowedRegistry(container.image)
+      msg :=  kubernetes.format(sprintf("Container '%s' with image '%s' of %s '%s' comes from not approved container registry %s", [container.name, container.image, kubernetes.kind, kubernetes.name, allowedRegistries]))
+      res := result.new(msg, container)
+    }
+    

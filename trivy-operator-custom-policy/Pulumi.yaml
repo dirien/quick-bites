@@ -1,0 +1,106 @@
+name: trivy-operator-custom-policy
+runtime: yaml
+description: Trivy Operator with custom policy on Civo
+
+variables:
+  civo-region: FRA1
+  civo-k8s-node-size: g4s.kube.medium
+  civo-k8s-node-count: 2
+  trivy-namespaces: trivy-system
+  trivy-operator-version: 0.2.0
+
+resources:
+  civo-firewall:
+    type: civo:Firewall
+    properties:
+      name: MyCivoFirewall
+      region: ${civo-region}
+
+  civo-k3s-cluster:
+    type: civo:KubernetesCluster
+    properties:
+      name: MyCivoCluster
+      region: ${civo-region}
+      firewallId: ${civo-firewall.id}
+      cni: cilium
+      pools:
+        nodeCount: ${civo-k8s-node-count}
+        size: ${civo-k8s-node-size}
+
+  k8s-provider:
+    type: pulumi:providers:kubernetes
+    properties:
+      kubeconfig: ${civo-k3s-cluster.kubeconfig}
+      enableServerSideApply: true
+
+  trivy-namespace:
+    type: kubernetes:core/v1:Namespace
+    properties:
+      metadata:
+        name: ${trivy-namespaces}
+    options:
+      provider: ${k8s-provider}
+
+  trivy-operator:
+    type: kubernetes:helm.sh/v3:Release
+    properties:
+      namespace: ${trivy-namespace.metadata.name}
+      chart: trivy-operator
+      version: ${trivy-operator-version}
+      repositoryOpts:
+        repo: https://aquasecurity.github.io/helm-charts/
+      values:
+        trivy:
+          ignoreUnfixed: true
+          imageRef: ghcr.io/aquasecurity/trivy:0.31.3
+    options:
+      provider: ${k8s-provider}
+
+  trivy-policy-cm:
+    type: kubernetes:core/v1:ConfigMap
+    options:
+      provider: ${k8s-provider}
+      parent: ${trivy-operator}
+    properties:
+      metadata:
+        name: trivy-operator-policies-config
+        namespace: ${trivy-namespace.metadata.name}
+      data:
+        policy.ED001.kinds: "*"
+        policy.ED001.rego: |
+          package builtin.trivyoperator.policy.k8s.custom
+
+          import future.keywords.in
+          import data.lib.kubernetes
+          import data.lib.result
+
+          default allowedRegistries = ["quay.io","ghcr.io","gcr.io"]
+
+          __rego_metadata__ := {
+            "id": "ED001",
+            "title": "Allowed container registry checks",
+            "severity": "CRITICAL",
+            "description": "The usage of non approved container registries is not permitted",
+          }
+
+          __rego_input__ := {
+            "combine": false,
+            "selector": [{"type": "kubernetes"}],
+          }
+
+          allowedRegistry(image) {
+            registry := allowedRegistries[_]
+            startswith(image, registry)
+          }
+
+          deny[res] {
+            container := kubernetes.containers[_]
+            not allowedRegistry(container.image)
+            msg :=  kubernetes.format(sprintf("Container '%s' with image '%s' of %s '%s' comes from not approved container registry %s", [container.name, container.image, kubernetes.kind, kubernetes.name, allowedRegistries]))
+            res := result.new(msg, container)
+          }
+
+outputs:
+  kubeconfig:
+    Fn::Secret:
+      ${civo-k3s-cluster.kubeconfig}
