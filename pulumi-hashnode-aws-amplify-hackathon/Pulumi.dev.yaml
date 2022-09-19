@@ -1,0 +1,4 @@
+config:
+  aws-native:region: eu-central-1
+  github:token:
+    secure: AAABAOfQYdJBQr9AXcp3MgvCiZKSDjnol3vBaCsVJOezTbOyt0ZwjbU7ZAf/5qS220vge634lH+VJMHT76mg5sDff74Tluwi

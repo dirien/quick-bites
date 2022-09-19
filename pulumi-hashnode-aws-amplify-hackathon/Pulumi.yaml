@@ -1,0 +1,3 @@
+name: pulumi-hashnode-aws-amplify-hackathon
+description: A minimal AWS Go Pulumi program
+runtime: go
