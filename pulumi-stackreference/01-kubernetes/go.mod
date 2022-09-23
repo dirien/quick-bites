@@ -3,7 +3,7 @@ module 01-kubernetes
 go 1.19
 
 require (
-	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.21.2
+	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.21.4
 	github.com/pulumi/pulumi/sdk/v3 v3.40.1
 )
 
