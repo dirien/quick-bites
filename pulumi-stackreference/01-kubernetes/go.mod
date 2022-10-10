@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.21.4
-	github.com/pulumi/pulumi/sdk/v3 v3.41.1
+	github.com/pulumi/pulumi/sdk/v3 v3.42.0
 )
 
 require (
