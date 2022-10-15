@@ -124,8 +124,8 @@ github.com/pulumi/pulumi-aws-native/sdk v0.29.0 h1:S84HKd7gSPsozE9YyGDHQOTCB7AH4
 github.com/pulumi/pulumi-aws-native/sdk v0.29.0/go.mod h1:YLO96fHwzel2xS2WPs66BIUjo3cskz1w9tvJFh8LJLI=
 github.com/pulumi/pulumi-github/sdk/v4 v4.17.0 h1:mVPgra7gAW6zhmiDt5BA1H2joxMIiqo9qUNNGCy/C0I=
 github.com/pulumi/pulumi-github/sdk/v4 v4.17.0/go.mod h1:VGX6jSvh2C74NKvOeS0hBx225Pbcvlhj32+ZRB81sts=
-github.com/pulumi/pulumi/sdk/v3 v3.42.0 h1:S1e1dBo5BLCMtp6AYsE08USwEKMgZNe9oAOL74OjKFA=
-github.com/pulumi/pulumi/sdk/v3 v3.42.0/go.mod h1:N5jL+cw5KiOeMn9bwvRuPQEAhbE3KPq2wSb/Kw+6HuY=
+github.com/pulumi/pulumi/sdk/v3 v3.43.1 h1:JH+al/6zK2A7SWQ6z2HlLKq223xnPE+oGJfaOJtqzlc=
+github.com/pulumi/pulumi/sdk/v3 v3.43.1/go.mod h1:N5jL+cw5KiOeMn9bwvRuPQEAhbE3KPq2wSb/Kw+6HuY=
 github.com/rivo/uniseg v0.2.0 h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rogpeppe/go-internal v1.8.1 h1:geMPLpDpQOgVyCg5z5GoRwLHepNdb71NXb67XFkP+Eg=
