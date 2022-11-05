@@ -19,6 +19,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [How to monitor Cilium on your Civo k3s cluster with Prometheus](/pulumi-civo-cilium-prometheus)
 - [Continuous Cluster Audit Scanning With The Trivy Operator Using Custom Policies](/trivy-operator-custom-policy)
 - [Use Pulumi To Deploy Your Static Site to AWS Amplify](/pulumi-hashnode-aws-amplify-hackathon)
+- [Running a Minecraft Server on an Exoscale SKS Cluster using Pulumi and CUE](/pulumi-exoscale)
 
 Notes:
 
