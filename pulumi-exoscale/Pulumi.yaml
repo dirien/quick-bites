@@ -1,0 +1,6 @@
+name: pulumi-exoscale
+description: A Exoscale demo program using CUE and YAML
+runtime:
+  name: yaml
+  options:
+    compiler: cue export

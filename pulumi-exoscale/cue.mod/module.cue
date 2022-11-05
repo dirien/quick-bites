@@ -1,0 +1,1 @@
+module: "exoscale.pulumi.com/minecraft"
