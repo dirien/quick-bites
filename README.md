@@ -20,6 +20,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Continuous Cluster Audit Scanning With The Trivy Operator Using Custom Policies](/trivy-operator-custom-policy)
 - [Use Pulumi To Deploy Your Static Site to AWS Amplify](/pulumi-hashnode-aws-amplify-hackathon)
 - [Running a Minecraft Server on an Exoscale SKS Cluster using Pulumi and CUE](/pulumi-exoscale)
+- [How to async/await in Rust: An Introduction](/rust-async)
 
 Notes:
 
