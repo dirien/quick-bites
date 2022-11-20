@@ -1,0 +1,11 @@
+[package]
+name = "rust-async"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+k8s-openapi = { version = "0.16.0", features = ["v1_24"] }
+kube = { version = "0.76.0", features = ["default", "derive"] }
+tokio = { version = "1.22.0", features = ["full"] }
