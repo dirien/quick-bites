@@ -1,0 +1,4 @@
+/cert.pem
+/kubeconfig.yaml
+/sealed-secret.yaml
+/secret.yaml
