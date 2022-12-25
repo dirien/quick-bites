@@ -22,6 +22,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Running a Minecraft Server on an Exoscale SKS Cluster using Pulumi and CUE](/pulumi-exoscale)
 - [How to async/await in Rust: An Introduction](/rust-async)
 - [Advanced Secret Management on Kubernetes With Pulumi and GitOps: Sealed Secrets Controller](/pulumi-argocd-sealedsecrets)
+- [panic! with sense: Error handling in Rust 🦀](/rust-error)
 
 Notes:
 
