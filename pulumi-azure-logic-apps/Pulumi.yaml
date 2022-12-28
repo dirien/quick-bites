@@ -1,0 +1,3 @@
+name: pulumi-azure-logic-apps
+runtime: go
+description: A minimal Azure Native Go Pulumi program
