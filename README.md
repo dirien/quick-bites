@@ -23,6 +23,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [How to async/await in Rust: An Introduction](/rust-async)
 - [Advanced Secret Management on Kubernetes With Pulumi and GitOps: Sealed Secrets Controller](/pulumi-argocd-sealedsecrets)
 - [panic! with sense: Error handling in Rust 🦀](/rust-error)
+- [Kubernetes and Pulumi: Converting k8s YAML to a Pulumi supported language](/pulumi-transform-kubernetes)
 
 Notes:
 
