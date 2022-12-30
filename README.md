@@ -24,6 +24,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Advanced Secret Management on Kubernetes With Pulumi and GitOps: Sealed Secrets Controller](/pulumi-argocd-sealedsecrets)
 - [panic! with sense: Error handling in Rust 🦀](/rust-error)
 - [Kubernetes and Pulumi: Converting k8s YAML to a Pulumi supported language](/pulumi-transform-kubernetes)
+- [How to set up a Dead Man's Switch in Prometheus](/prometheus-dead-man-switch)
 
 Notes:
 
