@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/pulumi/pulumi-aws-native/sdk v0.45.0
 	github.com/pulumi/pulumi-github/sdk/v4 v4.17.0
-	github.com/pulumi/pulumi/sdk/v3 v3.50.0
+	github.com/pulumi/pulumi/sdk/v3 v3.50.2
 )
 
 require (

@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/pulumi/pulumi-azure-native-sdk/resources v1.90.0
-	github.com/pulumi/pulumi-azure-native-sdk/storage v1.88.1
+	github.com/pulumi/pulumi-azure-native-sdk/storage v1.90.0
 	github.com/pulumi/pulumi/sdk/v3 v3.50.2
 )
 
