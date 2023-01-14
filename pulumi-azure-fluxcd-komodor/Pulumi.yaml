@@ -1,0 +1,118 @@
+name: pulumi-azure-fluxcd-komodor
+runtime: yaml
+description: A minimal Azure Native Pulumi YAML program
+
+config:
+  apiKey:
+    type: string
+    secret: true
+
+variables:
+  name: komodor
+  location: westeurope
+  kubeconfig:
+    fn::invoke:
+      function: azure-native:containerservice/v20220301:listManagedClusterUserCredentials
+      arguments:
+        resourceGroupName: ${komodor-rg.name}
+        resourceName: ${komodor-mc.name}
+resources:
+  komodor-rg:
+    type: azure-native:resources:ResourceGroup
+    properties:
+      location: ${location}
+      resourceGroupName: ${name}
+  komodor-mc:
+    type: azure-native:containerservice/v20220301:ManagedCluster
+    properties:
+      kubernetesVersion: 1.25.2
+      location: ${komodor-rg.location}
+      resourceGroupName: ${komodor-rg.name}
+      resourceName: komodor-mc
+      nodeResourceGroup: komodor-mc-nodepool
+      dnsPrefix: ${komodor-rg.name}
+      networkProfile:
+        networkPlugin: azure
+        networkPolicy: calico
+      servicePrincipalProfile:
+      identity:
+        type: SystemAssigned
+      agentPoolProfiles:
+        - name: agentpool
+          count: 3
+          vmSize: Standard_B2ms
+          osType: Linux
+          osDiskSizeGB: 30
+          type: VirtualMachineScaleSets
+          mode: System
+  flux-extension:
+    type: azure-native:kubernetesconfiguration/v20220301:Extension
+    properties:
+      clusterName: ${komodor-mc.name}
+      clusterResourceName: managedClusters
+      clusterRp: Microsoft.ContainerService
+      extensionName: flux
+      extensionType: microsoft.flux
+      resourceGroupName: ${komodor-rg.name}
+      configurationSettings:
+        'helm-controller.enabled': 'true'
+        'source-controller.enabled': 'true'
+        'kustomize-controller.enabled': 'true'
+        'notification-controller.enabled': 'false'
+        'image-automation-controller.enabled': 'false'
+        'image-reflector-controller.enabled': 'false'
+      scope:
+        cluster:
+          releaseNamespace: flux-system
+      autoUpgradeMinorVersion: true
+      releaseTrain: Stable
+  flux-configuration:
+    type: azure-native:kubernetesconfiguration/v20221101:FluxConfiguration
+    properties:
+      clusterName: ${komodor-mc.name}
+      clusterResourceName: managedClusters
+      clusterRp: Microsoft.ContainerService
+      fluxConfigurationName: flux-configuration
+      resourceGroupName: ${komodor-rg.name}
+      sourceKind: GitRepository
+      namespace: flux-system
+      gitRepository:
+        url: https://github.com/dirien/pulumi-azure-flux.git
+        repositoryRef:
+          branch: main
+      scope: cluster
+      kustomizations:
+        deploy:
+          path: ./clusters/azure
+          prune: true
+  k8s-provider:
+    type: pulumi:providers:kubernetes
+    properties:
+      kubeconfig:
+        fn::fromBase64: ${kubeconfig.kubeconfigs[0].value}
+      enableServerSideApply: true
+  komodor-namespace:
+    type: kubernetes:core/v1:Namespace
+    properties:
+      metadata:
+        name: ${name}
+    options:
+      provider: ${k8s-provider}
+  komodor-apikey-secret:
+    type: kubernetes:core/v1:Secret
+    properties:
+      metadata:
+        name: ${name}-apikey
+        namespace: ${komodor-namespace.metadata.name}
+      stringData:
+        apiKey: ${apiKey}
+    options:
+      provider: ${k8s-provider}
+      dependsOn:
+        - ${komodor-namespace}
+
+outputs:
+  "aks-cred-command": "az aks get-credentials -g ${komodor-rg.name}  -n ${komodor-mc.name}"
+  kubeconfig:
+    fn::secret:
+      fn::fromBase64: ${kubeconfig.kubeconfigs[0].value}
