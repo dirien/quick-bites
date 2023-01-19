@@ -1,0 +1,13 @@
+{
+    "name": "pulumi-aws-secretstore-csi",
+    "dependencies": {
+        "@pulumi/pulumi": "3.51.1",
+        "@pulumi/aws": "5.27.0",
+        "@pulumi/awsx": "1.0.1",
+        "@pulumi/kubernetes": "3.23.1",
+        "@pulumi/eks": "1.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "^18"
+    }
+}

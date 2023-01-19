@@ -1,0 +1,6 @@
+name: pulumi-azure-secretstore-csi
+runtime:
+  name: nodejs
+  options:
+    typescript: true
+description: A minimal Azure Native TypeScript Pulumi program
