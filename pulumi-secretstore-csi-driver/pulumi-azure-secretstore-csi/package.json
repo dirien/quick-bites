@@ -1,0 +1,13 @@
+{
+  "name": "pulumi-azure-secretstore-csi",
+  "main": "index.ts",
+  "devDependencies": {
+    "@types/node": "^18"
+  },
+  "dependencies": {
+    "@pulumi/pulumi": "3.51.1",
+    "@pulumi/azure-native": "1.92.0",
+    "@pulumi/azuread": "5.33.0",
+    "@pulumi/kubernetes": "3.23.1"
+  }
+}

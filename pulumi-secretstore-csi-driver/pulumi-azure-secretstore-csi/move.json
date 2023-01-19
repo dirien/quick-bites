@@ -1,0 +1,1365 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2023-01-16T20:54:55.341118+01:00",
+            "magic": "431ff86e35daeeba31bcdb09d8e2056992922109156d8bb8b8520d7f234d97b4",
+            "version": "v3.51.1"
+        },
+        "secrets_providers": {
+            "type": "service",
+            "state": {
+                "url": "https://api.pulumi.com",
+                "owner": "dirien",
+                "project": "pulumi-azure-secretstore-csi",
+                "stack": "dev"
+            }
+        },
+        "resources": [
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack",
+                "outputs": {
+                    "kubeConfig": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAPWMF4wIirqV7q+RAR1FbSk4xM12GABSGiZDHpm0LdJA2x1vku3mEFhj1OFr+Y9enrXIWTIE47uiIkqp221xRFQZjkLta7FUUQcNzfkvVpx6pvD1Thhc9NRzjJqRR6LINqLl3LA3T5rW7mWc07fTw2uDAyieT4sS3grPYcMAIdUUdIvmlOwd537Hkf1gL18/kugT79TEP9t7BhgrjBb2kKyuHk78CwcXTfbDrrNAsemHfDNj/j2c3qmGz3a3nL7U/IbOqJPBak5hrh4M+M0QZW3kaqMOdXASV4XoqZj/XRItOxh2T8ETSAVUmPusx12Pdo1fl21qzBNYNZwIkFUUKhohZKfria293zkKHj1kiSs4ts2hmftXRJOd+QJeIXzQylLEL6Tb5kaLGCwRZVgiCZL/LI27CigEmYWIT+QBnXCoj8eqIumUHkcPSA/we0WNfZp7fCrrL8XAtklNne3pbMbpX/bvXSiSdPgQsM0rZu6ZM/VvS/Sn7Bx4qm60gaUxihQdw3phWGDEYpr43dABkomAZDHiHarTo0XCSRrZtnc73b1jmEVAJAvS/tYqdoU6Abv9ONjv7MVRnHhd2RE9iUIbZ8LMdJ1TraxoDue7HwV2qQbyWSg5VOef5GC8FpPZ2Uz+lU6I1y+MvXs4VogTtp3a21MqhwNrPuUHs9zvK/jEeoF5WPfq560rWQkazGoY+f8v45UB17gX2CZOzN/DkK+2HwZ+rILvoBVbZZfEjLxoZZNGmpMY/fyQ5G2bTB2IfcNcwyPgZCPASRPfSGBQuK/dnbl99Ss0WaIxo6btTkbuqbqaZl+GLq0OiAh5KJj/R5A3GDXtiz7oZG3KUm6EObtJd71io4bjCbkoO7flMwqx04cqC5fwEJFmBeUtQxb41MxYpQ6H4d0GiGJktXGJuERafyDVAZznBjdQorrr7bJ8G1UZUWAGXUNCWFf10TYC/Te7jaMYuPUrtZexVy6wBPv4I3Vyy1K0URYRkGWwJGFsxkUrWbnosl/atsvhYI1ajCZej6tSa5aogPDblfajZaOwKM1AA9zZDE7ACZn9EiF44xXBNDtNL4dllBSJQ9sa6yVJQ9HS/i+GePZROabKC1cUGT8ZzjhDDN2WQ7ZJfT5lJ0fXXeZ2YSh1Z294riaAZDaEvMdQjYwzsLLXOeUiY7f6+1BFwRA4mlfroVNa2KpfdA3GLK6uwmDQshyrW+qR0SZ6Rxp8pSMLoBdebxSaI/hyt3Fx3LaVtgUyoNu5+M9DcMIxjfx7rzCg98+ajCHDH5sbTNEs2USbBZNMyjdhdDCFSUomr9X+m7vK5XdA7a9MP5i37iMyZBVkCpbnWUxVDEQsKEnEfrqqwgc5yjImVIug6B9OiMTWEfJASEPhpDgd00zlOARd9ouFg6RuqA+2KavkL8gciQY5zTm5iplyyfgGZ44lydUoafTmFNggvSCu7hatOg5z7+zS9HIGBHT3iNa/YT6kZd6BQVdbm3Q+GTI0fdZcDDaw5W5DY0iNUwrCqC+OO8KzTQO2/pv+6oQ7azk8nBBYA5TyHYNkr4adPKGt4APc7W1M21b/CQw0IBG5/RWugMsvMt+Y55AhGksv7zdCC33v/NLCuya/7nMDy9noeYZ1OCb33VF8bZT7D2bvyhOMzQ47zo3hLl1n8dj2NwZM/WhCYKZoIda2myqyK0sqP9TqPiZA0qyDXovMBnazT+CCwvgQZ68E4BdLysIOuF9vVor9bxTzc0gJZVEyqYUdi21WniwgGo3v8HqI4lmmRZLUm4HWpZhnmha9fQNGaoJn24Bur4yrjH9EA0H3+Bmy9dSu53Hx2nEBmiwPfSzhIc4g19ndUhEBjQC0J8W24SEdN5PJEynTwCbFNopT26W53cQvsFZkovY0r9LGz3PcT88YXXAaWFlrq1vEFVeMD5b/qk7Ctks+to2g8F5U8Zu4DZTswRFC1fLBADPGPmhSSxPf0uqsF5iOuWiUejyROIDluYyn9URAkteILbmvWugSA1Llz/pVI33DgN1jplHQowxWqpL4GDku1XEC7UW5sod/igoTkNA72zF1nb/gDEVUtQWynyiDNZ9F5eGRdL1Z1UNVq2/9SzPsHei6sMuAtlK2Z2xi8stG6KwWr9A3ypJFBrz1KtGefaFTlP//KFhTP3PsbVNpJI0qzgLAAOGt6o9rQfDralgZVXvhljF/vheEFhyu1u6fj9hroob0M40dgd55+mC/PScOkrDlAFvrUoQc7GAWdDn1AIkkX7ku2shEQb3N5To9rE1rFrcTlL4yXcMpUn5/cYHiua8Vwtj5eeWs4O9at9dtU+wXNAAp9cWe8cLfokMgNswT6Sq3yEDT7M2pAdxE/qnVO0z771Yqt1tycmkN7evdm9ayvTsyPXQpHvE6GrOwr3xlHU9b+aQ3paq8M3myrFg7GFxrHP86+/IFgKEcat4q/W9yaX4COtKvUNPwYZrLBtTLGVty7T6Af0Qs8yTY+DEthyjiTMiP7Nrq6fnswGcMOdx2wxIZmWBbtJAuJnGmdOtud40nZbB/F+bzvfsqHa/iS+qY+nr1j9YB5QcTf3kt6zX1nd0BojpsRw6FZXFYm7L5PQPvfDJ1EKKr7GOkAFtXVDJPlLK8I8ozQxzRI+5J093B+rOfppvLb0pWtsBJkd/u7yps4pO3J3EcwIvi7k/XZNoiI86OaQsChgRuKUDef9Yo5ktedPy3eM1YSjtrLETa8uH1Nqryr7xTqv5OT0uaQpUJ5MshLBiG5X0CuPS1ZJq8V0a/WUkHgN3HBKXnEiJE1/vSEh9NTPElZ5RjH95a1Ww6HDG9v7NRVpl7WFfW5+sL36nWSjsIPQ8Mqcnu6yXlykLVgjaxQCR438OWVeorYN11ALyuBN9W3KHB3879K18/kUH1M+nkrsVtuUilfP4/qgtBPxaX0YaJp8YNvuLQwekoWk49DsgAF8WcYdSpBo/XiSuhbIFAU1R6WfA4SAaerWmdzewD0BW/v5NDAv9fMOJDaVwL2SmK9AXf1Hki9wEkOjteIHdg7xzkom9QtPwfRVUIA3JHvRqyHWgqWXaHmJO+Xqcjm5n5lPKcTHw56aTCz8+I8cLjOfBPdLhL+Su00bYNLR+AM/neN1CAAyEJ8xPBZteOklfKs9p9lN2p78eNA0DxHtCBgYr0KI5A3grgh3oQ73FnNm3uLhxy657s0xQojYvRx/mds8C9sxZ12B8mVOOTSw2Q8dm8ZXU1qRB+e+75Mo6A2Jr5UVSIMn3SKjG2DYyWuHlz9Fk0/8Yu8zmrNR7SkGYjKerY1a/D/yfZ6JQM6zA20caVj8ygpMww3XMtbZGVuz6TMaH7wiFoaj/yu76GjJemfZW9y8ID6Dq9ifP8zLvJmDzcO3oxAzqBkf8tk9Pu9Io5xETCZMvgOHxeykCdLMnKWj9PwZUodOluMDgjMUIuZCLZvTJjlOUiZeeyn1gqAn0iLnyVbFvYx/EMk9AvkNi+rDlNsRZvTlHWWxYCW913Qqo2MF0yg7jaLNuXLP91nY+yVXYNWAx8W8JTG5+iJ4PuipZR5WMJB/ipEHlNs13f1jElHDuaWaFu5HUlR5SFOtogVyJkNi6YPQSV51BSsxMREtfXSQZaJb/BBlAh0fKh3LjVjGPgyQlaawk9TtcOAKECPEHIpqmMwvcn0ykW2m+iXSedHB/FWhXgQUgOrdzrK6qGiMulAGloxxK02WQMs9mOr/TQsV827pzXQ8sio2JL7Y8vCgPe/aAVwhrTJ9ox8BGm4zY7THb7o8UhaoYUKZgRIy3FqWnlcIW1lJ3XEeVtfhMPrwHyg7o1vynv2RspVmqzrd4ZacQ1VLSe6EFmQwSysxuaxZXF7+iNkSaALYUbs99wyuiEPXCbhhOdpiJjMg8KeICLu2WNY3tk122aCeQMXxi8Xf7zRRDaW/9tWtUsRJP6mp5ydQc5CRDYdAlg5N3/ddr7+woJL3b8NFwANS9aTU9rZNWDdlsz1qFk9oyVmatHCM/TEmvrodHOAXWcSqtWb8QjcC2qPBvQ7fAWV52iUF5AjyUACPaoOIeR/12YEezu4DxpxiPEVVs1YsJOGTj5P2JNPNsjfLgLRDgd4apVm3DMmCZmZAFOuiqStrtQNd8HvikYGfyL6ncaEoZar+T3wI9dxzlK2AzvJvcvt79L1Ao0CawWptnAg4nQQTq8x3GVFkVminYfNyTPszDIhinuvm5hsu8YvBGhECviYNFpI0XlPDfDP/n0rlMg7SMZ1gyHBWWcB+kto4OKTM8+Rpa9nYtruxE2LRfIdQt4bfg11Rv5DJa8cVig4psc6VRgVo/V+PlSCHYUD21AdWSeoHLYB15LffHtBIiYBkkduO287rfjtCDoPo+555U2CdLFTC74tJ3Lj09z7WOVinbbZtvTcIJmYa3B1f8qMHtd6FxR4uV98pkRrSLq/X2toBcZqyAhsH5bA7FjcP6lRa3LBC+cHpO3SUpu5kc140fn6ijba5+7se5MHCxAmtigQf105TazUbtNb/UpeWg7VHVBDnceEF39H+NsGgLhLoGC4muUwCUJf+NcQuSCEBNx6+dTS65mKDLLb/ZhIb1F4mUXFZ/Co46tnu5uww+bvyBQ2K8KMYPCmfxEsP5TpNeSVsZwA4u3rKRIHiph3wSrD5sPTE6ZkYkOxsF6tQiyxvaeWusk1VdI6M+TQzSCKnOhwUCiBni3csLq21FV8tCcHm1QCttkTGU0ggOis+J5sSL0WTh7OMT+/QTPNv43CQuwReWpECSI4t6a0OdRBZeaoIzfDx0NwcnkAY1JQ+15Namf/RFA4AlwGZCycYeoy08wXMFtZ+aliTrbEwpXiXWqCEWeHU2+/Lh+HBARoeR77niXA3GPUzAI4DdAthtTH5GnS2348HKqPOcNR7FkEjor/ZzMbINFzRo/MF+zKWqrTzQQ+jeNgTAeJvwjNcLJt/xPP8lMRZjCdLMfeSjhcygRHRtiJ4RQqbiq4H4LpSKe7NJ7b11ScjJ0uYYOFHLZPevGxUjmeUVRJmxSG8LeTB8RG9P+U8l9Qm8yM8GrUQttCTd5P3LeXZ1DClcqVGQaJb1ztvA59ll5Ujc9JOMUapIroBuOiHUysawu18Sr6Ye+Tq9vqgxpq7lCTPUF9iZiMyj6GMVJlrPwPXp1LqghwekFhHiFBSw06gWkQYBJmPElhv7i/Vl6WZ6h5Wq4yyCafxllRMWVnnh/LAKvV3zCqROTgMWG2gVocyqK0Hee/RoRnFVDUKaSmv0DCb9892eEgDGfz6vwoy5oZi9g7lP0R846k4Y+CyEjkoJ8q50r1xyNC7zOYmdNSb7YfmJEtC7+7EID+CmifFQ5nEJPsIStdxcj7GVOAbp9Gxz0OzUjQSUY0Ttm05yXLMN0XLOtPdm6qzizhW50N3mAbwpAbyKbm/eOiaGpJvpcSIgMJounNeN7q8o/B7EivuAjXcbQ315qtuA6PxZ5nIdCWO4bmP3O4bciAXelIJ6O/iVfS2ndVSSDXrvktce6Q5c8gQpMaZ75zJgJljhRd0ptljIhmj+N9zDoryPqb9FgsX5VvZcpWlgEpD2smj1K9cQc2tsLt2/Z/5d/SAuHA1n1kIac8JP0SejGhZql8Nwenz/n3QUbByFA375+VLltTFUcOBJad50xFoKLbkS5hms8uqutthEc2N2IHjSoKz/jN7sSCCcF8pNkyhk0S2n8j/7Y1ixU5n4+FREJ90V7UQHkyOVAUR5W+vmD4L+KA4YcbTM80BdrWYrf7OwJTto8sUQDqWnLjszEWKow/uXEQr+QcNLpa+yIULiDv5ZWOPOTliYKX63NiP/53fZcVCX96Tdu+ICzCIJ64Kd01CjW9u0Vv80WM0RjiaVvllGDT5Ys1yoYioYQECFmO/KRGykXM1fygN2J7WdEBwUvmg6cHA6+hHRPeuwT7wraWRxRjety3hgLSqc3AN2990GTUOhUZCmApCvrUxN/INfBlYtg10oyS46U7kbP5+/OI5uBplj51vxaZr5+wvVyXMHmaycTCzOircUhh0qrFJEph+I5zuoJALFujnPxZ+DxjWfzZqdWQPWMTGZgXUO0M/2A5Uvi35riRW9Kin8sE33/6xQGF/jz1jDJWYFnk5JOiEZoBJ1HQDlXAJ4E/CRLo3hEGWwIP42UGtOcRYZuIiRTURBZrJ7Q9808zZRJ2vQZx16soLdibay7YRRgzzaBxjvJkReZp0NlKIP5y9v4Ph6dqV3p3v+yUj3uYD3aOPh1M98MEhofZLveyGUM0Z5IDUDmMdLBYj8YVE+3FFa964oSLWUOZTGLkVDgaBcPCV2GU7oCYxL3PDzg+IguOMIrDp4l0sUB3vjWFLMCzj7g7BmQURc8QhnLsICWp1pAWIV52M7Dbpkz/e8HtKIPhwGhPyIFCvP+m8tT5swSIP/etirfcWyHAZL0rXfPxWFbGaGhgRis7VW/jR8SgmZ4qfZKs8c7g+oWZbLCvc6a1BoEqjPLFetbeBBKyLIfkci2sm1HKrwoIJatKrDPXxdVPN1CtJfaofoJ6wWTy94yQseFVJbAR9wdqBTVfHHVudew6JKaGEWpLydk2bZQ1QYj78IlHo7iBg4kHp77D4p1bJlOFDBHZE087ez+I4UvHu1irgjivNkSinjDA1s7eGNys0nIEkMYQ1WfkulU2gP7YKpXf97c0BskmnPkbyCY/SGMAfyj6LJdpdJxdj7kC2CXuErdJgbj2lY4flXO9fCQyUYCSd7v30CiZQKq1wQwNoiCrdeLh+akU4FHPkhe89BdcqJZWdMlgH486I4o9oDEVU99oD/AO6QCUaPAHzoUUaHioz+uvhG6T9GwNy8/BiiUIVIJOqRefjhRUYDmlvs0bxvBXurwrv6aMMYiZeclGjovefYEALP6u4Z2dmGG6UvCApb7fBdtOhJ5P3buEOK/D7nzyvpnpZG0RopdEppq6QxGPWRXYMeLApc9eyYvNpTrgNgwfbLltas6sRcVm7JBdYqwXyiDgs17YztCdEEyN67QRQ1sRfSlQtA0LeyGwzTjKh9KzYR9CNxSlLkUDDlae+1uMi2iBf012d4AnPefSrjOQiM/h2cYgW/5s+u5+wCWv3cLX3Okmw2hkTjv49cSFtx2EyOmx4hJEHDe7e29yHKp3p6BROENm9NU8l7tnR3j9dqMXU9TUlNMoEo0VjWope8EnoskRCpkl50sg+ommF+VbuA9TxencQBKxQahPLaNzUeEBLcXRhgKPjgyjGtHX/W1FytBaMlBSW9Md0paXebs7xx35C/moC9+9nO5RrUaeiyxVx5Cbe5VLxpc9mf5lVoAK7jaKEWVik6RqfxHKFg1Utg9CXSoSf4BfOVSDNk44IYkrxtg3PvpgrkIMU7JBVd+3Zh8F3KZrls73vW+9AW6VwwUL0tzZWAIlLLc0fXQrXVxmWua6hIMldylppnjK1cQ8LEC4gvqjYY5RB+rd1yXzsbel/wUKyUDqCp8Bnam0Fgm9pYW1smL/QQkkOerHO1wwGCyGV1xpqGsAHgVzMkLoV4jBhmnqd966FITPl9nL9hTbgg4Uv2bq7mwDFPdoayF4jPZa/4DMZeq1TIvz61oPGQ09kv5GKllYL40BYqRSvy1g5vVskQoIGrIYEtva3HFYAXxKGewVNXQKqn9O9Ck8ThJDkq9IIgthgpzMuu+0iRHqgRxjpNsYEUFGxPjepnE+e5ksTgI1DRrJn+GAIq0nsspcYgT/N8womH0nQA7eV5OgQ8NNzb3ZF21htUGtV5ysq+uhtVLvhvJjEPhC6fP5GlsugDiEHQExTuFguOxABNjidE3cFqsixWD5pie81XAbjfEmu7Iy7qWQp+lurFVgRp5ACAFIffhW3qhhpjpkty4wfE8RhHbKh0nJ1LYEBMeHuim7s14bAWfzwthN9nsweFEoB4h/U5Mdquw8tkSRUktPd7boStd4If/jdkDMi12mfisOI8QhDfV6ekpbr16yNvLhhDEbHLsMll5aLnqGka1zv0TKB1HGHiiRub6f/ZvVh+InoB7w9UZwAk4z+4SMJCzy0U1dOos0aHvTWCE52g6J5AG7anYW65vVDcA4/op0EH71J2V6iijxU3BIypOscvmGDj1DthCpix/is+UnMrYQkYvunBHQDJ1HFYtLYh+91iq9CvFXCFguAvZESlKW9vcbvv2PkubFQ7osAB3wD0vy+5+qNHc7HdLb24HnsPY60nw4E3FMmAcv068dr0uXkr/NLeMlDqT0qFoRrwVSRvoMDMb8Mf+0jNyhXhiFzspo2z9kDfhZSOYpZfpCkd1N4VWAYOJTHwwFjo1gDEjnVJvNMi37VWFCFG//jGkxeNbSu1L3r2PkEtV+r4v0QH/JaL5nFd0UyvmlY8GWQhqe0du9/KxfuiGZvJlMKCeoPJDKrazkMjQ722mx4+D/BRZ0x3MHvQ2RCNKPuo9OyDlkTyAAR4QodOiToF9NcCaT9eR5NjdweKHvo877LrqfDPEZChuZ2WHYyjHWfbU9CwGCmNj4OMGzLgg6vDle7q0w9Q3+MF8a5fEdMrL4sNls2QSMuStr2VTHm+CmmhRSEQO9lfXpWhS++zB3gWwgrShxQUPUybXm/ss6urBHwlAXvIrTGIdjJe+EtoWWNXnE2tvsjymDu78+A3+B6Ah49wXKyke0raFohm7iBD3/FT/Ae0x1fQ4c0W37YASrcstEzSK9Cv9wv4Pyju29I+1t1jBKqiNRCnuUGUFXyhFt/PjYrGX44Fi62TTMA6A3OM4q9lwmG9eqKYbb/hcCoJE/pmBcoQKuJV77rLXjs8HJVfVNZHjhA2Wcbi1E6cvhH/xSQ9VnXC9MHwwyrcMBTGzWqp17nZwnPZuV36dKZKFhWBP10bPAr+kZS6KmsCgBaRj3cgayDqx3xj6DuQUKIhTpXBgjzKITJNjHCgBAIjavTuLsWT6uFJjM/48UwysxLlCOhESaQbssWVK1esaIDQZg3UmE8mExRpDN184QyFKHeDf54/4YL28JnNlVrtPEX0HlIe4ZJXwBfYuKeNoc8pyVCZrMXYJxISliM9XE1/ckWsmX+Imw7Vj5T2F6T+FM1etk/Mect2EqEl1tG2653M3QPHRQRaYdXkB0dg21XlfbWXBy2zWErNHK+WpYZYcXO+bh+MHtY1DnFaIm0/cHs19vG833M1tgsqaeTdYnLUs53edZ0M6eBj8Y3UQ+MuAxLMw3ZPs8P0SaYeG0qbkak2PvylPjIJvN8OFIDRT8iUATH5PIuu9/yokrjNFuYrpYTStW63fP8+iaZzoxRORyKA0yBAXLuK8fRa8GpOMSl/C9s3/cx+JOjkq666P9/dDkXVfr3whjz5HnZBkIkwnWNimK5bndHZh0wxHPISClAr8tVGkv3hL6k1Jjx5GHUBQabhe8dBTVi9kaAEh8Sv82thCbp8wwvikk22NJqL1lOqnjmG1UBUP0GKxkRPINkvOhnIzmUleE5pS4id6TacuodGgPdk6FihExIsn+QZYh6mmVnH4T7mLVp72oDiQ6CMckMUsqK8q0ImPGNZemycFNtcuyGh6PCN9pS1HUBiixTccX+E7GTFAV+WUsjRFEQCYxnQ1lo2SxgHmTTuaf2IqsLzZIyeSXoo0C26B/wpVKAPRvgsBbXIDAMZHNqqPucZb6jaR6xo9/Y4HBdYt4bPBcoiqqKdOELVLdVrqJ6kfobt7rXlABfJyxJ64zCEA5kqbtiiwz6HfWkN8BHeEAvgMnYb6L8cBQNRl43tU7ogRtjKO9dNmbFk1oC739RzoXJDgGOVGo/xiSzW+yGben0EemAmYgGfgpQD5QPjwIZtSnsphaKmClLjVrDp5u9N9hBnkLNLT9GqNa1cciMO2EtjJEho1W1MQvhFYrOiUn+J/OufHpskYSZ5icip3ujKlak7GzSwptqHDvRhSX11tb5RC4kn22G3xpPj2urvq6z1y9HycI/COVHlI2zhdexB3me4A7F+gORZr90Oz2Xxo1n7hlo7W/c6RMPKJR9HLrvgwFAsheAv0vcp1ZqLp2VJ2A/LPzdVKch7w5NhQ2kkZD6zneDAVaIwlTVF0rbcBWH4oDQuQVf4lBjuezpe/WpCnwe+rzCGye4E+UF0gdi3VFIN7gICkmA8azY+6ht9aBDngDMvnaDlZo+x3611i+6oQ84fbrhA9IA3zAQKgpCpK6E0akCGG2lb4j45CNwBHRUNd40bMlDsUWvY76Rf1tOb7RpRJmYigbGwsUqy86Cb5VhqAg6EL9x7eph6KK4OAZQddkdq3L4DmV9jvQ9as+sie2mEtXpejYd6WPQf4fWVYMMw5XN6R/DNoteVOlyaIAVhCywutLsQ+cd6+k+EPZmsgjreNF3K7mZfDczUmDq0DVHqaAYvzifloxoL8plSRLRstBSG8J8xHJOiKEnCuUWhRAoOibBkbNjAV8zsAckpGmivF82HjeFWKRDvLG9gb4W8j3xUCKZvcx7ldFFVg4gqIexltGQuwPvG2Vhl4NWNCyIWvIeO+OIH1y8NKphD/iWa6HMIaM+emqGbXCETyqeuQVlhWdtDWkshT84k0yOwt1Utl1D46+aZ9LjLJOqXBtVfdb+S7UsgZayy8U3lQG2K8dhqWaQ4kFxgtx3/GuMa6VG2oF2OCC5GOj99IGFwBOHr4GelmQ5cxA9kVwU1D8MoYUPYGRvuXsWRGylBkOvOlBQFZAOr6vwShsoguolXt3wmvAFT1U7T8Gy3PuPeQK84SFyxMNuEobrDoTzHpszcSm4OVZZWpIuQ2beUWJgX+Y/do1v3Qy6313fO8eAMdND3dfvOoDGBxLC84EhekdLbK7/KKhC3dkj1f5R9Dle2CF6XhAOMS2Fhcnc3pvBrQ1mUjBcw/xS57qvyRvq8o1/Tj/W7FiBMNfldXCBnThpCHKIO/raLX41ajaWtZHv0soaaL4+On2qONwoIP44+eSEX8ikdKtglITuhxSpqo+aWxQan7VqQroSXhjpINzI+qUn7SepvO03I35TaEBPteTtOx4kJ/nBU/fJckaO+E73UkfkcrM1/C0A8qTGJ9LrkwllndEo+cMk8Ga135VW07wRhVm/s6tzCzW2uo+k5AL+aLLYaTCEiTEMD4n0sFxdm8EN90cZnM9MK082HzGzx8Nm+XubIhlCWTYsEig98eSrqROyufcnm3e98aEj9fo4hVFadZLfsFpyFM8bTEmXJ0KxBgnzvbvlld3v3pTFfAvuU4cwJftWDLxqVedSFWGmQpNvDXXu7hDa2a7NIxVlLeSX8ZaaBg2lXf/A0gxtcjf1opmJ2TPl5MQIjAnLKqyY16UY2ZAg2lLoi5TO7eoH5uoOMn72PtBesDdwZwOFB1wTDykdL9AD4CAcml68/k9x125EwL1sJad1h/YeYG2wiIiPwWulAjk/SONyjC05mhtErmNyu8RqB0+JO5TMaDr//YhSI79QM/k7CqUs+XMwbHkmwRM5ZuaIqVhMTlh6Z8/1xbQ0Z9s7d1/KsU8vf4yG0rsckhBSKDArPBc0OMojcl9eeLzEl9NFmaq2HUJzXqb4o/igthMSDHfwBf9VGv3K3K8oyMbG5nFjr6Rz9IviX1I4YGr+EaZwKrsS+OwVyzBRvNozk/uki09/4cy/196Qit7Lm/ul8TBGuHzXomM2R7VIObiXE344wBIj46gsEQB5tzHwHtH7AEwlCyKLg8dX+XRDXI7JXpjsZKuJTg+W/Rr8x5haGV2+DCtSjr2HBdkanfMp5lfg/R2grQSOx6YVdc+ztYGikTgX9KFcZQdtdvhEo10WSuuegB9fis9f2myeQaktD7k9LBx5/0wZMNZCtfscEdY1iJxD5v9Gc4p5Ik4P9tkbasxB6bQeKE1xwbGAs9UlDyUfrLZRdzbekkEHfe05SOf/fdjHftRu4DQRrsn4GK3CAwnR/Fwpt1SuunMScCE7bIo5QLSC9+9L579lXq1B4cRpC2VYPrH9OACFqYh0wHsKRCGbb7HzjeaQUBx8if+7qe10WjNF/Kmfdjlar80Qg1KKuWEF5wexclVA+Czb+0iXFrHW4zRYywQSQb4ACu8Xt2duYnWnpVMdq4QjU29HTdL4g/9Ie2aIN7iu1/j7969IbmR1bnYlvh/YBzDUB75B4xkWulra2fei1xx4FwTrjtxj79pCYrCO5WPiXB6+x9qpxygnqwRfT4pzu2yuYwbtS+TzzICSTWoV5Rnb8lTqYB69TjOk2PzfbkOjRpDFSCDdLOQAAg2gAWtE5WGmlueYasmX3154pe/Vs/AbHyLZ256MrgGrsFD7KLRs70i4+S+tG8Xw32B7pAIdmjwWc06YYNL9knwobPgnJSUmNsHMS5v3ZFhaqTJtUZB9IfRE/zQYmU1+Jw6nLlSag2+fHzrlxEZpxY905f2tCLoAraVE7bUjT1SCgYV0XqM3/BGmi8RTXm739SdM/duGgsSC50je8Ui89j2fuqIp3otEuuzbcwzNJP/eDMF3Ol+gfozoX1cKrGcziYGjekJRxk6RqhXVPo+IFpLoH6gscjfOkQ3jcACAV+LqML4mjhBnHcjYigd7OSyXw694nt2K1fDbQwFYJZ3ptv3ihv/3d6mEnBPDzH+DTtglGnxy+7mpZeCooSb2JOug9/2URrxS/fdtcMsqDValeI5pDQnWfY2c3A0CisNXpfahviNt/uhveCBsjhkUud3zcJyUXJCjc2UNLffzttzv3LAAguHfHVRDtzhhCwclOKpp2Ndy8pdZdWfdTEGOPDIOFiZu2yZ7sSgJxlFpsuZgFXAt4kf+Ijd/YKVnM4o52eozKzGcruDnF8RJym3N4G1t1iStjbITb26yw5MGE3oizK70X3Zb9LOsudUFsautjoF4qQpQsCTtM+JLgHh9aWdAN6Wd7M1EmoxcrtNBXJY7UNtbVC3VGVuJYB55rJobhUsFHcEy4T3pHgl29UnhD0/aNOFibZsG5Eoq+8c43YBmeVIa3/RKJ2RxIccaxMLQHacCMxH04O7EshrazSF8svy9gAG7OHW0rLfua88JLjb0nTmEVIV7o+itghHIpQx1czjIay7VyyAN2o4RlJf9Ny7xUlQVZFlUszDIZJOLa/23P5fCOAr1yp"
+                    }
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:azuread::default_5_33_0",
+                "custom": true,
+                "id": "1d304b44-dbd1-422a-8acf-825203b5dbdd",
+                "type": "pulumi:providers:azuread",
+                "inputs": {
+                    "version": "5.33.0"
+                },
+                "outputs": {
+                    "version": "5.33.0"
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:azure-native::default_1_92_0",
+                "custom": true,
+                "id": "6e7e2ddc-f2b0-49ae-9fc8-f125df91ab18",
+                "type": "pulumi:providers:azure-native",
+                "inputs": {
+                    "location": "westeurope",
+                    "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215",
+                    "version": "1.92.0"
+                },
+                "outputs": {
+                    "location": "westeurope",
+                    "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215",
+                    "version": "1.92.0"
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::azuread:index/application:Application::csi-driver-demo-app",
+                "custom": true,
+                "id": "d1d9ced2-34d8-4b48-924f-77256957d920",
+                "type": "azuread:index/application:Application",
+                "inputs": {
+                    "__defaults": [
+                        "preventDuplicateNames",
+                        "signInAudience"
+                    ],
+                    "displayName": "csi-driver-demo",
+                    "preventDuplicateNames": false,
+                    "signInAudience": "AzureADMyOrg"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":300000000000,\"read\":300000000000,\"update\":600000000000},\"schema_version\":\"1\"}",
+                    "api": {
+                        "knownClientApplications": [],
+                        "mappedClaimsEnabled": false,
+                        "oauth2PermissionScopes": [],
+                        "requestedAccessTokenVersion": 1
+                    },
+                    "appRoleIds": {},
+                    "appRoles": [],
+                    "applicationId": "888a9853-fc37-4d44-b7d8-18a8d097b941",
+                    "deviceOnlyAuthEnabled": false,
+                    "disabledByMicrosoft": "\u003cnil\u003e",
+                    "displayName": "csi-driver-demo",
+                    "fallbackPublicClientEnabled": false,
+                    "featureTags": [
+                        {
+                            "customSingleSignOn": false,
+                            "enterprise": false,
+                            "gallery": false,
+                            "hide": false
+                        }
+                    ],
+                    "groupMembershipClaims": [],
+                    "id": "d1d9ced2-34d8-4b48-924f-77256957d920",
+                    "identifierUris": [],
+                    "logoImage": "",
+                    "logoUrl": "",
+                    "marketingUrl": "",
+                    "oauth2PermissionScopeIds": {},
+                    "oauth2PostResponseRequired": false,
+                    "objectId": "d1d9ced2-34d8-4b48-924f-77256957d920",
+                    "optionalClaims": {
+                        "accessTokens": [],
+                        "idTokens": [],
+                        "saml2Tokens": []
+                    },
+                    "owners": [],
+                    "preventDuplicateNames": false,
+                    "privacyStatementUrl": "",
+                    "publicClient": {
+                        "redirectUris": []
+                    },
+                    "publisherDomain": "engindiriediri.onmicrosoft.com",
+                    "requiredResourceAccesses": [],
+                    "signInAudience": "AzureADMyOrg",
+                    "singlePageApplication": {
+                        "redirectUris": []
+                    },
+                    "supportUrl": "",
+                    "tags": [],
+                    "templateId": "",
+                    "termsOfServiceUrl": "",
+                    "web": {
+                        "homepageUrl": "",
+                        "implicitGrant": {
+                            "accessTokenIssuanceEnabled": false,
+                            "idTokenIssuanceEnabled": false
+                        },
+                        "logoutUrl": "",
+                        "redirectUris": []
+                    }
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:azuread::default_5_33_0::1d304b44-dbd1-422a-8acf-825203b5dbdd",
+                "propertyDependencies": {
+                    "displayName": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo",
+                "custom": true,
+                "id": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourceGroups/csi-driver-demo",
+                "type": "azure-native:resources/v20220901:ResourceGroup",
+                "inputs": {
+                    "location": "westeurope",
+                    "resourceGroupName": "csi-driver-demo"
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAP8WEcKAZ5PjslUhy7Jr4EzTnS5ETCcvQaC2TWv35jdj5DsLYBvEwmTgoWDS1DsphzHsGyxIGtn19SjwmnR1oWfs0gNWbwMdkQpokNFnYDqTcRvMBY+MFrJL3tw="
+                    },
+                    "id": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourceGroups/csi-driver-demo",
+                    "location": "westeurope",
+                    "name": "csi-driver-demo",
+                    "properties": {
+                        "provisioningState": "Succeeded"
+                    },
+                    "type": "Microsoft.Resources/resourceGroups"
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:azure-native::default_1_92_0::6e7e2ddc-f2b0-49ae-9fc8-f125df91ab18",
+                "propertyDependencies": {
+                    "resourceGroupName": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:containerservice/v20220902preview:ManagedCluster::csi-driver-demo",
+                "custom": true,
+                "id": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourcegroups/csi-driver-demo/providers/Microsoft.ContainerService/managedClusters/csi-driver-demo-aks",
+                "type": "azure-native:containerservice/v20220902preview:ManagedCluster",
+                "inputs": {
+                    "agentPoolProfiles": [
+                        {
+                            "count": 3,
+                            "mode": "System",
+                            "name": "agentpool",
+                            "osDiskSizeGB": 30,
+                            "osType": "Linux",
+                            "type": "VirtualMachineScaleSets",
+                            "vmSize": "Standard_B2ms"
+                        }
+                    ],
+                    "dnsPrefix": "csi-driver-demo",
+                    "identity": {
+                        "type": "SystemAssigned"
+                    },
+                    "kubernetesVersion": "1.25.2",
+                    "location": "westeurope",
+                    "networkProfile": {
+                        "dnsServiceIP": "10.0.0.10",
+                        "dockerBridgeCidr": "172.17.0.1/16",
+                        "networkPlugin": "azure",
+                        "networkPolicy": "calico",
+                        "outboundType": "loadBalancer",
+                        "podCidr": "10.244.0.0/16",
+                        "serviceCidr": "10.0.0.0/16"
+                    },
+                    "nodeResourceGroup": "csi-driver-demo-aks-nodes",
+                    "oidcIssuerProfile": {
+                        "enabled": true
+                    },
+                    "resourceGroupName": "csi-driver-demo",
+                    "resourceName": "csi-driver-demo-aks"
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAB/L1cL1VllPCogUbn/BMDY2Q3Vbsyq+sfQvtOayUzlMalP99ZCOB3psqvKxdQ9OdniW3ljiTa7Dv1PoiSs1Kapb4/CUOukJ0NJ0MGiqgjvYxHklUC39Ig3iqKt3zkWeMhivLuDWoeyKgQaK9+amOkx9VHGLQe8ADGRTeg8omcOZ8HP9HsAZJTX2SarqizHrzbQJRa9eQK+cWk7y4fo11CuNOJrtslUSDbF1xF3vjKz74u2tnLymauDypNo9FUKZ4lOteq3lgzVUpbtaoITUfjcbTN0ZMdkBWhB9PKFOIqDx6muZxqfjptUVrxa9Cl4QJhd4uKhBt/jrHyHKS7r+wNG/o3/HZrDZSLLRdLHv3P+pAdbWbRVNCdVDh/seGEMg/SKgyDh1AYk6XIxHolaWqdk148Q3leVdBvmDbehXAI52kSV04roNzXEhTrMeqsP+JUhyUkODbzWktXsD5fPuX4OzRYiQ0S47t1+MQ4XQ+48tCFhQdg8KtBC17Ua6DV6ns4Z1BzF75DtN1cryVvW6eRwQKmYV0uqlfBFec069UvTyWkFjB+6vaaeyI9sJOEk9KQwwKyuGARIUegrDsBEgbo7UZD9NvFRrVM4CDlUHBRUXVEn6q3OI2oHQ+Y3uxp3F9n9mBfk0kg2JyO/6aiXKyYqDoSmBh57eKbhJJpMLjwTabcSMWAL1i5Jf6buCc3+cqPogJjp47UqusZ+spLAMdSkA7Nbw0v2a8ajaJnA2jW9UJ2tvbjS3hoJPC6gquHLbqhFgb98htTr4g1d7eRAQCuu4GzH05oZ6Bn8dGN5ZlLpirYIgU5ULX7CBBlqp5y8fhfwYdFb4P2lZYU0sG5Ejn/afVDO8Km5eDdoKl2nZFiAWe5jMZEde/4zS9TWbWq529hrh0T0ENmx79vg5tDo="
+                    },
+                    "agentPoolProfiles": [
+                        {
+                            "count": 3,
+                            "currentOrchestratorVersion": "1.25.2",
+                            "enableFIPS": false,
+                            "kubeletDiskType": "OS",
+                            "maxPods": 30,
+                            "mode": "System",
+                            "name": "agentpool",
+                            "nodeImageVersion": "AKSUbuntu-2204gen2containerd-2022.12.19",
+                            "orchestratorVersion": "1.25.2",
+                            "osDiskSizeGB": 30,
+                            "osDiskType": "Managed",
+                            "osSKU": "Ubuntu",
+                            "osType": "Linux",
+                            "powerState": {
+                                "code": "Running"
+                            },
+                            "provisioningState": "Succeeded",
+                            "type": "VirtualMachineScaleSets",
+                            "vmSize": "Standard_B2ms"
+                        }
+                    ],
+                    "azurePortalFQDN": "csi-driver-demo-7574cdc7.portal.hcp.westeurope.azmk8s.io",
+                    "currentKubernetesVersion": "1.25.2",
+                    "dnsPrefix": "csi-driver-demo",
+                    "enableRBAC": true,
+                    "fqdn": "csi-driver-demo-7574cdc7.hcp.westeurope.azmk8s.io",
+                    "id": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourcegroups/csi-driver-demo/providers/Microsoft.ContainerService/managedClusters/csi-driver-demo-aks",
+                    "identity": {
+                        "principalId": "64c8bc48-ad9a-440d-b908-1d32118c02fd",
+                        "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215",
+                        "type": "SystemAssigned"
+                    },
+                    "identityProfile": {
+                        "kubeletidentity": {
+                            "clientId": "af80c10c-0acf-4e1f-b9b2-b1ed568642c7",
+                            "objectId": "4775c698-9176-4e66-aae8-e73bd09668ba",
+                            "resourceId": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourcegroups/csi-driver-demo-aks-nodes/providers/Microsoft.ManagedIdentity/userAssignedIdentities/csi-driver-demo-aks-agentpool"
+                        }
+                    },
+                    "kubernetesVersion": "1.25.2",
+                    "location": "westeurope",
+                    "maxAgentPools": 100,
+                    "name": "csi-driver-demo-aks",
+                    "networkProfile": {
+                        "dnsServiceIP": "10.0.0.10",
+                        "dockerBridgeCidr": "172.17.0.1/16",
+                        "ipFamilies": [
+                            "IPv4"
+                        ],
+                        "loadBalancerProfile": {
+                            "backendPoolType": "nodeIPConfiguration",
+                            "effectiveOutboundIPs": [
+                                {
+                                    "id": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourceGroups/csi-driver-demo-aks-nodes/providers/Microsoft.Network/publicIPAddresses/37d5f9a3-50a3-433a-b1dd-d805ce4c88c0"
+                                }
+                            ],
+                            "managedOutboundIPs": {
+                                "count": 1
+                            }
+                        },
+                        "loadBalancerSku": "Standard",
+                        "networkPlugin": "azure",
+                        "networkPolicy": "calico",
+                        "outboundType": "loadBalancer",
+                        "serviceCidr": "10.0.0.0/16",
+                        "serviceCidrs": [
+                            "10.0.0.0/16"
+                        ]
+                    },
+                    "nodeResourceGroup": "csi-driver-demo-aks-nodes",
+                    "oidcIssuerProfile": {
+                        "enabled": true,
+                        "issuerURL": "https://westeurope.oic.prod-aks.azure.com/3bb336c2-6605-4144-aa4b-b04b79bef215/6b29222d-e814-464d-8918-2a57d015696a/"
+                    },
+                    "powerState": {
+                        "code": "Running"
+                    },
+                    "provisioningState": "Succeeded",
+                    "securityProfile": {},
+                    "servicePrincipalProfile": {
+                        "clientId": "msi"
+                    },
+                    "sku": {
+                        "name": "Basic",
+                        "tier": "Free"
+                    },
+                    "storageProfile": {
+                        "diskCSIDriver": {
+                            "enabled": true,
+                            "version": "v1"
+                        },
+                        "fileCSIDriver": {
+                            "enabled": true
+                        },
+                        "snapshotController": {
+                            "enabled": true
+                        }
+                    },
+                    "type": "Microsoft.ContainerService/ManagedClusters",
+                    "windowsProfile": {
+                        "adminUsername": "azureuser",
+                        "enableCSIProxy": true
+                    },
+                    "workloadAutoScalerProfile": {}
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo"
+                ],
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:azure-native::default_1_92_0::6e7e2ddc-f2b0-49ae-9fc8-f125df91ab18",
+                "propertyDependencies": {
+                    "agentPoolProfiles": null,
+                    "dnsPrefix": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo"
+                    ],
+                    "identity": null,
+                    "kubernetesVersion": null,
+                    "location": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo"
+                    ],
+                    "networkProfile": null,
+                    "nodeResourceGroup": null,
+                    "oidcIssuerProfile": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo"
+                    ],
+                    "resourceName": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::azuread:index/applicationFederatedIdentityCredential:ApplicationFederatedIdentityCredential::exampleApplicationFederatedIdentityCredential",
+                "custom": true,
+                "id": "d1d9ced2-34d8-4b48-924f-77256957d920/federatedIdentityCredential/5cf4d433-862b-4ac3-9a0e-e1c4b5a4fff5",
+                "type": "azuread:index/applicationFederatedIdentityCredential:ApplicationFederatedIdentityCredential",
+                "inputs": {
+                    "__defaults": [],
+                    "applicationObjectId": "d1d9ced2-34d8-4b48-924f-77256957d920",
+                    "audiences": [
+                        "api://AzureADTokenExchange"
+                    ],
+                    "description": "Kubernetes service account federated credential",
+                    "displayName": "kubernetes-federated-credential",
+                    "issuer": "https://westeurope.oic.prod-aks.azure.com/3bb336c2-6605-4144-aa4b-b04b79bef215/6b29222d-e814-464d-8918-2a57d015696a/",
+                    "subject": "system:serviceaccount:default:test"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":900000000000,\"delete\":300000000000,\"read\":300000000000,\"update\":300000000000}}",
+                    "applicationObjectId": "d1d9ced2-34d8-4b48-924f-77256957d920",
+                    "audiences": [
+                        "api://AzureADTokenExchange"
+                    ],
+                    "credentialId": "5cf4d433-862b-4ac3-9a0e-e1c4b5a4fff5",
+                    "description": "Kubernetes service account federated credential",
+                    "displayName": "kubernetes-federated-credential",
+                    "id": "d1d9ced2-34d8-4b48-924f-77256957d920/federatedIdentityCredential/5cf4d433-862b-4ac3-9a0e-e1c4b5a4fff5",
+                    "issuer": "https://westeurope.oic.prod-aks.azure.com/3bb336c2-6605-4144-aa4b-b04b79bef215/6b29222d-e814-464d-8918-2a57d015696a/",
+                    "subject": "system:serviceaccount:default:test"
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:containerservice/v20220902preview:ManagedCluster::csi-driver-demo",
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azuread:index/application:Application::csi-driver-demo-app"
+                ],
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:azuread::default_5_33_0::1d304b44-dbd1-422a-8acf-825203b5dbdd",
+                "propertyDependencies": {
+                    "applicationObjectId": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azuread:index/application:Application::csi-driver-demo-app"
+                    ],
+                    "audiences": null,
+                    "description": null,
+                    "displayName": null,
+                    "issuer": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:containerservice/v20220902preview:ManagedCluster::csi-driver-demo"
+                    ],
+                    "subject": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:kubernetes::k8s-provider",
+                "custom": true,
+                "id": "5d35e253-a6e6-4dc1-b266-d25dda545f0a",
+                "type": "pulumi:providers:kubernetes",
+                "inputs": {
+                    "enableServerSideApply": "true",
+                    "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUk5NlVFdHY2b0NZYTAxZVJBYTY4Ymt3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01URTJNVGMxTkRBMVdoZ1BNakExTXpBeE1UWXhPREEwTURWYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCndVajgxUHZLTVhnYk9TWFAxUFpSUFNnYWVNMWZTSWtmRGFLN2FaVXdCbjJQWlhnK2NqZDgvRFdwSUdpU1ZsTDQKZFhNa2J3clZpcnp2aWQzazMwWWFlbm8yaTZPYytWa0N0OHNWdVpiQkFLNnJjSEJYSG9CYXdtK3lodHBycmNIdgpPSVdtSDByNGpmSHhLUktBeFJDdyt1My9rOGJDODlhKzhtUFVudHpEWTNiZjM1YmlSSGdFUGVlVUpyYVd4NXpPCjU4NW1LK0NScUpISFZkalRKSmNuLzUzempTV0Fldy9jNGpPTmRoU09OQkxzMVZIT0pubW5HTzNZZUVLSUF4ZUUKZjVNUlVDZDM4MlFGbWR0dVdScGd5SVhUaDI1OCtRR2tkZzJuSzJuUllkcXJMNUhCbWI3TG90TFlGangrRVJFawpaZGlHemdEWlNhdmF3RHNUYXJoSExGNUtKQU85Q3V5b09leXE4VUFocTV4NkFXK0JUZXVZWWlydXBXZmpROTBBCllMbS9BbEcvM1JlUGRRS2NpZ0s2ZGY4ZldVdjlMOElyQUpISGNPRm85UkRKWkxMenVGb21qcEx4MW4vRzh3WVAKSzQxU25PUnNHS3V5Y29xSUNkMEJ5d3pyd1JNd2E5aDM5TmlGMDBINWI0ekV0RCs3NWNUQkV6YlhVTGp3OWVCNgpNZGd3SWtTSEhGUUNJZUxkZWtsRjJkNXpSQVE0bWN5SDlXdUgyWnBWUHJQeVpiN2RoQlhoWTl6Z25FeUFPYzZ2Ck5PbjdNc1JTbnVsemlEdFQzWWxlbjQ2Y0xueWVROVZuVlhHckZ6cXRhR3hEWG51eGl0N3AxOXlrM0RiM0ZmUnYKRCtCNEdKdVBmL2FOOEZ2RjI1bzFjKzhjTjJLOHNIc1N6cHB6dkMyTHNXY0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGR210anpFQmQ1dkNlVEgwCmFVMm5RMzhuamt3aE1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQlVsRUM1VFdCZFdKSlV6cjI0OFNwdkVCNVQKOE1HWEtiTFN4cSt2L1htNExrZlZnd2NaV2d4QmFGOGllMXh1YVpub1RDVGhjaFFWYUtRL3RNbHZoTEQ0aEw1cgpDVVF1MFBReWZackxSTFBFRXYzUXcvdFA4VDlYZitFanM4d1o3OHRIV3M3VUVRNHpsY2V3MG1jVzA2R3hJUnZzCkVxNmR3M2FKeCtBN1oxbllOYzM4TFcwZEdZcm13Tk51V0kxYkl5Rmo1OTc2NUNjYlFwc3JPTmliNEVsUm5reVIKWlJtanlNU3dlTzdxTFhmK2VQRElicE45ajRqcldhVURpSnVGNU9QVHBrRE1aN1RubU1rOUNiOWpRUTBFQjJaTgp1OHhKMWFKQmhtUlhrUDlmWXdKLzhrRTlObDRVTlQ0cDcxeWJiMjYzdEpvbWh6RmlBZkFtbHRFMXZjdWRDVEZNCmptWEl2S2NSNVNRWmJHTlpqR1JWejhodDE1V2g4bUtLbll2MkYvZFo2MlFzQkJlRjRCLzNBMStRVlFyT0JDNXkKb3RsSGZxOU44UXFySTJEbnpFTFV5N1E4dHZqa2srLzBvZkJkVDk2L05XeDVkWWh0c1phYzROQ3FIZDd3QjJpNwpoSzhwa0FORTgvaEVER09Ud2FuL1lrdXNYK3gxMnlzdS9BYmx6ZlBwMmkyTUZBZng3MTZXRm81eW5LZldMdU1CCkNodUVKTWhteHRzOEtCaXFLdG5iYnRQV0RJZjJkYWlCQ2YwZ3hjTW9zY09FamMvb1NJTXVjWEczNm9WUXd2MGkKMml2WFF6bU5vTXk4SEJmbE8vWm8wT1pXWVVzLzY4ZENnaTNVWWtjOEg1NWVVcUk4TFZaT1BvQUd1MU5jVjJRUApVb1p2MUZSWXFiR1FpL05lemc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    server: https://csi-driver-demo-7574cdc7.hcp.westeurope.azmk8s.io:443\n  name: csi-driver-demo-aks\ncontexts:\n- context:\n    cluster: csi-driver-demo-aks\n    user: clusterUser_csi-driver-demo_csi-driver-demo-aks\n  name: csi-driver-demo-aks\ncurrent-context: csi-driver-demo-aks\nkind: Config\npreferences: {}\nusers:\n- name: clusterUser_csi-driver-demo_csi-driver-demo-aks\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRVVBleElGVy94czBua0J6aVJLL21yekFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeE1UWXhOelUwTURWYUZ3MHlOVEF4TVRZeE9EQTBNRFZhTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUM3ZDlWMk1LS0Y0RzlpZWpmR01wSGoKc0NISUZCV3I0a1hLYTFRSVF0MGV3TFFnWWl5aG42eFhRLzdXZ1VlYVphczdqVlJNRERTWUhVR3hIWHorUUF3Lwp3U3MwWWNaUm9EaWk4bHJ5YW4wYm1lUTFTb3dBd3ZCbCtaNVVKeFlOd05mVFErY2FBaE5iQjZTNjIzZG5sNlM0CkdTY24wZ1Q1cGtPbEt0ZFpIRWRmdEZkb2pEZFpyQ1lZTGplaUwxa1E4M3FxS0VZbm5iWDBaQlh4SC9yc29HdVMKQ3NUMTNyNjlWa1orWlhDdEVmQTFuelA4bVl6MEc3Q285UHVwaWFRZUpidldFYnZHYlB2R2RPU3FFOUdEUUdwaApBUmdSbVVXcVpGMTZqMVRMMDRTNEVwM01jRlRDN1JLUzZmUDcyVElzdVNyclBUdms5OVVvZ1o3Z1d4SjJkdWFrCmxjOUtxdVF2SEg3ejlqUzdFNFlJWVdEbXI1QnJqZkNhZWdwNUswWVAwbmtjMmEzSWZVcFFBaUxwbnhsNmZmaHQKTVpQbGs1RmZ5dVdlK2lHckJZVG93WmlobkxndUk0VVQwcVlnK2d4ajJZbGtOR21SN0U2dkxNWVhkVmdBQ1YybApBUFZ0WHo4NURteEZoNGlDSDdKajdZWk1jMnlaUlNGam1PaU13d0RHNlpMaFlHSWhQQ2tnMFdrU0ZqdmpNQlFMCm0waWN4Vkk0QlpkcUl0SHVBTXVRSlFMRjdOZ2pDNUNOWUVYUWtNa1huQ3gzaUViekJQWVF4MzFibG9mblJyQmUKTHp0VjBZenVNcHdPUGhLOGZHVHRDWmJVcUdUaFJ1Z2h1K0lqN1NEVVJ4eTdzbWM4OU1hWjNTUHBZeFdhbSs3MQp3QUt0Y1pOS1JFNE53amZJbUphVXRRSURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlJwclk4eEFYZWIKd25reDlHbE5wME4vSjQ1TUlUQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFHUmNCVkdMV0sxblNJVXpIQlQ2ZgpKUlp5Rm9DazJJQ08yR3VZakJKd3psZFNKQWFvWXJMc1UwYkhWeWVJUE82QjBOamNwTDVVWE1QcGhlbkRsQTB0ClA3ck8wcDRpcEYwMVFyeTNRak9DaEJRK3gvU3BOU0hDNUplWldsUzhBWGVFVHlTODFsazJwU0hvY3NpMVJibFAKVldqNnIwRlpKNFE1Tzc4eTl4MGppaEdzQmRaYVE5bng5cFFNcjBWM24yeExFR2pWZFJKZG5TUTJ6M3EzTDIzWQpYSS9xcUJlbkVVQUNFdCtyNnYyczEyVEtLQ3luL0lVTHpLL0dRNzJ4Y1Mya28rS0xDN1BPMjBjeVYrUFVLQ0JvCkM1eHdzWk5OUnNabDRIeGtGcG1mOWw3S2dJRDIxMDNZRDQ3V0xTc01UWkpkM2w2eUdvb3RLbTNCWDJwS2pXSlUKZlg1cGNybE8vM0tScHBXckJWdkxmTGkrSlR1UUNPWTB3UUlKZW5Vbjlsa0IyWGV2eWM1ZG0wR2taTW5SMkJaVwprUk5zVDlnQU90cnpNaEpoNEtLTEFVRjh0Rm5jQVltbGFwaTQ0dWFmdjdtZmw5Smh2Si93RE9TM3VhNENrK2dOCmxaRG5KZG4ySU1ZVk92dVFoeWhrZDkvOWF1eS9JblBqaTU4RVF5UlpOYVg0RC9DcUlMMHVtRkc0cE1nU2trN2YKbFQyT3RqQW0yVCtKbzFQbEEvcHhQMDJzKy8rSVFpY3V6b2c4UXZ1NDY5WUpYYUhmOC9URllFdm9hc25yNWNVSgp2djFOcXl1eVRLNnBWMTllcU1YdnQvRW8ycWFUWFdyY1RkSlgrZ0NLa3lHUXdtOHNkRUQrODNOV2pIb3R1QXZoCjZ4TlFGak1aa0tKdm1pMkFnRHR0NUJZPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdTNmVmRqQ2loZUJ2WW5vM3hqS1I0N0FoeUJRVnErSkZ5bXRVQ0VMZEhzQzBJR0lzCm9aK3NWMFArMW9GSG1tV3JPNDFVVEF3MG1CMUJzUjE4L2tBTVA4RXJOR0hHVWFBNG92SmE4bXA5RzVua05VcU0KQU1Md1pmbWVWQ2NXRGNEWDAwUG5HZ0lUV3dla3V0dDNaNWVrdUJrbko5SUUrYVpEcFNyWFdSeEhYN1JYYUl3MwpXYXdtR0M0M29pOVpFUE42cWloR0o1MjE5R1FWOFIvNjdLQnJrZ3JFOWQ2K3ZWWkdmbVZ3clJId05aOHovSm1NCjlCdXdxUFQ3cVlta0hpVzcxaEc3eG16N3huVGtxaFBSZzBCcVlRRVlFWmxGcW1SZGVvOVV5OU9FdUJLZHpIQlUKd3UwU2t1bnorOWt5TExrcTZ6MDc1UGZWS0lHZTRGc1NkbmJtcEpYUFNxcmtMeHgrOC9ZMHV4T0dDR0ZnNXErUQphNDN3bW5vS2VTdEdEOUo1SE5tdHlIMUtVQUlpNlo4WmVuMzRiVEdUNVpPUlg4cmxudm9ocXdXRTZNR1lvWnk0CkxpT0ZFOUttSVBvTVk5bUpaRFJwa2V4T3J5ekdGM1ZZQUFsZHBRRDFiVjgvT1E1c1JZZUlnaCt5WSsyR1RITnMKbVVVaFk1am9qTU1BeHVtUzRXQmlJVHdwSU5GcEVoWTc0ekFVQzV0SW5NVlNPQVdYYWlMUjdnRExrQ1VDeGV6WQpJd3VRaldCRjBKREpGNXdzZDRoRzh3VDJFTWQ5VzVhSDUwYXdYaTg3VmRHTTdqS2NEajRTdkh4azdRbVcxS2hrCjRVYm9JYnZpSSswZzFFY2N1N0puUFBUR21kMGo2V01WbXB2dTljQUNyWEdUU2tST0RjSTN5SmlXbExVQ0F3RUEKQVFLQ0FnQWhFMnlUTk5PSUFXaEZuTUM0ZEhXdkVZVjBVcTdjSzhrYWhNTkh6ZHhMcjc1WU5Gb2hqaFdQTkEwRApkYjNYYlBiQVJCaEticURjOGRTRVZtcVdSV0NqNHdZbmNOVFgxQWdLSCs2UjlOM3IvOFAyN3hjeWp6SnhHNUNtCjBscWV4SmFQek53Nmg0RTR2MmwrR25pL3kwNmh1TFppM1RoSmY5OVJoZlNHNFdscVpseEJzdk9WRzcyQTZLNmkKSys1d0FqVnpUalhLaVpYdjc3UzdYV1FkV2RTQTZPdUZZZTZQWTJoK3BwRXh5QWQwdm9raW1VajRUT1puZVFucQpDTUh2RzhNL2F0T1JsK3I0UWVtU1pIckR5SnE4VU1BWllzeWEycWh2bGxoa3VnWWhvQTg5WWRoaXFBZHQ2bDlFCjRUWnNFNk9SNjdUa21pRit5eGZvQjhtREkwbGdGS3dlcEJodnA5MVl6VFlRbWJ1OVNhd3FtTldLQXVtWlIwa1YKOGRPc1l3bU5vRkpOWWwvUTJrK0VxcXVUeERGQTJNTCszT0pzdm1GQU54T3dIWjRzRmlFR1VPcldJM3kzUE8zdwpoZHdqT211cG5NVVpsUEVYRVo0cDNLNFE2QVpHdytEcGg5MXJzOEZFYXdUOFgzYkpSek44dXVlWURGQXJPUTY0CmhkbDRCM3BPM0xTL01qYkYrL1MweVNKZHF0TFlINWpQRThJTFZ6VzRRMGtuVUpZbmZFVVB2ZFFqeXpGcUU4LzYKZGNISVlxY090U25vN1drYjk3bzY1Z0hZWlBDUGp1Q1RiMWRlSVFETTBJVXIyK0JyQnJQb043NTFkZExWL1QwNgpzSGZjZVhoU1ZGV3d3R2FZRDYyMEVnWWJseU01bU9PS0ZHU1pndVNJdDhmdE9PQzJ3UUtDQVFFQStNMHZDcFgwCnR1YUlNbmgvOXpqWEhxdWxCbW4zYkEwcmhTNzZzU1RLV1hSYlJMcE9vYzl1VkVUOElOa0Y0NWdzakQ2R3IyaTkKY1BzT3J5UmFoNjJ2d3FRVDkwNGE1eWFvMzVDSzQxejdUVXRWMlVHelNIZHQ2SWt4MGNnRzR0T1RBY1pVRUJXaQp0K25LQUFYRXk1REtPb0hVbzU4dUNpOXFTT3FtMjRtWXc1Z1MyNnk3TlQ0S3JEdHRjaXIxdVRJVFZQTGNXUVZVCmx4aUNENWJaTFRmZG9KZ2x0VEhTZU8xZU1EQ2pTWTdzckZpVWg2V0JtaVpBeStielI3ZVBRTlZGWXM1dkdySlIKVmFyc3RPVGtYa1kzRk9WVjZCL1pDcFBlZzJUbmkxenBxbUs4aHJwQStwUjJiYlFZdmNBZjRKS29ML2dtTjRaeApKN1VpTDBwV3ZGU0JrUUtDQVFFQXdPUmVGWjhjQ1cyaDdZUUFJcHFSM2x5RDI2dHpGUElFNlJJeUpFZjNkWkR0CjZIYVNMSHY3eDJoam9EVmdRd2p1NGs4enVNSS9NVDczL010dC96SW9EVzZmQVQ3MzE0eGl1TExFYm1NNVlNNlYKSWQxb0R6bWU4aEtmTjJQV0NRQkhONGxQQUsyL2ZkU00xZzJSZGMxU0dhTzkzL1VIRXFWNFFYM2FIUC9PYXdEagpOL1dWVnhZZkdIb2VkTmJMSHllQzdOa29SR3ljdS91aFo4dDJZUlV3cm16aVF4N2ZoVTRIalk0SDQrMENGR1I0CjdVUllGUnZQS3M2UHpMU0hFd0g4THpzOE9CdjFXTVVxYzNYZ3hlNlBMODY0bkFqSkxRWXVMN2VUUTZwWXRIeWgKV2NVWHBsaDVWTEtHOHY3Z3Z1S0UzV1RRYS9XOGltNUp1Z01DTnZ6TzVRS0NBUUVBZ25CWVJFMkFBYy8xQWJqcApKZnkzMDQyYnREUWtFcE1KQ1FjclNXb0hhRVMzZ04zSVVjOEZnY3ExQUtlbkRiNS9SSHVYY3lrUGdNY3UyS1hQCmpLaURxQ0VMa3JGeEsxUzZYcE5TTFlkVy9Sd05BeDBOMkdVOHl4ZjZkWWhRQytWdWdoU3ZoOHRBQnZuYi9JMEoKc3N2VEtqOWM4dmVHVkxLdEgxTmViV1RESVhCK0dvdUJqcFZiVlJiRzkzOE1XcTZsTWZrdGlzSmZxZU9nZEhuYQpuSGxZaVZTYkdGYnBpSnF4c2NRZUozZDJINWxGTGFTWXdPOWpNME4rc2svTEcrdDBPQ3dRVmNlOUdwUEZDOFdnCjhNZ1JJclJsaUpBQjR5akpGTXYzRkxwK2l1Uy9BRWR2djYvTU14R2prdi9COXFRTTV6RkxIL3N0SWVzMTQrTXUKZkFnMThRS0NBUUFLeGJZclp2TmQ0MjJEb2plUHR5b21UT3hnUERiMUdIOEZ0U3B2dEVVeG42SnB0UlY4dm4vVgpKeE5KUXpIWkRJcXF3Tm1XbStLRGtZeXY1WHlESC8zMG9oVG5NT2tPZEp5ZXkvMEVYUzQ3SmM1V1VkTVo1cEhsCjJ2eGhUNFlJZ3FkM2hvZU85aVVYbGVNM29SSmFqZGpqN2EwUThOSXdUR1ZtNHV4bmFqSFE3Ly9BaEVxT3pvRjIKRUh2YThwUHRiWHQyVnJwVTkrdlk0N2lqMzAwQkp2bk5BKyt1NSs1N3QxdmNuKzM0NEtlWkUvTmM3TkF1ZlpzWQpQT2p5K2JJQmNiN3Z0Rk1zbndNWXJnb3M0SXhwQVdXbHVkbTlmUkFmSDVVOHZQZlFjNWI0blcwMVlqaHI1YzBBCjJlZUhjb3lDbkl2bkFWWlNjU3JTWUU1bHdQMUNyT094QW9JQkFRRGpXQkVSdFIyL3NseXVabzhtQ2toN2hRNksKaDFidmlnak1ra2ZqMG9tUUQydU1wdndRYStoZjBOZDlVWnF4M3BJRmtDbFJ0dFBRZDQvZDV6dFl5bWU4azRpYgpVV29HUkF0QXNQUmc4QkRPUmJVeHZpSHRheWhLdm9VSlFuR1VZcFM3TkxqazdZVFhqTW9tVnVPS2R4L0drNVZLCll5clJMZDhZdGVqajdQWjd2SUVtUng2b25zSzlzT3ZBdEN0enllakw1cjUyWmJ2QWdlOEZZYWx5d0xNcGpxRTcKOWRlS1R6dEV3c1l4akM2TXRWdGJXeHdpWmVEbWU2TlJyVTFCb1lKUitLMlBVZThQRnkzUHJRVDZRaUVrSjJQOQpyNk8ybGlQRERRTWRpNXBEUzdaNFJFdXNLVWVxcDlzbUJkdzJaSzZ5TzVlWUN4S21rNG9vRml0MFovaUMKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K\n    token: 781d8deda3c2e8d42731923dc6996c3a31dfbeb6ac6f48cc325eb7d901733cc5037cc53ef9b89ad4639541a8b0a06fdbe1877491e7469ad8b03778da46b4d4e5\n",
+                    "version": "3.23.1"
+                },
+                "outputs": {
+                    "enableServerSideApply": "true",
+                    "kubeconfig": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUk5NlVFdHY2b0NZYTAxZVJBYTY4Ymt3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01URTJNVGMxTkRBMVdoZ1BNakExTXpBeE1UWXhPREEwTURWYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCndVajgxUHZLTVhnYk9TWFAxUFpSUFNnYWVNMWZTSWtmRGFLN2FaVXdCbjJQWlhnK2NqZDgvRFdwSUdpU1ZsTDQKZFhNa2J3clZpcnp2aWQzazMwWWFlbm8yaTZPYytWa0N0OHNWdVpiQkFLNnJjSEJYSG9CYXdtK3lodHBycmNIdgpPSVdtSDByNGpmSHhLUktBeFJDdyt1My9rOGJDODlhKzhtUFVudHpEWTNiZjM1YmlSSGdFUGVlVUpyYVd4NXpPCjU4NW1LK0NScUpISFZkalRKSmNuLzUzempTV0Fldy9jNGpPTmRoU09OQkxzMVZIT0pubW5HTzNZZUVLSUF4ZUUKZjVNUlVDZDM4MlFGbWR0dVdScGd5SVhUaDI1OCtRR2tkZzJuSzJuUllkcXJMNUhCbWI3TG90TFlGangrRVJFawpaZGlHemdEWlNhdmF3RHNUYXJoSExGNUtKQU85Q3V5b09leXE4VUFocTV4NkFXK0JUZXVZWWlydXBXZmpROTBBCllMbS9BbEcvM1JlUGRRS2NpZ0s2ZGY4ZldVdjlMOElyQUpISGNPRm85UkRKWkxMenVGb21qcEx4MW4vRzh3WVAKSzQxU25PUnNHS3V5Y29xSUNkMEJ5d3pyd1JNd2E5aDM5TmlGMDBINWI0ekV0RCs3NWNUQkV6YlhVTGp3OWVCNgpNZGd3SWtTSEhGUUNJZUxkZWtsRjJkNXpSQVE0bWN5SDlXdUgyWnBWUHJQeVpiN2RoQlhoWTl6Z25FeUFPYzZ2Ck5PbjdNc1JTbnVsemlEdFQzWWxlbjQ2Y0xueWVROVZuVlhHckZ6cXRhR3hEWG51eGl0N3AxOXlrM0RiM0ZmUnYKRCtCNEdKdVBmL2FOOEZ2RjI1bzFjKzhjTjJLOHNIc1N6cHB6dkMyTHNXY0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGR210anpFQmQ1dkNlVEgwCmFVMm5RMzhuamt3aE1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQlVsRUM1VFdCZFdKSlV6cjI0OFNwdkVCNVQKOE1HWEtiTFN4cSt2L1htNExrZlZnd2NaV2d4QmFGOGllMXh1YVpub1RDVGhjaFFWYUtRL3RNbHZoTEQ0aEw1cgpDVVF1MFBReWZackxSTFBFRXYzUXcvdFA4VDlYZitFanM4d1o3OHRIV3M3VUVRNHpsY2V3MG1jVzA2R3hJUnZzCkVxNmR3M2FKeCtBN1oxbllOYzM4TFcwZEdZcm13Tk51V0kxYkl5Rmo1OTc2NUNjYlFwc3JPTmliNEVsUm5reVIKWlJtanlNU3dlTzdxTFhmK2VQRElicE45ajRqcldhVURpSnVGNU9QVHBrRE1aN1RubU1rOUNiOWpRUTBFQjJaTgp1OHhKMWFKQmhtUlhrUDlmWXdKLzhrRTlObDRVTlQ0cDcxeWJiMjYzdEpvbWh6RmlBZkFtbHRFMXZjdWRDVEZNCmptWEl2S2NSNVNRWmJHTlpqR1JWejhodDE1V2g4bUtLbll2MkYvZFo2MlFzQkJlRjRCLzNBMStRVlFyT0JDNXkKb3RsSGZxOU44UXFySTJEbnpFTFV5N1E4dHZqa2srLzBvZkJkVDk2L05XeDVkWWh0c1phYzROQ3FIZDd3QjJpNwpoSzhwa0FORTgvaEVER09Ud2FuL1lrdXNYK3gxMnlzdS9BYmx6ZlBwMmkyTUZBZng3MTZXRm81eW5LZldMdU1CCkNodUVKTWhteHRzOEtCaXFLdG5iYnRQV0RJZjJkYWlCQ2YwZ3hjTW9zY09FamMvb1NJTXVjWEczNm9WUXd2MGkKMml2WFF6bU5vTXk4SEJmbE8vWm8wT1pXWVVzLzY4ZENnaTNVWWtjOEg1NWVVcUk4TFZaT1BvQUd1MU5jVjJRUApVb1p2MUZSWXFiR1FpL05lemc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    server: https://csi-driver-demo-7574cdc7.hcp.westeurope.azmk8s.io:443\n  name: csi-driver-demo-aks\ncontexts:\n- context:\n    cluster: csi-driver-demo-aks\n    user: clusterUser_csi-driver-demo_csi-driver-demo-aks\n  name: csi-driver-demo-aks\ncurrent-context: csi-driver-demo-aks\nkind: Config\npreferences: {}\nusers:\n- name: clusterUser_csi-driver-demo_csi-driver-demo-aks\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRVVBleElGVy94czBua0J6aVJLL21yekFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeE1UWXhOelUwTURWYUZ3MHlOVEF4TVRZeE9EQTBNRFZhTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUM3ZDlWMk1LS0Y0RzlpZWpmR01wSGoKc0NISUZCV3I0a1hLYTFRSVF0MGV3TFFnWWl5aG42eFhRLzdXZ1VlYVphczdqVlJNRERTWUhVR3hIWHorUUF3Lwp3U3MwWWNaUm9EaWk4bHJ5YW4wYm1lUTFTb3dBd3ZCbCtaNVVKeFlOd05mVFErY2FBaE5iQjZTNjIzZG5sNlM0CkdTY24wZ1Q1cGtPbEt0ZFpIRWRmdEZkb2pEZFpyQ1lZTGplaUwxa1E4M3FxS0VZbm5iWDBaQlh4SC9yc29HdVMKQ3NUMTNyNjlWa1orWlhDdEVmQTFuelA4bVl6MEc3Q285UHVwaWFRZUpidldFYnZHYlB2R2RPU3FFOUdEUUdwaApBUmdSbVVXcVpGMTZqMVRMMDRTNEVwM01jRlRDN1JLUzZmUDcyVElzdVNyclBUdms5OVVvZ1o3Z1d4SjJkdWFrCmxjOUtxdVF2SEg3ejlqUzdFNFlJWVdEbXI1QnJqZkNhZWdwNUswWVAwbmtjMmEzSWZVcFFBaUxwbnhsNmZmaHQKTVpQbGs1RmZ5dVdlK2lHckJZVG93WmlobkxndUk0VVQwcVlnK2d4ajJZbGtOR21SN0U2dkxNWVhkVmdBQ1YybApBUFZ0WHo4NURteEZoNGlDSDdKajdZWk1jMnlaUlNGam1PaU13d0RHNlpMaFlHSWhQQ2tnMFdrU0ZqdmpNQlFMCm0waWN4Vkk0QlpkcUl0SHVBTXVRSlFMRjdOZ2pDNUNOWUVYUWtNa1huQ3gzaUViekJQWVF4MzFibG9mblJyQmUKTHp0VjBZenVNcHdPUGhLOGZHVHRDWmJVcUdUaFJ1Z2h1K0lqN1NEVVJ4eTdzbWM4OU1hWjNTUHBZeFdhbSs3MQp3QUt0Y1pOS1JFNE53amZJbUphVXRRSURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlJwclk4eEFYZWIKd25reDlHbE5wME4vSjQ1TUlUQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFHUmNCVkdMV0sxblNJVXpIQlQ2ZgpKUlp5Rm9DazJJQ08yR3VZakJKd3psZFNKQWFvWXJMc1UwYkhWeWVJUE82QjBOamNwTDVVWE1QcGhlbkRsQTB0ClA3ck8wcDRpcEYwMVFyeTNRak9DaEJRK3gvU3BOU0hDNUplWldsUzhBWGVFVHlTODFsazJwU0hvY3NpMVJibFAKVldqNnIwRlpKNFE1Tzc4eTl4MGppaEdzQmRaYVE5bng5cFFNcjBWM24yeExFR2pWZFJKZG5TUTJ6M3EzTDIzWQpYSS9xcUJlbkVVQUNFdCtyNnYyczEyVEtLQ3luL0lVTHpLL0dRNzJ4Y1Mya28rS0xDN1BPMjBjeVYrUFVLQ0JvCkM1eHdzWk5OUnNabDRIeGtGcG1mOWw3S2dJRDIxMDNZRDQ3V0xTc01UWkpkM2w2eUdvb3RLbTNCWDJwS2pXSlUKZlg1cGNybE8vM0tScHBXckJWdkxmTGkrSlR1UUNPWTB3UUlKZW5Vbjlsa0IyWGV2eWM1ZG0wR2taTW5SMkJaVwprUk5zVDlnQU90cnpNaEpoNEtLTEFVRjh0Rm5jQVltbGFwaTQ0dWFmdjdtZmw5Smh2Si93RE9TM3VhNENrK2dOCmxaRG5KZG4ySU1ZVk92dVFoeWhrZDkvOWF1eS9JblBqaTU4RVF5UlpOYVg0RC9DcUlMMHVtRkc0cE1nU2trN2YKbFQyT3RqQW0yVCtKbzFQbEEvcHhQMDJzKy8rSVFpY3V6b2c4UXZ1NDY5WUpYYUhmOC9URllFdm9hc25yNWNVSgp2djFOcXl1eVRLNnBWMTllcU1YdnQvRW8ycWFUWFdyY1RkSlgrZ0NLa3lHUXdtOHNkRUQrODNOV2pIb3R1QXZoCjZ4TlFGak1aa0tKdm1pMkFnRHR0NUJZPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdTNmVmRqQ2loZUJ2WW5vM3hqS1I0N0FoeUJRVnErSkZ5bXRVQ0VMZEhzQzBJR0lzCm9aK3NWMFArMW9GSG1tV3JPNDFVVEF3MG1CMUJzUjE4L2tBTVA4RXJOR0hHVWFBNG92SmE4bXA5RzVua05VcU0KQU1Md1pmbWVWQ2NXRGNEWDAwUG5HZ0lUV3dla3V0dDNaNWVrdUJrbko5SUUrYVpEcFNyWFdSeEhYN1JYYUl3MwpXYXdtR0M0M29pOVpFUE42cWloR0o1MjE5R1FWOFIvNjdLQnJrZ3JFOWQ2K3ZWWkdmbVZ3clJId05aOHovSm1NCjlCdXdxUFQ3cVlta0hpVzcxaEc3eG16N3huVGtxaFBSZzBCcVlRRVlFWmxGcW1SZGVvOVV5OU9FdUJLZHpIQlUKd3UwU2t1bnorOWt5TExrcTZ6MDc1UGZWS0lHZTRGc1NkbmJtcEpYUFNxcmtMeHgrOC9ZMHV4T0dDR0ZnNXErUQphNDN3bW5vS2VTdEdEOUo1SE5tdHlIMUtVQUlpNlo4WmVuMzRiVEdUNVpPUlg4cmxudm9ocXdXRTZNR1lvWnk0CkxpT0ZFOUttSVBvTVk5bUpaRFJwa2V4T3J5ekdGM1ZZQUFsZHBRRDFiVjgvT1E1c1JZZUlnaCt5WSsyR1RITnMKbVVVaFk1am9qTU1BeHVtUzRXQmlJVHdwSU5GcEVoWTc0ekFVQzV0SW5NVlNPQVdYYWlMUjdnRExrQ1VDeGV6WQpJd3VRaldCRjBKREpGNXdzZDRoRzh3VDJFTWQ5VzVhSDUwYXdYaTg3VmRHTTdqS2NEajRTdkh4azdRbVcxS2hrCjRVYm9JYnZpSSswZzFFY2N1N0puUFBUR21kMGo2V01WbXB2dTljQUNyWEdUU2tST0RjSTN5SmlXbExVQ0F3RUEKQVFLQ0FnQWhFMnlUTk5PSUFXaEZuTUM0ZEhXdkVZVjBVcTdjSzhrYWhNTkh6ZHhMcjc1WU5Gb2hqaFdQTkEwRApkYjNYYlBiQVJCaEticURjOGRTRVZtcVdSV0NqNHdZbmNOVFgxQWdLSCs2UjlOM3IvOFAyN3hjeWp6SnhHNUNtCjBscWV4SmFQek53Nmg0RTR2MmwrR25pL3kwNmh1TFppM1RoSmY5OVJoZlNHNFdscVpseEJzdk9WRzcyQTZLNmkKSys1d0FqVnpUalhLaVpYdjc3UzdYV1FkV2RTQTZPdUZZZTZQWTJoK3BwRXh5QWQwdm9raW1VajRUT1puZVFucQpDTUh2RzhNL2F0T1JsK3I0UWVtU1pIckR5SnE4VU1BWllzeWEycWh2bGxoa3VnWWhvQTg5WWRoaXFBZHQ2bDlFCjRUWnNFNk9SNjdUa21pRit5eGZvQjhtREkwbGdGS3dlcEJodnA5MVl6VFlRbWJ1OVNhd3FtTldLQXVtWlIwa1YKOGRPc1l3bU5vRkpOWWwvUTJrK0VxcXVUeERGQTJNTCszT0pzdm1GQU54T3dIWjRzRmlFR1VPcldJM3kzUE8zdwpoZHdqT211cG5NVVpsUEVYRVo0cDNLNFE2QVpHdytEcGg5MXJzOEZFYXdUOFgzYkpSek44dXVlWURGQXJPUTY0CmhkbDRCM3BPM0xTL01qYkYrL1MweVNKZHF0TFlINWpQRThJTFZ6VzRRMGtuVUpZbmZFVVB2ZFFqeXpGcUU4LzYKZGNISVlxY090U25vN1drYjk3bzY1Z0hZWlBDUGp1Q1RiMWRlSVFETTBJVXIyK0JyQnJQb043NTFkZExWL1QwNgpzSGZjZVhoU1ZGV3d3R2FZRDYyMEVnWWJseU01bU9PS0ZHU1pndVNJdDhmdE9PQzJ3UUtDQVFFQStNMHZDcFgwCnR1YUlNbmgvOXpqWEhxdWxCbW4zYkEwcmhTNzZzU1RLV1hSYlJMcE9vYzl1VkVUOElOa0Y0NWdzakQ2R3IyaTkKY1BzT3J5UmFoNjJ2d3FRVDkwNGE1eWFvMzVDSzQxejdUVXRWMlVHelNIZHQ2SWt4MGNnRzR0T1RBY1pVRUJXaQp0K25LQUFYRXk1REtPb0hVbzU4dUNpOXFTT3FtMjRtWXc1Z1MyNnk3TlQ0S3JEdHRjaXIxdVRJVFZQTGNXUVZVCmx4aUNENWJaTFRmZG9KZ2x0VEhTZU8xZU1EQ2pTWTdzckZpVWg2V0JtaVpBeStielI3ZVBRTlZGWXM1dkdySlIKVmFyc3RPVGtYa1kzRk9WVjZCL1pDcFBlZzJUbmkxenBxbUs4aHJwQStwUjJiYlFZdmNBZjRKS29ML2dtTjRaeApKN1VpTDBwV3ZGU0JrUUtDQVFFQXdPUmVGWjhjQ1cyaDdZUUFJcHFSM2x5RDI2dHpGUElFNlJJeUpFZjNkWkR0CjZIYVNMSHY3eDJoam9EVmdRd2p1NGs4enVNSS9NVDczL010dC96SW9EVzZmQVQ3MzE0eGl1TExFYm1NNVlNNlYKSWQxb0R6bWU4aEtmTjJQV0NRQkhONGxQQUsyL2ZkU00xZzJSZGMxU0dhTzkzL1VIRXFWNFFYM2FIUC9PYXdEagpOL1dWVnhZZkdIb2VkTmJMSHllQzdOa29SR3ljdS91aFo4dDJZUlV3cm16aVF4N2ZoVTRIalk0SDQrMENGR1I0CjdVUllGUnZQS3M2UHpMU0hFd0g4THpzOE9CdjFXTVVxYzNYZ3hlNlBMODY0bkFqSkxRWXVMN2VUUTZwWXRIeWgKV2NVWHBsaDVWTEtHOHY3Z3Z1S0UzV1RRYS9XOGltNUp1Z01DTnZ6TzVRS0NBUUVBZ25CWVJFMkFBYy8xQWJqcApKZnkzMDQyYnREUWtFcE1KQ1FjclNXb0hhRVMzZ04zSVVjOEZnY3ExQUtlbkRiNS9SSHVYY3lrUGdNY3UyS1hQCmpLaURxQ0VMa3JGeEsxUzZYcE5TTFlkVy9Sd05BeDBOMkdVOHl4ZjZkWWhRQytWdWdoU3ZoOHRBQnZuYi9JMEoKc3N2VEtqOWM4dmVHVkxLdEgxTmViV1RESVhCK0dvdUJqcFZiVlJiRzkzOE1XcTZsTWZrdGlzSmZxZU9nZEhuYQpuSGxZaVZTYkdGYnBpSnF4c2NRZUozZDJINWxGTGFTWXdPOWpNME4rc2svTEcrdDBPQ3dRVmNlOUdwUEZDOFdnCjhNZ1JJclJsaUpBQjR5akpGTXYzRkxwK2l1Uy9BRWR2djYvTU14R2prdi9COXFRTTV6RkxIL3N0SWVzMTQrTXUKZkFnMThRS0NBUUFLeGJZclp2TmQ0MjJEb2plUHR5b21UT3hnUERiMUdIOEZ0U3B2dEVVeG42SnB0UlY4dm4vVgpKeE5KUXpIWkRJcXF3Tm1XbStLRGtZeXY1WHlESC8zMG9oVG5NT2tPZEp5ZXkvMEVYUzQ3SmM1V1VkTVo1cEhsCjJ2eGhUNFlJZ3FkM2hvZU85aVVYbGVNM29SSmFqZGpqN2EwUThOSXdUR1ZtNHV4bmFqSFE3Ly9BaEVxT3pvRjIKRUh2YThwUHRiWHQyVnJwVTkrdlk0N2lqMzAwQkp2bk5BKyt1NSs1N3QxdmNuKzM0NEtlWkUvTmM3TkF1ZlpzWQpQT2p5K2JJQmNiN3Z0Rk1zbndNWXJnb3M0SXhwQVdXbHVkbTlmUkFmSDVVOHZQZlFjNWI0blcwMVlqaHI1YzBBCjJlZUhjb3lDbkl2bkFWWlNjU3JTWUU1bHdQMUNyT094QW9JQkFRRGpXQkVSdFIyL3NseXVabzhtQ2toN2hRNksKaDFidmlnak1ra2ZqMG9tUUQydU1wdndRYStoZjBOZDlVWnF4M3BJRmtDbFJ0dFBRZDQvZDV6dFl5bWU4azRpYgpVV29HUkF0QXNQUmc4QkRPUmJVeHZpSHRheWhLdm9VSlFuR1VZcFM3TkxqazdZVFhqTW9tVnVPS2R4L0drNVZLCll5clJMZDhZdGVqajdQWjd2SUVtUng2b25zSzlzT3ZBdEN0enllakw1cjUyWmJ2QWdlOEZZYWx5d0xNcGpxRTcKOWRlS1R6dEV3c1l4akM2TXRWdGJXeHdpWmVEbWU2TlJyVTFCb1lKUitLMlBVZThQRnkzUHJRVDZRaUVrSjJQOQpyNk8ybGlQRERRTWRpNXBEUzdaNFJFdXNLVWVxcDlzbUJkdzJaSzZ5TzVlWUN4S21rNG9vRml0MFovaUMKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K\n    token: 781d8deda3c2e8d42731923dc6996c3a31dfbeb6ac6f48cc325eb7d901733cc5037cc53ef9b89ad4639541a8b0a06fdbe1877491e7469ad8b03778da46b4d4e5\n",
+                    "version": "3.23.1"
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:containerservice/v20220902preview:ManagedCluster::csi-driver-demo",
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo",
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azuread:index/application:Application::csi-driver-demo-app"
+                ],
+                "propertyDependencies": {
+                    "enableServerSideApply": null,
+                    "kubeconfig": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo",
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:containerservice/v20220902preview:ManagedCluster::csi-driver-demo"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::kubernetes:core/v1:ServiceAccount::k8s-sa",
+                "custom": true,
+                "id": "default/test",
+                "type": "kubernetes:core/v1:ServiceAccount",
+                "inputs": {
+                    "apiVersion": "v1",
+                    "kind": "ServiceAccount",
+                    "metadata": {
+                        "name": "test",
+                        "namespace": "default"
+                    }
+                },
+                "outputs": {
+                    "__fieldManager": "pulumi-kubernetes-753be2b3",
+                    "__initialApiVersion": "v1",
+                    "__inputs": {
+                        "apiVersion": "v1",
+                        "kind": "ServiceAccount",
+                        "metadata": {
+                            "name": "test",
+                            "namespace": "default"
+                        }
+                    },
+                    "apiVersion": "v1",
+                    "kind": "ServiceAccount",
+                    "metadata": {
+                        "creationTimestamp": "2023-01-16T18:07:03Z",
+                        "name": "test",
+                        "namespace": "default",
+                        "resourceVersion": "1653",
+                        "uid": "23c98965-d540-449a-b84e-707237173ebc"
+                    }
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:kubernetes::k8s-provider::5d35e253-a6e6-4dc1-b266-d25dda545f0a",
+                "propertyDependencies": {
+                    "apiVersion": null,
+                    "kind": null,
+                    "metadata": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::kubernetes:apps/v1:Deployment::k8s-demo-deployment",
+                "custom": true,
+                "id": "default/nginx-deployment",
+                "type": "kubernetes:apps/v1:Deployment",
+                "inputs": {
+                    "apiVersion": "apps/v1",
+                    "kind": "Deployment",
+                    "metadata": {
+                        "labels": {
+                            "app": "nginx"
+                        },
+                        "name": "nginx-deployment",
+                        "namespace": "default"
+                    },
+                    "spec": {
+                        "replicas": 2,
+                        "selector": {
+                            "matchLabels": {
+                                "app": "nginx"
+                            }
+                        },
+                        "template": {
+                            "metadata": {
+                                "labels": {
+                                    "app": "nginx"
+                                }
+                            },
+                            "spec": {
+                                "containers": [
+                                    {
+                                        "image": "nginx",
+                                        "name": "nginx-deployment",
+                                        "ports": [
+                                            {
+                                                "containerPort": 80
+                                            }
+                                        ],
+                                        "volumeMounts": [
+                                            {
+                                                "mountPath": "/mnt/secrets-store",
+                                                "name": "secrets-store-inline",
+                                                "readOnly": true
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "serviceAccountName": "test",
+                                "volumes": [
+                                    {
+                                        "csi": {
+                                            "driver": "secrets-store.csi.k8s.io",
+                                            "readOnly": true,
+                                            "volumeAttributes": {
+                                                "secretProviderClass": "azure-secret-provider"
+                                            }
+                                        },
+                                        "name": "secrets-store-inline"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "outputs": {
+                    "__fieldManager": "pulumi-kubernetes-3e4a99f6",
+                    "__initialApiVersion": "apps/v1",
+                    "__inputs": {
+                        "apiVersion": "apps/v1",
+                        "kind": "Deployment",
+                        "metadata": {
+                            "labels": {
+                                "app": "nginx"
+                            },
+                            "name": "nginx-deployment",
+                            "namespace": "default"
+                        },
+                        "spec": {
+                            "replicas": 2,
+                            "selector": {
+                                "matchLabels": {
+                                    "app": "nginx"
+                                }
+                            },
+                            "template": {
+                                "metadata": {
+                                    "labels": {
+                                        "app": "nginx"
+                                    }
+                                },
+                                "spec": {
+                                    "containers": [
+                                        {
+                                            "image": "nginx",
+                                            "name": "nginx-deployment",
+                                            "ports": [
+                                                {
+                                                    "containerPort": 80
+                                                }
+                                            ],
+                                            "volumeMounts": [
+                                                {
+                                                    "mountPath": "/mnt/secrets-store",
+                                                    "name": "secrets-store-inline",
+                                                    "readOnly": true
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "serviceAccountName": "test",
+                                    "volumes": [
+                                        {
+                                            "csi": {
+                                                "driver": "secrets-store.csi.k8s.io",
+                                                "readOnly": true,
+                                                "volumeAttributes": {
+                                                    "secretProviderClass": "azure-secret-provider"
+                                                }
+                                            },
+                                            "name": "secrets-store-inline"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "apiVersion": "apps/v1",
+                    "kind": "Deployment",
+                    "metadata": {
+                        "annotations": {
+                            "deployment.kubernetes.io/revision": "1"
+                        },
+                        "creationTimestamp": "2023-01-16T18:17:41Z",
+                        "generation": 3,
+                        "labels": {
+                            "app": "nginx"
+                        },
+                        "managedFields": [
+                            {
+                                "apiVersion": "apps/v1",
+                                "fieldsType": "FieldsV1",
+                                "fieldsV1": {
+                                    "f:metadata": {
+                                        "f:labels": {
+                                            "f:app": {}
+                                        }
+                                    },
+                                    "f:spec": {
+                                        "f:selector": {},
+                                        "f:template": {
+                                            "f:metadata": {
+                                                "f:labels": {
+                                                    "f:app": {}
+                                                }
+                                            },
+                                            "f:spec": {
+                                                "f:containers": {
+                                                    "k:{\"name\":\"nginx-deployment\"}": {
+                                                        ".": {},
+                                                        "f:image": {},
+                                                        "f:name": {},
+                                                        "f:ports": {
+                                                            "k:{\"containerPort\":80,\"protocol\":\"TCP\"}": {
+                                                                ".": {},
+                                                                "f:containerPort": {}
+                                                            }
+                                                        },
+                                                        "f:volumeMounts": {
+                                                            "k:{\"mountPath\":\"/mnt/secrets-store\"}": {
+                                                                ".": {},
+                                                                "f:mountPath": {},
+                                                                "f:name": {},
+                                                                "f:readOnly": {}
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "f:serviceAccountName": {},
+                                                "f:volumes": {
+                                                    "k:{\"name\":\"secrets-store-inline\"}": {
+                                                        ".": {},
+                                                        "f:csi": {
+                                                            "f:driver": {},
+                                                            "f:readOnly": {},
+                                                            "f:volumeAttributes": {
+                                                                "f:secretProviderClass": {}
+                                                            }
+                                                        },
+                                                        "f:name": {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "manager": "pulumi-kubernetes-4ca6f894",
+                                "operation": "Apply"
+                            },
+                            {
+                                "apiVersion": "apps/v1",
+                                "fieldsType": "FieldsV1",
+                                "fieldsV1": {
+                                    "f:metadata": {
+                                        "f:labels": {
+                                            "f:app": {}
+                                        }
+                                    },
+                                    "f:spec": {
+                                        "f:selector": {},
+                                        "f:template": {
+                                            "f:metadata": {
+                                                "f:labels": {
+                                                    "f:app": {}
+                                                }
+                                            },
+                                            "f:spec": {
+                                                "f:containers": {
+                                                    "k:{\"name\":\"nginx-deployment\"}": {
+                                                        ".": {},
+                                                        "f:image": {},
+                                                        "f:name": {},
+                                                        "f:ports": {
+                                                            "k:{\"containerPort\":80,\"protocol\":\"TCP\"}": {
+                                                                ".": {},
+                                                                "f:containerPort": {}
+                                                            }
+                                                        },
+                                                        "f:volumeMounts": {
+                                                            "k:{\"mountPath\":\"/mnt/secrets-store\"}": {
+                                                                ".": {},
+                                                                "f:mountPath": {},
+                                                                "f:name": {},
+                                                                "f:readOnly": {}
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "f:serviceAccountName": {},
+                                                "f:volumes": {
+                                                    "k:{\"name\":\"secrets-store-inline\"}": {
+                                                        ".": {},
+                                                        "f:csi": {
+                                                            "f:driver": {},
+                                                            "f:readOnly": {},
+                                                            "f:volumeAttributes": {
+                                                                "f:secretProviderClass": {}
+                                                            }
+                                                        },
+                                                        "f:name": {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "manager": "pulumi-kubernetes-f16e19bc",
+                                "operation": "Apply",
+                                "time": "2023-01-16T18:17:41Z"
+                            },
+                            {
+                                "apiVersion": "apps/v1",
+                                "fieldsType": "FieldsV1",
+                                "fieldsV1": {
+                                    "f:metadata": {
+                                        "f:labels": {
+                                            "f:app": {}
+                                        }
+                                    },
+                                    "f:spec": {
+                                        "f:replicas": {},
+                                        "f:selector": {},
+                                        "f:template": {
+                                            "f:metadata": {
+                                                "f:labels": {
+                                                    "f:app": {}
+                                                }
+                                            },
+                                            "f:spec": {
+                                                "f:containers": {
+                                                    "k:{\"name\":\"nginx-deployment\"}": {
+                                                        ".": {},
+                                                        "f:image": {},
+                                                        "f:name": {},
+                                                        "f:ports": {
+                                                            "k:{\"containerPort\":80,\"protocol\":\"TCP\"}": {
+                                                                ".": {},
+                                                                "f:containerPort": {}
+                                                            }
+                                                        },
+                                                        "f:volumeMounts": {
+                                                            "k:{\"mountPath\":\"/mnt/secrets-store\"}": {
+                                                                ".": {},
+                                                                "f:mountPath": {},
+                                                                "f:name": {},
+                                                                "f:readOnly": {}
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "f:serviceAccountName": {},
+                                                "f:volumes": {
+                                                    "k:{\"name\":\"secrets-store-inline\"}": {
+                                                        ".": {},
+                                                        "f:csi": {
+                                                            "f:driver": {},
+                                                            "f:readOnly": {},
+                                                            "f:volumeAttributes": {
+                                                                "f:secretProviderClass": {}
+                                                            }
+                                                        },
+                                                        "f:name": {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "manager": "pulumi-kubernetes-3e4a99f6",
+                                "operation": "Apply",
+                                "time": "2023-01-16T18:22:30Z"
+                            },
+                            {
+                                "apiVersion": "apps/v1",
+                                "fieldsType": "FieldsV1",
+                                "fieldsV1": {
+                                    "f:metadata": {
+                                        "f:annotations": {
+                                            ".": {},
+                                            "f:deployment.kubernetes.io/revision": {}
+                                        }
+                                    },
+                                    "f:status": {
+                                        "f:availableReplicas": {},
+                                        "f:conditions": {
+                                            ".": {},
+                                            "k:{\"type\":\"Available\"}": {
+                                                ".": {},
+                                                "f:lastTransitionTime": {},
+                                                "f:lastUpdateTime": {},
+                                                "f:message": {},
+                                                "f:reason": {},
+                                                "f:status": {},
+                                                "f:type": {}
+                                            },
+                                            "k:{\"type\":\"Progressing\"}": {
+                                                ".": {},
+                                                "f:lastTransitionTime": {},
+                                                "f:lastUpdateTime": {},
+                                                "f:message": {},
+                                                "f:reason": {},
+                                                "f:status": {},
+                                                "f:type": {}
+                                            }
+                                        },
+                                        "f:observedGeneration": {},
+                                        "f:readyReplicas": {},
+                                        "f:replicas": {},
+                                        "f:updatedReplicas": {}
+                                    }
+                                },
+                                "manager": "kube-controller-manager",
+                                "operation": "Update",
+                                "subresource": "status",
+                                "time": "2023-01-16T19:06:20Z"
+                            }
+                        ],
+                        "name": "nginx-deployment",
+                        "namespace": "default",
+                        "resourceVersion": "19384",
+                        "uid": "19f5fa2c-4bf5-4327-945d-78c62d33d5ba"
+                    },
+                    "spec": {
+                        "progressDeadlineSeconds": 600,
+                        "replicas": 2,
+                        "revisionHistoryLimit": 10,
+                        "selector": {
+                            "matchLabels": {
+                                "app": "nginx"
+                            }
+                        },
+                        "strategy": {
+                            "rollingUpdate": {
+                                "maxSurge": "25%",
+                                "maxUnavailable": "25%"
+                            },
+                            "type": "RollingUpdate"
+                        },
+                        "template": {
+                            "metadata": {
+                                "labels": {
+                                    "app": "nginx"
+                                }
+                            },
+                            "spec": {
+                                "containers": [
+                                    {
+                                        "image": "nginx",
+                                        "imagePullPolicy": "Always",
+                                        "name": "nginx-deployment",
+                                        "ports": [
+                                            {
+                                                "containerPort": 80,
+                                                "protocol": "TCP"
+                                            }
+                                        ],
+                                        "resources": {},
+                                        "terminationMessagePath": "/dev/termination-log",
+                                        "terminationMessagePolicy": "File",
+                                        "volumeMounts": [
+                                            {
+                                                "mountPath": "/mnt/secrets-store",
+                                                "name": "secrets-store-inline",
+                                                "readOnly": true
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "dnsPolicy": "ClusterFirst",
+                                "restartPolicy": "Always",
+                                "schedulerName": "default-scheduler",
+                                "securityContext": {},
+                                "serviceAccount": "test",
+                                "serviceAccountName": "test",
+                                "terminationGracePeriodSeconds": 30,
+                                "volumes": [
+                                    {
+                                        "csi": {
+                                            "driver": "secrets-store.csi.k8s.io",
+                                            "readOnly": true,
+                                            "volumeAttributes": {
+                                                "secretProviderClass": "azure-secret-provider"
+                                            }
+                                        },
+                                        "name": "secrets-store-inline"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "status": {
+                        "availableReplicas": 2,
+                        "conditions": [
+                            {
+                                "lastTransitionTime": "2023-01-16T18:17:41Z",
+                                "lastUpdateTime": "2023-01-16T18:22:10Z",
+                                "message": "ReplicaSet \"nginx-deployment-5c869ff87c\" has successfully progressed.",
+                                "reason": "NewReplicaSetAvailable",
+                                "status": "True",
+                                "type": "Progressing"
+                            },
+                            {
+                                "lastTransitionTime": "2023-01-16T19:06:20Z",
+                                "lastUpdateTime": "2023-01-16T19:06:20Z",
+                                "message": "Deployment has minimum availability.",
+                                "reason": "MinimumReplicasAvailable",
+                                "status": "True",
+                                "type": "Available"
+                            }
+                        ],
+                        "observedGeneration": 3,
+                        "readyReplicas": 2,
+                        "replicas": 2,
+                        "updatedReplicas": 2
+                    }
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:kubernetes::k8s-provider::5d35e253-a6e6-4dc1-b266-d25dda545f0a",
+                "propertyDependencies": {
+                    "apiVersion": null,
+                    "kind": null,
+                    "metadata": null,
+                    "spec": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:keyvault/v20220701:Vault::csi-driver-demo-vault",
+                "custom": true,
+                "id": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourceGroups/csi-driver-demo/providers/Microsoft.KeyVault/vaults/csi-driver-demo-vault",
+                "type": "azure-native:keyvault/v20220701:Vault",
+                "inputs": {
+                    "location": "westeurope",
+                    "properties": {
+                        "accessPolicies": [
+                            {
+                                "objectId": "d1d9ced2-34d8-4b48-924f-77256957d920",
+                                "permissions": {
+                                    "certificates": [
+                                        "get"
+                                    ],
+                                    "keys": [
+                                        "get"
+                                    ],
+                                    "secrets": [
+                                        "get"
+                                    ]
+                                },
+                                "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215"
+                            }
+                        ],
+                        "enableRbacAuthorization": false,
+                        "enableSoftDelete": true,
+                        "publicNetworkAccess": "enabled",
+                        "sku": {
+                            "family": "A",
+                            "name": "standard"
+                        },
+                        "softDeleteRetentionInDays": 90,
+                        "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215"
+                    },
+                    "resourceGroupName": "csi-driver-demo",
+                    "vaultName": "csi-driver-demo-vault"
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAFDgd6ZUI1BlwYCsdTwtgljPKKS1lqLFEQnCI2ElKTXMOwbaJMOe0BMwsxvK9v36YirEJOasWUkZP/q1j87Ih5sLMZXG9nXdEpLby/Pxxieus1j3oLNnqBTem5RG64EEZcbwqLKHJ5bejYj9DlBQWCcErFFjY/Dkfz4xLl9Zi//86AEs8zB4tFRE5yh+C7s8pvLVE8Io5J6SkJITQKQVgJI5LRjZvem5kRsNnRSeAGJuLjveUVOCpmP+cCuEX8PuGbW5V0BieWOHEtm+bT4x4tPoR4YebboxgquHPnWD/MOA5ST95+BI+KVQk5Dq7YNBBffFf+zJJIyElNl2VYisK88IxFptcPJ/Gf9uCwFEKBdbL46tR1wli56Cy0Z47M7bKCLIb/NzuVWuh87NnrGwtlwPIwaLH4IMz1Z27qkEnkML4fMwqFpdg6D5q48XHVPeB2fwJeOyLV9gMQLmY4EHxlB9TCALC6oc3EfVbJmRNZxkfHhKaWO8Naa6ZpDw5KO2Lt+WSrkaQfHc3XoQUzASa8VqTCJfiRVN3IgrobI1JoA+EoonM1Jf4UDppbBlEK8QeQQNRgGJ0lu2DXNd0mlGq3+psxOk+lP5xFIwnyllJK/86oakdIvN88lFz4v0Hb0N03rGY7SHyty10Ro5oPBkTH5clB/uudS8OOClv/QTfk/d+wKhuwiXzeCo+Si5j7gv8iSndA5M6C9+7YVF/ikDlQ=="
+                    },
+                    "id": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourceGroups/csi-driver-demo/providers/Microsoft.KeyVault/vaults/csi-driver-demo-vault",
+                    "location": "westeurope",
+                    "name": "csi-driver-demo-vault",
+                    "properties": {
+                        "accessPolicies": [
+                            {
+                                "objectId": "d1d9ced2-34d8-4b48-924f-77256957d920",
+                                "permissions": {
+                                    "certificates": [
+                                        "get"
+                                    ],
+                                    "keys": [
+                                        "get"
+                                    ],
+                                    "secrets": [
+                                        "get"
+                                    ]
+                                },
+                                "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215"
+                            }
+                        ],
+                        "enableRbacAuthorization": false,
+                        "enableSoftDelete": true,
+                        "enabledForDeployment": false,
+                        "enabledForDiskEncryption": false,
+                        "enabledForTemplateDeployment": false,
+                        "provisioningState": "Succeeded",
+                        "publicNetworkAccess": "Enabled",
+                        "sku": {
+                            "family": "A",
+                            "name": "standard"
+                        },
+                        "softDeleteRetentionInDays": 90,
+                        "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215",
+                        "vaultUri": "https://csi-driver-demo-vault.vault.azure.net/"
+                    },
+                    "systemData": {
+                        "createdAt": "2023-01-16T17:51:28.19Z",
+                        "createdBy": "engin.diri@ediri.de",
+                        "createdByType": "User",
+                        "lastModifiedAt": "2023-01-16T19:32:00.26Z",
+                        "lastModifiedBy": "engin.diri@ediri.de",
+                        "lastModifiedByType": "User"
+                    },
+                    "tags": {},
+                    "type": "Microsoft.KeyVault/vaults"
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo",
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azuread:index/application:Application::csi-driver-demo-app"
+                ],
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:azure-native::default_1_92_0::6e7e2ddc-f2b0-49ae-9fc8-f125df91ab18",
+                "propertyDependencies": {
+                    "location": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo"
+                    ],
+                    "properties": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azuread:index/application:Application::csi-driver-demo-app"
+                    ],
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo"
+                    ],
+                    "vaultName": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:keyvault/v20220701:Secret::csi-driver-demo-secret",
+                "custom": true,
+                "id": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourceGroups/csi-driver-demo/providers/Microsoft.KeyVault/vaults/csi-driver-demo-vault/secrets/secret",
+                "type": "azure-native:keyvault/v20220701:Secret",
+                "inputs": {
+                    "properties": {
+                        "value": "secret"
+                    },
+                    "resourceGroupName": "csi-driver-demo",
+                    "secretName": "secret",
+                    "vaultName": "csi-driver-demo-vault"
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAIQQJyvahxcfJdngrAYiuW9/0OLJKWiNLatyj0TlSjs49kgsBNa/T9giYpnzXVSlSUKgAHkLcNV+035LZsRNY8rL9WwKHH15QA4vlvXDSvJnN/y4vgyKb0xv5bMiDxNl34WnoPodF4Ex2GISCwWjjiey/mqFUj9iByA7yvZiXaRB4jPRgigFhw8yQjX0KajVflytrF6vDHENV3UxMM8="
+                    },
+                    "id": "/subscriptions/d62eb9ef-fe7c-45f5-8bd6-7b2b727869c4/resourceGroups/csi-driver-demo/providers/Microsoft.KeyVault/vaults/csi-driver-demo-vault/secrets/secret",
+                    "location": "westeurope",
+                    "name": "secret",
+                    "properties": {
+                        "attributes": {
+                            "created": 1673892869,
+                            "enabled": true,
+                            "updated": 1673892869
+                        },
+                        "secretUri": "https://csi-driver-demo-vault.vault.azure.net/secrets/secret",
+                        "secretUriWithVersion": "https://csi-driver-demo-vault.vault.azure.net/secrets/secret/c80bb5f437114308b48a82cd4cf67d15"
+                    },
+                    "type": "Microsoft.KeyVault/vaults/secrets"
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:keyvault/v20220701:Vault::csi-driver-demo-vault",
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo"
+                ],
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:azure-native::default_1_92_0::6e7e2ddc-f2b0-49ae-9fc8-f125df91ab18",
+                "propertyDependencies": {
+                    "properties": null,
+                    "resourceGroupName": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:resources/v20220901:ResourceGroup::csi-driver-demo"
+                    ],
+                    "secretName": null,
+                    "vaultName": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:keyvault/v20220701:Vault::csi-driver-demo-vault"
+                    ]
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::kubernetes:helm.sh/v3:Release::csi-secrets-store-provider-azure",
+                "custom": true,
+                "id": "kube-system/csi-secrets-store-provider-azure-bb661224",
+                "type": "kubernetes:helm.sh/v3:Release",
+                "inputs": {
+                    "allowNullValues": false,
+                    "atomic": false,
+                    "chart": "csi-secrets-store-provider-azure",
+                    "cleanupOnFail": false,
+                    "createNamespace": false,
+                    "dependencyUpdate": false,
+                    "description": "",
+                    "devel": false,
+                    "disableCRDHooks": false,
+                    "disableOpenapiValidation": false,
+                    "disableWebhooks": false,
+                    "forceUpdate": false,
+                    "keyring": "",
+                    "lint": false,
+                    "name": "csi-secrets-store-provider-azure-bb661224",
+                    "namespace": "kube-system",
+                    "postrender": "",
+                    "recreatePods": false,
+                    "renderSubchartNotes": false,
+                    "replace": false,
+                    "repositoryOpts": {
+                        "caFile": "",
+                        "certFile": "",
+                        "keyFile": "",
+                        "password": "",
+                        "repo": "https://azure.github.io/secrets-store-csi-driver-provider-azure/charts",
+                        "username": ""
+                    },
+                    "resetValues": false,
+                    "resourceNames": {
+                        "CSIDriver.storage.k8s.io/storage.k8s.io/v1": [
+                            "secrets-store.csi.k8s.io"
+                        ],
+                        "ClusterRole.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                            "secretproviderclasses-admin-role",
+                            "secretproviderclasses-role",
+                            "secretproviderclasses-viewer-role",
+                            "secretprovidertokenrequest-role",
+                            "secrets-store-csi-driver-keep-crds",
+                            "secrets-store-csi-driver-upgrade-crds"
+                        ],
+                        "ClusterRoleBinding.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                            "secretproviderclasses-rolebinding",
+                            "secretprovidertokenrequest-rolebinding",
+                            "secrets-store-csi-driver-keep-crds",
+                            "secrets-store-csi-driver-upgrade-crds"
+                        ],
+                        "CustomResourceDefinition.apiextensions.k8s.io/apiextensions.k8s.io/v1": [
+                            "secretproviderclasses.secrets-store.csi.x-k8s.io",
+                            "secretproviderclasspodstatuses.secrets-store.csi.x-k8s.io"
+                        ],
+                        "DaemonSet.apps/apps/v1": [
+                            "kube-system/csi-secrets-store-provider-azure-bb661224",
+                            "kube-system/secrets-store-csi-driver"
+                        ],
+                        "Job.batch/batch/v1": [
+                            "kube-system/secrets-store-csi-driver-keep-crds",
+                            "kube-system/secrets-store-csi-driver-upgrade-crds"
+                        ],
+                        "ServiceAccount/v1": [
+                            "kube-system/csi-secrets-store-provider-azure",
+                            "kube-system/secrets-store-csi-driver",
+                            "kube-system/secrets-store-csi-driver-keep-crds",
+                            "kube-system/secrets-store-csi-driver-upgrade-crds"
+                        ]
+                    },
+                    "reuseValues": false,
+                    "skipAwait": false,
+                    "skipCrds": false,
+                    "timeout": 300,
+                    "values": {},
+                    "verify": false,
+                    "version": "",
+                    "waitForJobs": false
+                },
+                "outputs": {
+                    "__inputs": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "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"
+                    },
+                    "allowNullValues": false,
+                    "atomic": false,
+                    "chart": "csi-secrets-store-provider-azure",
+                    "cleanupOnFail": false,
+                    "createNamespace": false,
+                    "dependencyUpdate": false,
+                    "description": "",
+                    "devel": false,
+                    "disableCRDHooks": false,
+                    "disableOpenapiValidation": false,
+                    "disableWebhooks": false,
+                    "forceUpdate": false,
+                    "keyring": "",
+                    "lint": false,
+                    "name": "csi-secrets-store-provider-azure-bb661224",
+                    "namespace": "kube-system",
+                    "postrender": "",
+                    "recreatePods": false,
+                    "renderSubchartNotes": false,
+                    "replace": false,
+                    "repositoryOpts": {
+                        "caFile": "",
+                        "certFile": "",
+                        "keyFile": "",
+                        "password": "",
+                        "repo": "https://azure.github.io/secrets-store-csi-driver-provider-azure/charts",
+                        "username": ""
+                    },
+                    "resetValues": false,
+                    "resourceNames": {
+                        "CSIDriver.storage.k8s.io/storage.k8s.io/v1": [
+                            "secrets-store.csi.k8s.io"
+                        ],
+                        "ClusterRole.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                            "secretproviderclasses-admin-role",
+                            "secretproviderclasses-role",
+                            "secretproviderclasses-viewer-role",
+                            "secretprovidertokenrequest-role"
+                        ],
+                        "ClusterRoleBinding.rbac.authorization.k8s.io/rbac.authorization.k8s.io/v1": [
+                            "secretproviderclasses-rolebinding",
+                            "secretprovidertokenrequest-rolebinding"
+                        ],
+                        "DaemonSet.apps/apps/v1": [
+                            "kube-system/csi-secrets-store-provider-azure-bb661224",
+                            "kube-system/secrets-store-csi-driver"
+                        ],
+                        "ServiceAccount/v1": [
+                            "kube-system/csi-secrets-store-provider-azure",
+                            "kube-system/secrets-store-csi-driver"
+                        ]
+                    },
+                    "reuseValues": false,
+                    "skipAwait": false,
+                    "skipCrds": false,
+                    "status": {
+                        "appVersion": "1.4.0",
+                        "chart": "csi-secrets-store-provider-azure",
+                        "name": "csi-secrets-store-provider-azure-bb661224",
+                        "namespace": "kube-system",
+                        "revision": 1,
+                        "status": "deployed",
+                        "version": "1.4.0"
+                    },
+                    "timeout": 300,
+                    "values": {},
+                    "verify": false,
+                    "version": "1.4.0",
+                    "waitForJobs": false
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:keyvault/v20220701:Vault::csi-driver-demo-vault"
+                ],
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:kubernetes::k8s-provider::5d35e253-a6e6-4dc1-b266-d25dda545f0a",
+                "propertyDependencies": {
+                    "chart": null,
+                    "compat": null,
+                    "namespace": null,
+                    "repositoryOpts": null
+                }
+            },
+            {
+                "urn": "urn:pulumi:dev::pulumi-azure-secretstore-csi::kubernetes:secrets-store.csi.x-k8s.io/v1:SecretProviderClass::k8s-cr",
+                "custom": true,
+                "id": "default/azure-secret-provider",
+                "type": "kubernetes:secrets-store.csi.x-k8s.io/v1:SecretProviderClass",
+                "inputs": {
+                    "apiVersion": "secrets-store.csi.x-k8s.io/v1",
+                    "kind": "SecretProviderClass",
+                    "metadata": {
+                        "name": "azure-secret-provider",
+                        "namespace": "default"
+                    },
+                    "spec": {
+                        "parameters": {
+                            "clientID": "888a9853-fc37-4d44-b7d8-18a8d097b941",
+                            "keyvaultName": "csi-driver-demo-vault",
+                            "objects": "array:\n   - |\n     objectName: \"secret\"\n     objectType: \"secret\"",
+                            "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215"
+                        },
+                        "provider": "azure"
+                    }
+                },
+                "outputs": {
+                    "__fieldManager": "pulumi-kubernetes-9c4af68e",
+                    "__initialApiVersion": "secrets-store.csi.x-k8s.io/v1",
+                    "__inputs": {
+                        "apiVersion": "secrets-store.csi.x-k8s.io/v1",
+                        "kind": "SecretProviderClass",
+                        "metadata": {
+                            "name": "azure-secret-provider",
+                            "namespace": "default"
+                        },
+                        "spec": {
+                            "parameters": {
+                                "clientID": "888a9853-fc37-4d44-b7d8-18a8d097b941",
+                                "keyvaultName": "csi-driver-demo-vault",
+                                "objects": "array:\n   - |\n     objectName: \"secret\"\n     objectType: \"secret\"",
+                                "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215"
+                            },
+                            "provider": "azure"
+                        }
+                    },
+                    "apiVersion": "secrets-store.csi.x-k8s.io/v1",
+                    "kind": "SecretProviderClass",
+                    "metadata": {
+                        "creationTimestamp": "2023-01-16T18:17:40Z",
+                        "generation": 13,
+                        "managedFields": [
+                            {
+                                "apiVersion": "secrets-store.csi.x-k8s.io/v1",
+                                "fieldsType": "FieldsV1",
+                                "fieldsV1": {
+                                    "f:spec": {
+                                        "f:parameters": {
+                                            "f:clientID": {},
+                                            "f:keyvaultName": {},
+                                            "f:objects": {},
+                                            "f:tenantId": {}
+                                        },
+                                        "f:provider": {}
+                                    }
+                                },
+                                "manager": "pulumi-kubernetes-9c4af68e",
+                                "operation": "Apply",
+                                "time": "2023-01-16T19:17:57Z"
+                            }
+                        ],
+                        "name": "azure-secret-provider",
+                        "namespace": "default",
+                        "resourceVersion": "22858",
+                        "uid": "5c4a5a6a-5620-44da-a15d-1767000ca547"
+                    },
+                    "spec": {
+                        "parameters": {
+                            "clientID": "888a9853-fc37-4d44-b7d8-18a8d097b941",
+                            "keyvaultName": "csi-driver-demo-vault",
+                            "objects": "array:\n   - |\n     objectName: \"secret\"\n     objectType: \"secret\"",
+                            "tenantId": "3bb336c2-6605-4144-aa4b-b04b79bef215"
+                        },
+                        "provider": "azure"
+                    }
+                },
+                "parent": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:pulumi:Stack::pulumi-azure-secretstore-csi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:keyvault/v20220701:Secret::csi-driver-demo-secret",
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:keyvault/v20220701:Vault::csi-driver-demo-vault",
+                    "urn:pulumi:dev::pulumi-azure-secretstore-csi::azuread:index/application:Application::csi-driver-demo-app"
+                ],
+                "provider": "urn:pulumi:dev::pulumi-azure-secretstore-csi::pulumi:providers:kubernetes::k8s-provider::5d35e253-a6e6-4dc1-b266-d25dda545f0a",
+                "propertyDependencies": {
+                    "apiVersion": null,
+                    "kind": null,
+                    "metadata": null,
+                    "spec": [
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:keyvault/v20220701:Vault::csi-driver-demo-vault",
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azuread:index/application:Application::csi-driver-demo-app",
+                        "urn:pulumi:dev::pulumi-azure-secretstore-csi::azure-native:keyvault/v20220701:Secret::csi-driver-demo-secret"
+                    ]
+                }
+            }
+        ]
+    }
+}

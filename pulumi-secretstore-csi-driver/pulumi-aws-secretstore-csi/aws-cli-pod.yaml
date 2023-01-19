@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: awscli
+  namespace: default
+  labels:
+      app: awscli
+spec:
+  serviceAccountName: test
+  containers:
+    - image: amazon/aws-cli
+      command:
+        - "sleep"
+        - "604800"
+      imagePullPolicy: IfNotPresent
+      name: awscli
+  restartPolicy: Always
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: awscli2
+  namespace: default
+  labels:
+    app: awscli
+spec:
+  containers:
+    - image: amazon/aws-cli
+      command:
+        - "sleep"
+        - "604800"
+      imagePullPolicy: IfNotPresent
+      name: awscli
+  restartPolicy: Always

@@ -1,0 +1,6 @@
+name: pulumi-aws-secretstore-csi
+runtime:
+  name: nodejs
+  options:
+    typescript: true
+description: A minimal AWS JavaScript Pulumi program
