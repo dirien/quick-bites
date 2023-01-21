@@ -27,6 +27,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [How to set up a Dead Man's Switch in Prometheus](/prometheus-dead-man-switch)
 - [Deploy Komodor on AKS via the Flux Cluster Extension using Pulumi](/pulumi-azure-fluxcd-komodor)
 - [Advanced Secret Management on Kubernetes With Pulumi: Secrets Store CSI Driver](/pulumi-secretstore-csi-driver)
+- [Serialize and Deserialize Data in Rust using serde and serde_json](/rust-json)
 
 Notes:
 
