@@ -4,7 +4,7 @@
         "@types/node": "17.0.24"
     },
     "dependencies": {
-        "@pulumi/pulumi": "3.52.1",
+        "@pulumi/pulumi": "3.53.1",
         "@pulumi/digitalocean": "4.16.0"
     }
 }
