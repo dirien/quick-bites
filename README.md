@@ -28,6 +28,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Deploy Komodor on AKS via the Flux Cluster Extension using Pulumi](/pulumi-azure-fluxcd-komodor)
 - [Advanced Secret Management on Kubernetes With Pulumi: Secrets Store CSI Driver](/pulumi-secretstore-csi-driver)
 - [Serialize and Deserialize Data in Rust using serde and serde_json](/rust-json)
+- [Design Patterns in Rust 🦀: An Introduction to the Builder Pattern](/rust-builder-pattern)
 
 Notes:
 
