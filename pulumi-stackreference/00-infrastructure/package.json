@@ -5,6 +5,6 @@
     },
     "dependencies": {
         "@pulumi/pulumi": "3.53.1",
-        "@pulumi/digitalocean": "4.16.0"
+        "@pulumi/digitalocean": "4.17.0"
     }
 }
