@@ -1,10 +1,10 @@
 {
     "name": "pulumi-scaleway-quickstart",
     "devDependencies": {
-        "@types/node": "18.11.18"
+        "@types/node": "18.13.0"
     },
     "dependencies": {
-        "@pulumi/pulumi": "3.53.1",
+        "@pulumi/pulumi": "3.54.0",
         "@pulumiverse/scaleway": "0.4.0"
     }
 }
