@@ -29,6 +29,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Advanced Secret Management on Kubernetes With Pulumi: Secrets Store CSI Driver](/pulumi-secretstore-csi-driver)
 - [Serialize and Deserialize Data in Rust using serde and serde_json](/rust-json)
 - [Design Patterns in Rust 🦀: An Introduction to the Builder Pattern](/rust-builder-pattern)
+- [Design Patterns in Rust 🦀: Upgrading the Builder Pattern using the Typestate Pattern](/rust-typestate-builder-pattern)
 
 Notes:
 
