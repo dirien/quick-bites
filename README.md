@@ -30,6 +30,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Serialize and Deserialize Data in Rust using serde and serde_json](/rust-json)
 - [Design Patterns in Rust 🦀: An Introduction to the Builder Pattern](/rust-builder-pattern)
 - [Design Patterns in Rust 🦀: Upgrading the Builder Pattern using the Typestate Pattern](/rust-typestate-builder-pattern)
+- [Rust Development: Creating a REST API with Actix Web for Beginners](/rust-actix-web-rest-api)
 
 Notes:
 
