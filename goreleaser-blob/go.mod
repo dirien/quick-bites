@@ -5,8 +5,8 @@ go 1.19
 require (
 	github.com/charmbracelet/bubbles v0.15.0
 	github.com/charmbracelet/bubbletea v0.23.2
-	github.com/charmbracelet/lipgloss v0.6.0
-	gopkg.in/alecthomas/kingpin.v2 v2.3.1
+	github.com/charmbracelet/lipgloss v0.7.1
+	gopkg.in/alecthomas/kingpin.v2 v2.3.2
 )
 
 require (
