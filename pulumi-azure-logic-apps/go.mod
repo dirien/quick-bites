@@ -1,6 +1,6 @@
 module pulumi-azure-logic-apps
 
-go 1.17
+go 1.20
 
 require (
 	github.com/pulumi/pulumi-azure-native-sdk/resources v1.96.0

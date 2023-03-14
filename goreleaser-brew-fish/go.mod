@@ -1,3 +1,3 @@
 module dirien/goreleaser-brew-fish
 
-go 1.19
+go 1.20

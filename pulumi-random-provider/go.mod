@@ -1,6 +1,6 @@
 module pulumi-random-provider
 
-go 1.19
+go 1.20
 
 require (
 	github.com/pulumi/pulumi-random/sdk/v4 v4.12.0
