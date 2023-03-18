@@ -108,8 +108,8 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.19.0 h1:L8tqdBnYDuk2zICTscl0+q4W0iAUBl1B+ex/ZWiQTlc=
 github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.19.0/go.mod h1:ICyhl3vUtjOayFMHs808C690kcacMA723wFwz57HoA4=
-github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.24.1 h1:GX0URNU6q8EkeAzgIwtE/mkC7YISihD2XZU1YeohLgY=
-github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.24.1/go.mod h1:/2uuKELv+RvIQtIctdnezesprWkkxGLv6i4456NSSCw=
+github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.24.2 h1:djHcE/9dzbixLb6gR4Wacap5p73T2urZoYy8TClXfoo=
+github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.24.2/go.mod h1:/2uuKELv+RvIQtIctdnezesprWkkxGLv6i4456NSSCw=
 github.com/pulumi/pulumi-tls/sdk/v4 v4.10.0 h1:4MC0GyEomAjEZJPXEzBZpZ4+TOUg5WE77k38tMDIvS0=
 github.com/pulumi/pulumi-tls/sdk/v4 v4.10.0/go.mod h1:tNXsM/+RsiVVmBdzJMOOp6gMoi3sPko5u0FKdiei+cE=
 github.com/pulumi/pulumi/sdk/v3 v3.58.0 h1:j02FvYlVCAWHGbJ83TXGLwYTPzF2bR4/q1fo038WsFo=

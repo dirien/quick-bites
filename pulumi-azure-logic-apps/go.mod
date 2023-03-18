@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/pulumi/pulumi-azure-native-sdk/resources v1.96.0
 	github.com/pulumi/pulumi-azure-native-sdk/storage v1.96.0
-	github.com/pulumi/pulumi-azure-native-sdk/web v1.90.0
+	github.com/pulumi/pulumi-azure-native-sdk/web v1.96.0
 	github.com/pulumi/pulumi/sdk/v3 v3.58.0
 )
 
