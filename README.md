@@ -31,6 +31,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Design Patterns in Rust 🦀: An Introduction to the Builder Pattern](/rust-builder-pattern)
 - [Design Patterns in Rust 🦀: Upgrading the Builder Pattern using the Typestate Pattern](/rust-typestate-builder-pattern)
 - [Rust Development: Creating a REST API with Actix Web for Beginners](/rust-actix-web-rest-api)
+- [Building a RESTful API with Actix Web and Diesel for Persistent Data Storage](/rust-actix-web-rest-api-diesel)
 
 Notes:
 
