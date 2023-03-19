@@ -599,7 +599,8 @@ curl -X POST -H "Content-Type: application/json" -d '{"title": "Buy eggs", "desc
 curl -X POST -H "Content-Type: application/json" -d '{"title": "Buy bread", "description": "Buy 1 loaf of bread"}' http://localhost:8080/api/todos
 
 # Get all Todo items
-curl -s[
+curl -s http://localhost:8080/api/todos | jq  
+[
   {
     "id": "590538de-56c4-4057-b4e6-c91021fc04be",
     "title": "Buy milk",
