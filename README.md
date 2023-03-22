@@ -32,6 +32,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Design Patterns in Rust 🦀: Upgrading the Builder Pattern using the Typestate Pattern](/rust-typestate-builder-pattern)
 - [Rust Development: Creating a REST API with Actix Web for Beginners](/rust-actix-web-rest-api)
 - [Building a RESTful API with Actix Web and Diesel for Persistent Data Storage](/rust-actix-web-rest-api-diesel)
+- [Minecraft Server: Secrets, Observability, Kubernetes and more with Pulumi and Scaleway](/pulumi-scaleway-kapsule)
 
 Notes:
 
