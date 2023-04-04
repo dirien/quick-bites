@@ -23,8 +23,8 @@ github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ3
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/dirien/pulumi-scaleway/sdk/v2 v2.13.1 h1:l7lwlJzom0cAvd2kD7dgBBq1Rq3JUQz43u+t0y+fJNA=
-github.com/dirien/pulumi-scaleway/sdk/v2 v2.13.1/go.mod h1:e7iwy2DYoOsynMkhMUTr/4c7968gYVUwCa1+LrF7t3I=
+github.com/dirien/pulumi-scaleway/sdk/v2 v2.14.1 h1:v8/qC6Drs9WKky0j17g/OTzDy7XrWBMS+HXChHh9JuM=
+github.com/dirien/pulumi-scaleway/sdk/v2 v2.14.1/go.mod h1:PbmvWNMDO2JJ73goOlgBdrOcG+qmkGhM8ilJgEMX4os=
 github.com/djherbis/times v1.5.0 h1:79myA211VwPhFTqUk8xehWrsEO+zcIZj0zT8mXPVARU=
 github.com/djherbis/times v1.5.0/go.mod h1:5q7FDLvbNg1L/KaBmPcWlVR9NmoKo3+ucqUA3ijQhA0=
 github.com/emirpasic/gods v1.18.1 h1:FXtiHYKDGKCW2KzwZKx0iC0PQmdlorYgdFG9jPXJ1Bc=
@@ -110,8 +110,8 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.24.2 h1:djHcE/9dzbixLb6gR4Wacap5p73T2urZoYy8TClXfoo=
 github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.24.2/go.mod h1:/2uuKELv+RvIQtIctdnezesprWkkxGLv6i4456NSSCw=
-github.com/pulumi/pulumi/sdk/v3 v3.59.0 h1:ONbWeLkPX27aMwux+Y548qRaUn+mdJC79f68espqpZ8=
-github.com/pulumi/pulumi/sdk/v3 v3.59.0/go.mod h1:Pb5H3OaRZg0n4TRIfY0pagR/NBIEvjp3lZe2Spr6Umc=
+github.com/pulumi/pulumi/sdk/v3 v3.61.0 h1:9TyuMU8IdJiVwtsoMP4U8BqKEArGLKfvC72VEwG3XZ0=
+github.com/pulumi/pulumi/sdk/v3 v3.61.0/go.mod h1:Pb5H3OaRZg0n4TRIfY0pagR/NBIEvjp3lZe2Spr6Umc=
 github.com/rivo/uniseg v0.2.0 h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rogpeppe/go-internal v1.9.0 h1:73kH8U+JUqXU8lRuOHeVHaa/SZPifC7BkcraZVejAe8=
