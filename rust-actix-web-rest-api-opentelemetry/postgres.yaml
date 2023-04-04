@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: postgres
+    image: postgres:14.7-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: superuser
+      POSTGRES_PASSWORD: superpassword
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  postgres-data:
