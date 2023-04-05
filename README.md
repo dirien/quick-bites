@@ -34,6 +34,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Building a RESTful API with Actix Web and Diesel for Persistent Data Storage](/rust-actix-web-rest-api-diesel)
 - [Minecraft Server: Secrets, Observability, Kubernetes and more with Pulumi and Scaleway](/pulumi-scaleway-kapsule)
 - [Observability Made Easy: Building a RESTful API with Actix Web and OpenTelemetry](/rust-actix-web-rest-api-opentelemetry)
+- [Leveraging Pulumi to Incorporate AWS Cognito as an Identity Provider for ArgoCD](/pulumi-cognito-gitops-ui/argocd)
 
 Notes:
 
