@@ -9,14 +9,14 @@ edition = "2021"
 actix-web = "4.3.1"
 actix-web-opentelemetry = { version = "0.13.0", features = ["opentelemetry-prometheus", "metrics", "metrics-prometheus", "prometheus"] }
 chrono = { version = "0.4.24", features = ["serde"] }
-diesel = { version = "2.0.3", features = ["postgres", "r2d2", "chrono", "uuid"] }
+diesel = { version = "2.0.4", features = ["postgres", "r2d2", "chrono", "uuid"] }
 dotenv = "0.15.0"
-serde = { version = "1.0.159", features = ["derive"] }
+serde = { version = "1.0.160", features = ["derive"] }
 uuid = { version = "1.3.1", features = ["v4"] }
 tracing = "0.1.37"
-opentelemetry = { version = "0.18.0", features = ["rt-tokio-current-thread","trace"] }
-opentelemetry-jaeger = { version = "0.17.0", features = ["rt-tokio-current-thread", "collector_client", "rt-tokio", "isahc_collector_client"] }
+opentelemetry = { version = "0.19.0", features = ["rt-tokio-current-thread","trace"] }
+opentelemetry-jaeger = { version = "0.18.0", features = ["rt-tokio-current-thread", "collector_client", "rt-tokio", "isahc_collector_client"] }
 tracing-opentelemetry = { version = "0.18.0"}
 tracing-subscriber = { version = "0.3", features = ["registry", "env-filter"] }
 tracing-bunyan-formatter = "0.3"
-opentelemetry-prometheus = "0.11.0"
+opentelemetry-prometheus = "0.12.0"

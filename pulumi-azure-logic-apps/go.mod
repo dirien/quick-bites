@@ -3,10 +3,10 @@ module pulumi-azure-logic-apps
 go 1.20
 
 require (
-	github.com/pulumi/pulumi-azure-native-sdk/resources v1.99.1
-	github.com/pulumi/pulumi-azure-native-sdk/storage v1.99.1
-	github.com/pulumi/pulumi-azure-native-sdk/web v1.99.1
-	github.com/pulumi/pulumi/sdk/v3 v3.62.0
+	github.com/pulumi/pulumi-azure-native-sdk/resources v1.100.1
+	github.com/pulumi/pulumi-azure-native-sdk/storage v1.100.1
+	github.com/pulumi/pulumi-azure-native-sdk/web v1.100.1
+	github.com/pulumi/pulumi/sdk/v3 v3.64.0
 )
 
 require (
@@ -40,7 +40,7 @@ require (
 	github.com/pjbgf/sha1cd v0.3.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pkg/term v1.1.0 // indirect
-	github.com/pulumi/pulumi-azure-native-sdk v1.99.1 // indirect
+	github.com/pulumi/pulumi-azure-native-sdk v1.100.1 // indirect
 	github.com/rivo/uniseg v0.4.3 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/sabhiram/go-gitignore v0.0.0-20210923224102-525f6e181f06 // indirect
