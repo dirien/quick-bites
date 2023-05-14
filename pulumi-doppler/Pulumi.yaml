@@ -1,0 +1,3 @@
+name: pulumi-doppler
+runtime: go
+description: A minimal DigitalOcean Go Pulumi program

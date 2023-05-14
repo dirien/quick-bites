@@ -1,0 +1,21 @@
+[package]
+name = "hello"
+version = "0.1.0"
+authors = [ "" ]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "hello"
+
+[dependencies]
+futures = "0.3"
+
+wasmbus-rpc = "0.11"
+wasmcloud-interface-httpserver = "0.8.2"
+
+[profile.release]
+# Optimize for small code size
+lto = true
+opt-level = "s"
+strip = true
