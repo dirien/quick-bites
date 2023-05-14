@@ -36,6 +36,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Observability Made Easy: Building a RESTful API with Actix Web and OpenTelemetry](/rust-actix-web-rest-api-opentelemetry)
 - [Leveraging Pulumi to Incorporate AWS Cognito as an Identity Provider for ArgoCD](/pulumi-cognito-gitops-ui/argocd)
 - [🥊 Fiber (Go) vs. Nickel.rs (Rust) 🥊: A Framework Showdown in 'Hello World'](/rust-vs-go)
+- [Advanced Secrets Management on Kubernetes with Pulumi: Doppler Secrets Operator](/pulumi-doppler)
 
 Notes:
 
