@@ -4,8 +4,8 @@ go 1.20
 
 require (
 	github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.19.1
-	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.27.1
-	github.com/pulumi/pulumi/sdk/v3 v3.67.0
+	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.28.0
+	github.com/pulumi/pulumi/sdk/v3 v3.68.0
 )
 
 require (
@@ -17,7 +17,7 @@ require (
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
 	github.com/blang/semver v3.5.1+incompatible // indirect
 	github.com/cheggaaa/pb v1.0.29 // indirect
-	github.com/cloudflare/circl v1.1.0 // indirect
+	github.com/cloudflare/circl v1.3.3 // indirect
 	github.com/djherbis/times v1.5.0 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/go-git/gcfg v1.5.0 // indirect
