@@ -20,8 +20,9 @@ github.com/blang/semver v3.5.1+incompatible/go.mod h1:kRBLl5iJ+tD4TcOOxsy/0fnweb
 github.com/bwesterb/go-ristretto v1.2.0/go.mod h1:fUIoIZaG73pV5biE2Blr2xEzDoMj7NFEuV9ekS419A0=
 github.com/cheggaaa/pb v1.0.29 h1:FckUN5ngEk2LpvuG0fw1GEFx6LtyY2pWI/Z2QgCnEYo=
 github.com/cheggaaa/pb v1.0.29/go.mod h1:W40334L7FMC5JKWldsTWbdGjLo0RxUKK73K+TuPxX30=
-github.com/cloudflare/circl v1.1.0 h1:bZgT/A+cikZnKIwn7xL2OBj012Bmvho/o6RpRvv3GKY=
 github.com/cloudflare/circl v1.1.0/go.mod h1:prBCrKB9DV4poKZY1l9zBXg2QJY7mvgRvtMxxK7fi4I=
+github.com/cloudflare/circl v1.3.3 h1:fE/Qz0QdIGqeWfnwq0RE0R7MI51s0M2E4Ga9kq5AEMs=
+github.com/cloudflare/circl v1.3.3/go.mod h1:5XYMA4rFBvNIrhs50XuiBJ15vF2pZn4nnUKZrLbUZFA=
 github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -116,10 +117,10 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.19.1 h1:puQkzakMvZ8LG5eJY5vd5Rlx1A5rFtQNTBdtIMLuEMk=
 github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.19.1/go.mod h1:ICyhl3vUtjOayFMHs808C690kcacMA723wFwz57HoA4=
-github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.27.1 h1:Mw1ABVgGTaA+MJ1kZ3UlRtJ1xq/ZxyV8evMl5gVMzEA=
-github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.27.1/go.mod h1:508LdoLdEEzi9DWpitSkSbF/7mf3VCoSs116KFuImX0=
-github.com/pulumi/pulumi/sdk/v3 v3.67.0 h1:ED5eeIlLIaZdn5+wMoNS30ihVJJeA/c9hgTsOREVtpE=
-github.com/pulumi/pulumi/sdk/v3 v3.67.0/go.mod h1:RbSUT1ZWIbOtMk6vjNwBbRGIS9mlcI78sY56KDZyAd8=
+github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.28.0 h1:07u3A3KVt5/+YTudyK9XYz3EYqFasoMBi6puAGLzWyI=
+github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.28.0/go.mod h1:OdSHna8qSimLhP7HpTcUwvnGzl2MoaXF3gS39pIO/Xc=
+github.com/pulumi/pulumi/sdk/v3 v3.68.0 h1:JWn3DGJhzoWL8bNbUdyLSSPeKS2F9mv14/EL9QeVT3w=
+github.com/pulumi/pulumi/sdk/v3 v3.68.0/go.mod h1:A/WHc5MlxU8GpX/sRmfQ9G0/Bxxl4GNdSP7TQmy4yIw=
 github.com/rivo/uniseg v0.2.0 h1:S1pD9weZBuJdFmowNwbpi7BJ8TNftyUImj/0WQi72jY=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rogpeppe/go-internal v1.9.0 h1:73kH8U+JUqXU8lRuOHeVHaa/SZPifC7BkcraZVejAe8=
