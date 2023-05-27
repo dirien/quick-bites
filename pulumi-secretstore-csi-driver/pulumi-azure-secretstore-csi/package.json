@@ -8,6 +8,6 @@
     "@pulumi/pulumi": "3.68.0",
     "@pulumi/azure-native": "1.102.0",
     "@pulumi/azuread": "5.38.0",
-    "@pulumi/kubernetes": "3.28.0"
+    "@pulumi/kubernetes": "3.28.1"
   }
 }

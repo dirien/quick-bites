@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/pulumi/pulumi-aws/sdk/v5 v5.41.0
 	github.com/pulumi/pulumi-eks/sdk v1.0.2
-	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.28.0
+	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.28.1
 	github.com/pulumi/pulumi/sdk/v3 v3.68.0
 )
 
