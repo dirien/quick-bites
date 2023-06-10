@@ -3,9 +3,9 @@ module pulumi-scaleway-kapsule
 go 1.20
 
 require (
-	github.com/dirien/pulumi-scaleway/sdk/v2 v2.19.0
-	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.28.1
-	github.com/pulumi/pulumi/sdk/v3 v3.68.0
+	github.com/dirien/pulumi-scaleway/sdk/v2 v2.20.0
+	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.29.0
+	github.com/pulumi/pulumi/sdk/v3 v3.70.0
 )
 
 require (
@@ -23,7 +23,6 @@ require (
 	github.com/go-git/gcfg v1.5.0 // indirect
 	github.com/go-git/go-billy/v5 v5.4.0 // indirect
 	github.com/go-git/go-git/v5 v5.6.0 // indirect
-	github.com/gofrs/uuid v4.2.0+incompatible // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/glog v1.0.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
@@ -43,7 +42,7 @@ require (
 	github.com/pjbgf/sha1cd v0.3.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pkg/term v1.1.0 // indirect
-	github.com/rivo/uniseg v0.2.0 // indirect
+	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/sabhiram/go-gitignore v0.0.0-20210923224102-525f6e181f06 // indirect
 	github.com/santhosh-tekuri/jsonschema/v5 v5.0.0 // indirect
