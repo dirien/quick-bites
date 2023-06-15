@@ -1,0 +1,126 @@
+---
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: cargo-build
+spec:
+  params:
+    - name: version
+      type: string
+      default: latest
+      description: Version of Rust to use
+    - name: directory
+      type: string
+      default: ""
+      description: Directory containing the source to build
+    - name: build-args
+      type: string
+      description: Rust build args
+    - name: bin-name
+      type: string
+      description: Name of the binary to build
+  steps:
+    - name: cargo-build
+      image: rust:$(params.version)
+      workingDir: $(workspaces.source.path)/$(params.directory)
+      script: |
+        #!/bin/bash -e
+        cargo build $(params.build-args) --bin $(params.bin-name)
+        ls -la target/release
+    - name: create-dockerfile
+      image: alpine
+      workingDir: $(workspaces.source.path)/$(params.directory)
+      script: |
+        #!/bin/sh -e
+        
+        echo "FROM debian:bullseye-slim" > Dockerfile
+        echo "COPY target/release/$(params.bin-name) /usr/local/bin/$(params.bin-name)" >> Dockerfile
+        echo "CMD [\"$(params.bin-name)\"]" >> Dockerfile    
+        ls -la
+        cat Dockerfile
+  workspaces:
+    - name: source
+      description: The workspace consist the rust project
+---
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: rust-pipeline
+spec:
+  workspaces:
+    - name: shared-workspace
+    - name: dockerconfig
+  tasks:
+    - name: clone-repo
+      taskRef:
+        name: git-clone
+        bundle: gcr.io/tekton-releases/catalog/upstream/git-clone:0.9
+      workspaces:
+        - name: output
+          workspace: shared-workspace
+      params:
+        - name: url
+          value: https://github.com/dirien/quick-bites
+        - name: deleteExisting
+          value: "true"
+    - name: cargo-build
+      taskRef:
+        name: cargo-build
+      params:
+        - name: directory
+          value: "rust-vs-go/rust"
+        - name: build-args
+          value: "--release"
+        - name: bin-name
+          value: "rust"
+        - name: version
+          value: "1.69.0"
+      workspaces:
+        - name: source
+          workspace: shared-workspace
+      runAfter:
+        - clone-repo
+    - name: kaniko
+      taskRef:
+        name: kaniko
+        bundle: gcr.io/tekton-releases/catalog/upstream/kaniko:0.6
+      params:
+        - name: DOCKERFILE
+          value: rust-vs-go/rust/Dockerfile
+        - name: IMAGE
+          value: ghcr.io/dirien/quick-bites-rust
+        - name: CONTEXT
+          value: rust-vs-go/rust
+      workspaces:
+        - name: source
+          workspace: shared-workspace
+        - name: dockerconfig
+          workspace: dockerconfig
+      runAfter:
+        - cargo-build
+---
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: rust-pipeline-run
+spec:
+  pipelineRef:
+    name: rust-pipeline
+  podTemplate:
+    securityContext:
+      fsGroup: 65532
+  workspaces:
+    - name: dockerconfig
+      secret:
+        secretName: ghcr-auth
+        items:
+          - key: config.json
+            path: config.json
+    - name: shared-workspace
+      volumeClaimTemplate:
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 1Gi

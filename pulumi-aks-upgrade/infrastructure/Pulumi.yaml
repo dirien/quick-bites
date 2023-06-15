@@ -1,0 +1,3 @@
+name: sample-aks-cluster
+runtime: nodejs
+description: my playground aks cluster
