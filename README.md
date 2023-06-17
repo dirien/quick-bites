@@ -38,6 +38,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [🥊 Fiber (Go) vs. Nickel.rs (Rust) 🥊: A Framework Showdown in 'Hello World'](/rust-vs-go)
 - [Advanced Secrets Management on Kubernetes with Pulumi: Doppler Secrets Operator](/pulumi-doppler)
 - [How to upgrade your AKS cluster using only Pulumi](/pulumi-aks-upgrade)
+- [How to build an SSH client using Rust 🦀](/rust-ssh)
 
 Notes:
 
