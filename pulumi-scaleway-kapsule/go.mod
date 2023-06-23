@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/dirien/pulumi-scaleway/sdk/v2 v2.21.0
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.29.1
-	github.com/pulumi/pulumi/sdk/v3 v3.72.0
+	github.com/pulumi/pulumi/sdk/v3 v3.73.0
 )
 
 require (
