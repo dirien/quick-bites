@@ -6,7 +6,7 @@ require (
 	github.com/pulumi/pulumi-azure-native-sdk/resources v1.103.0
 	github.com/pulumi/pulumi-azure-native-sdk/storage v1.103.0
 	github.com/pulumi/pulumi-azure-native-sdk/web v1.103.0
-	github.com/pulumi/pulumi/sdk/v3 v3.72.0
+	github.com/pulumi/pulumi/sdk/v3 v3.73.0
 )
 
 require (
