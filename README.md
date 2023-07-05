@@ -39,6 +39,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Advanced Secrets Management on Kubernetes with Pulumi: Doppler Secrets Operator](/pulumi-doppler)
 - [How to upgrade your AKS cluster using only Pulumi](/pulumi-aks-upgrade)
 - [How to build an SSH client using Rust 🦀](/rust-ssh)
+- [Rust Development with Testcontainers](/rust-testcontainers)
 
 Notes:
 
