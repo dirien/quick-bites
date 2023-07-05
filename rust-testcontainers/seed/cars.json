@@ -1,0 +1,152 @@
+[
+  {
+    "brand": "Toyota",
+    "name": "Camry",
+    "year": 2015,
+    "type": "Sedan"
+  },
+  {
+    "brand": "Volkswagen",
+    "name": "Golf",
+    "year": 2020,
+    "type": "Hatchback"
+  },
+  {
+    "brand": "Jeep",
+    "name": "Grand Cherokee",
+    "year": 2021,
+    "type": "SUV"
+  },
+  {
+    "brand": "Nissan",
+    "name": "Rogue",
+    "year": 2020,
+    "type": "Crossover"
+  },
+  {
+    "brand": "Chevrolet",
+    "name": "Corvette",
+    "year": 2021,
+    "type": "Coupe"
+  },
+  {
+    "brand": "Mazda",
+    "name": "MX-5 Miata",
+    "year": 2019,
+    "type": "Convertible"
+  },
+  {
+    "brand": "Honda",
+    "name": "Odyssey",
+    "year": 2018,
+    "type": "Minivan"
+  },
+  {
+    "brand": "Ford",
+    "name": "F-150",
+    "year": 2020,
+    "type": "Pickup"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "name": "Sprinter",
+    "year": 2021,
+    "type": "Van"
+  },
+  {
+    "brand": "Volvo",
+    "name": "V60",
+    "year": 2020,
+    "type": "Wagon"
+  },
+  {
+    "brand": "Tesla",
+    "name": "Model X",
+    "year": 2021,
+    "type": "Other"
+  },
+  {
+    "brand": "Audi",
+    "name": "A3",
+    "year": 2016,
+    "type": "Sedan"
+  },
+  {
+    "brand": "Subaru",
+    "name": "Impreza",
+    "year": 2020,
+    "type": "Hatchback"
+  },
+  {
+    "brand": "BMW",
+    "name": "X5",
+    "year": 2021,
+    "type": "SUV"
+  },
+  {
+    "brand": "Hyundai",
+    "name": "Tucson",
+    "year": 2021,
+    "type": "Crossover"
+  },
+  {
+    "brand": "Dodge",
+    "name": "Challenger",
+    "year": 2020,
+    "type": "Coupe"
+  },
+  {
+    "brand": "Porsche",
+    "name": "911 Carrera",
+    "year": 2021,
+    "type": "Convertible"
+  },
+  {
+    "brand": "Chrysler",
+    "name": "Pacifica",
+    "year": 2020,
+    "type": "Minivan"
+  },
+  {
+    "brand": "Ram",
+    "name": "1500",
+    "year": 2021,
+    "type": "Pickup"
+  },
+  {
+    "brand": "Ford",
+    "name": "Transit",
+    "year": 2020,
+    "type": "Van"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "name": "E-Class",
+    "year": 2019,
+    "type": "Wagon"
+  },
+  {
+    "brand": "Tesla",
+    "name": "Cybertruck",
+    "year": 2022,
+    "type": "Other"
+  },
+  {
+    "brand": "Lexus",
+    "name": "ES",
+    "year": 2021,
+    "type": "Sedan"
+  },
+  {
+    "brand": "Mini",
+    "name": "Cooper",
+    "year": 2020,
+    "type": "Hatchback"
+  },
+  {
+    "brand": "Toyota",
+    "name": "RAV4",
+    "year": 2022,
+    "type": "SUV"
+  }
+]
