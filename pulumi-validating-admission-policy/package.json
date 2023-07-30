@@ -1,0 +1,12 @@
+{
+    "name": "pulumi-validating-admission-policy",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^16"
+    },
+    "dependencies": {
+        "@ediri/scaleway": "2.25.1",
+        "@pulumi/kubernetes": "4.0.3",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}

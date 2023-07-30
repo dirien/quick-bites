@@ -1,0 +1,12 @@
+name: pulumi-validating-admission-policy
+runtime: nodejs
+description: A minimal TypeScript Pulumi program
+config:
+  scaleway:region: "fr-par"
+  scaleway:zone: "fr-par-1"
+  cluster:version: "1.27"
+  cluster:auto_upgrade: true
+  node:node_type: "PLAY2-NANO"
+  node:auto_scale: false
+  node:node_count: 1
+  node:auto_heal: true

@@ -40,6 +40,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [How to upgrade your AKS cluster using only Pulumi](/pulumi-aks-upgrade)
 - [How to build an SSH client using Rust 🦀](/rust-ssh)
 - [Rust Development with Testcontainers](/rust-testcontainers)
+- [Kubernetes 1.26: Implementing Validating Admission Policies with Pulumi](/pulumi-validating-admission-policy)
 
 Notes:
 
