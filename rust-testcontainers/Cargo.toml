@@ -10,5 +10,5 @@ actix-web = "4.3.1"
 anyhow = "1.0.72"
 dotenvy = "0.15.7"
 mongodb = "2.6.0"
-serde = { version = "1.0.180", features = ["derive"] }
+serde = { version = "1.0.181", features = ["derive"] }
 testcontainers = { version = "0.14.0", features = ["tokio", "async-trait"] }
