@@ -1,0 +1,5 @@
+name: pulumi-ovh-kube
+runtime: go
+description: A minimal Go Pulumi program
+config:
+  serviceName: c3878ba251b5478181eab758e6b34d6a
