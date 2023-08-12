@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 k8s-openapi = { version = "0.19.0", features = ["v1_24"] }
 kube = { version = "0.85.0", features = ["default", "derive"] }
-tokio = { version = "1.30.0", features = ["full"] }
+tokio = { version = "1.31.0", features = ["full"] }
