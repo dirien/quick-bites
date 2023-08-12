@@ -4,7 +4,8 @@ go 1.18
 
 require (
 	github.com/dirien/pulumi-ovh/sdk v0.32.0
-	github.com/pulumi/pulumi/sdk/v3 v3.74.0
+	github.com/pulumi/pulumi-kubernetes/sdk/v4 v4.0.3
+	github.com/pulumi/pulumi/sdk/v3 v3.78.1
 )
 
 require (
@@ -23,8 +24,8 @@ require (
 	github.com/go-git/go-billy/v5 v5.4.0 // indirect
 	github.com/go-git/go-git/v5 v5.6.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
-	github.com/golang/glog v1.0.0 // indirect
-	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/golang/glog v1.1.0 // indirect
+	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/grpc-ecosystem/grpc-opentracing v0.0.0-20180507213350-8e809c8a8645 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
@@ -33,7 +34,6 @@ require (
 	github.com/inconshreveable/mousetrap v1.0.1 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
 	github.com/kevinburke/ssh_config v1.2.0 // indirect
-	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
 	github.com/mitchellh/go-ps v1.0.0 // indirect
 	github.com/mitchellh/go-wordwrap v0.0.0-20150314170334-ad45545899c7 // indirect
@@ -42,7 +42,6 @@ require (
 	github.com/pjbgf/sha1cd v0.3.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pkg/term v1.1.0 // indirect
-	github.com/pulumi/pulumi-kubernetes/sdk/v4 v4.0.3 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/sabhiram/go-gitignore v0.0.0-20210923224102-525f6e181f06 // indirect
@@ -60,13 +59,13 @@ require (
 	github.com/zclconf/go-cty v1.12.1 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	golang.org/x/crypto v0.3.1-0.20221117191849-2c476679df9a // indirect
-	golang.org/x/net v0.7.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/term v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
-	google.golang.org/genproto v0.0.0-20230110181048-76db0878b65f // indirect
-	google.golang.org/grpc v1.53.0 // indirect
-	google.golang.org/protobuf v1.28.1 // indirect
+	golang.org/x/net v0.10.0 // indirect
+	golang.org/x/sys v0.8.0 // indirect
+	golang.org/x/term v0.8.0 // indirect
+	golang.org/x/text v0.9.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20230706204954-ccb25ca9f130 // indirect
+	google.golang.org/grpc v1.57.0 // indirect
+	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	lukechampine.com/frand v1.4.2 // indirect
