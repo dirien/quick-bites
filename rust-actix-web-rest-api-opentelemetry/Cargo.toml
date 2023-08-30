@@ -6,9 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-actix-web = "4.3.1"
+actix-web = "4.4.0"
 actix-web-opentelemetry = { version = "0.15.0", features = ["opentelemetry-prometheus", "metrics", "metrics-prometheus", "prometheus"] }
-chrono = { version = "0.4.26", features = ["serde"] }
+chrono = { version = "0.4.28", features = ["serde"] }
 diesel = { version = "2.1.1", features = ["postgres", "r2d2", "chrono", "uuid"] }
 dotenv = "0.15.0"
 serde = { version = "1.0.188", features = ["derive"] }
@@ -16,7 +16,7 @@ uuid = { version = "1.4.1", features = ["v4"] }
 tracing = "0.1.37"
 opentelemetry = { version = "0.20.0", features = ["rt-tokio-current-thread","trace"] }
 opentelemetry-jaeger = { version = "0.19.0", features = ["rt-tokio-current-thread", "collector_client", "rt-tokio", "isahc_collector_client"] }
-tracing-opentelemetry = { version = "0.20.0"}
+tracing-opentelemetry = { version = "0.21.0"}
 tracing-subscriber = { version = "0.3", features = ["registry", "env-filter"] }
 tracing-bunyan-formatter = "0.3"
 opentelemetry-prometheus = "0.13.0"
