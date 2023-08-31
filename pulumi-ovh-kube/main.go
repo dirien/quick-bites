@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/dirien/pulumi-ovh/sdk/go/ovh/cloudproject"
 	k8s "github.com/pulumi/pulumi-kubernetes/sdk/v4/go/kubernetes"
 	"github.com/pulumi/pulumi-kubernetes/sdk/v4/go/kubernetes/helm/v3"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi/config"
+	"github.com/scraly/pulumi-ovh/sdk/go/ovh/cloudproject"
 )
 
 func main() {
