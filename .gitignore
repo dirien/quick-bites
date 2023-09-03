@@ -2,3 +2,4 @@
 **/dist
 **/target
 **/Pulumi.dev.yaml
+**/kubeconfig.yaml
