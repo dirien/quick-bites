@@ -42,6 +42,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Rust Development with Testcontainers](/rust-testcontainers)
 - [Kubernetes 1.26: Implementing Validating Admission Policies with Pulumi](/pulumi-validating-admission-policy)
 - [Deploying a Kubernetes cluster in Strasbourg?!](/pulumi-ovh-kube)
+- [A Step-by-Step Guide to Using Velero on AWS EKS Clusters via Pulumi](/pulumi-eks-velero)
 
 Notes:
 
