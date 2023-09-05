@@ -515,7 +515,7 @@ kubectl --kubeconfig=kubeconfig.yaml apply -f test.yaml
 This will create a Pod in the `velero-test` namespace with a persistent volume claim. To create some data in the volume, we can exec into the Pod and create a file in the volume:
 
 ```bash
-kubectl exec -it app -n velero-test -- sh -c 'echo "Hello World" > /data/test.txt'
+kubectl exec -it app -n velero-test -- sh -c 'echo "Hi, today is $(date)" > /data/test.txt'
 ```
 
 Check if the file is created:
@@ -527,7 +527,7 @@ kubectl exec -it app -n velero-test -- sh -c 'cat /data/test.txt'
 You should see the following output:
 
 ```bash
-Hello World
+Hi, today is Tue Sep  5 09:21:53 UTC 2023
 ```
 
 This should be enough to simulate to show the backup and restore functionality of Velero.
@@ -680,6 +680,19 @@ Started:    2023-09-03 18:18:26 +0200 CEST
 Completed:  2023-09-03 18:18:27 +0200 CEST
 
 ... omitted for brevity
+```
+
+Now we can check if the everything is restored, including the data in the volume:
+
+```bash
+kubectl exec -it app -n velero-test -- sh -c 'cat /data/test.txt'
+```
+
+And yes, the data is back, the timestamp is the same as before:
+
+```bash
+kubectl exec -it app -n velero-test -- sh -c 'cat /data/test.txt'
+Hi, today is Tue Sep  5 09:21:53 UTC 2023
 ```
 
 ## Housekeeping
