@@ -6,7 +6,7 @@ require (
 	github.com/pulumi/pulumi-aws/sdk/v5 v5.42.0
 	github.com/pulumi/pulumi-eks/sdk v1.0.3
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.2
-	github.com/pulumi/pulumi/sdk/v3 v3.80.0
+	github.com/pulumi/pulumi/sdk/v3 v3.83.0
 )
 
 require (
