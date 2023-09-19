@@ -1,0 +1,3 @@
+name: pulumi-eks-vpc-cni-network-policies
+runtime: nodejs
+description: A minimal AWS TypeScript Pulumi program

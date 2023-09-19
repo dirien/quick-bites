@@ -43,6 +43,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Kubernetes 1.26: Implementing Validating Admission Policies with Pulumi](/pulumi-validating-admission-policy)
 - [Deploying a Kubernetes cluster in Strasbourg?!](/pulumi-ovh-kube)
 - [A Step-by-Step Guide to Using Velero on AWS EKS Clusters via Pulumi](/pulumi-eks-velero)
+- [How to enable network policies in EKS using the AWS VPC CNI plugin with Pulumi](/pulumi-eks-vpc-cni-network-policies)
 
 Notes:
 
