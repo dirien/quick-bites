@@ -1,0 +1,14 @@
+{
+    "name": "pulumi-eks-vpc-cni-network-policies",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^16"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^5.42.0",
+        "@pulumi/awsx": "^1.0.0",
+        "@pulumi/eks": "^1.0.3",
+        "@pulumi/kubernetes": "^3.30.2",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}
