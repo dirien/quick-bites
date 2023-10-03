@@ -114,9 +114,9 @@ checksum = "ca6c635b3aa665c649ad1415f1573c85957dfa47690ec27aebe7ec17efe3c643"
 
 [[package]]
 name = "async-nats"
-version = "0.30.0"
+version = "0.31.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "94e3e851ddf3b62be8a8085e1e453968df9cdbf990a37bbb589b5b4f587c68d7"
+checksum = "8257238e2a3629ee5618502a75d1b91f8017c24638c75349fc8d2d80cf1f7c4c"
 dependencies = [
  "base64 0.21.0",
  "bytes",
@@ -2471,9 +2471,9 @@ dependencies = [
 
 [[package]]
 name = "wasmbus-rpc"
-version = "0.14.0"
+version = "0.15.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2da4e25698e9e15af56e9bb510d233495c4ec9c6bbbf13d046205190dd4ab935"
+checksum = "d17417841089a43a945a31ddfcc0062704a97625fb7ecbfbe91df043d930f05a"
 dependencies = [
  "async-nats",
  "async-trait",
@@ -2508,9 +2508,9 @@ dependencies = [
 
 [[package]]
 name = "wasmcloud-interface-httpserver"
-version = "0.11.0"
+version = "0.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "424c4bd21e2494711997a2a9e07aa4d14ff2c4c4db3e08a0f6099345544383c5"
+checksum = "54caf06ad2db2b2f6bd719ea771c72779cb2fef92c865bde66dad3db63515365"
 dependencies = [
  "async-trait",
  "serde",

@@ -11,8 +11,8 @@ name = "hello"
 [dependencies]
 futures = "0.3"
 
-wasmbus-rpc = "0.14"
-wasmcloud-interface-httpserver = "0.11.0"
+wasmbus-rpc = "0.15"
+wasmcloud-interface-httpserver = "0.12.0"
 
 [profile.release]
 # Optimize for small code size
