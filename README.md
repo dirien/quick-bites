@@ -44,6 +44,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [Deploying a Kubernetes cluster in Strasbourg?!](/pulumi-ovh-kube)
 - [A Step-by-Step Guide to Using Velero on AWS EKS Clusters via Pulumi](/pulumi-eks-velero)
 - [How to enable network policies in EKS using the AWS VPC CNI plugin with Pulumi](/pulumi-eks-vpc-cni-network-policies)
+- [Rust in the Cloud: Running Rust based functions in AWS](/rust-in-the-cloud-aws)
 
 Notes:
 
