@@ -11,8 +11,8 @@ actix-web-opentelemetry = { version = "0.16.0", features = ["opentelemetry-prome
 chrono = { version = "0.4.31", features = ["serde"] }
 diesel = { version = "2.1.4", features = ["postgres", "r2d2", "chrono", "uuid"] }
 dotenv = "0.15.0"
-serde = { version = "1.0.192", features = ["derive"] }
-uuid = { version = "1.6.0", features = ["v4"] }
+serde = { version = "1.0.193", features = ["derive"] }
+uuid = { version = "1.6.1", features = ["v4"] }
 tracing = "0.1.40"
 opentelemetry = { version = "0.21.0", features = ["rt-tokio-current-thread","trace"] }
 opentelemetry-jaeger = { version = "0.20.0", features = ["rt-tokio-current-thread", "collector_client", "rt-tokio", "isahc_collector_client"] }
