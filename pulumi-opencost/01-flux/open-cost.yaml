@@ -29,5 +29,10 @@ spec:
       interval: 10m
   values:
     opencost:
+      prometheus:
+        internal:
+          enabled: true
+          serviceName: prometheus-prometheus-server
+          namespaceName: prometheus
       ui:
         enabled: true
