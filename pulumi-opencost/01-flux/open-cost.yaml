@@ -15,9 +15,10 @@ metadata:
 spec:
   interval: 10m
   targetNamespace: opencost
+  install:
+    crds: CreateReplace
+    createNamespace: true
   chart:
-    install:
-      createNamespace: true
     spec:
       chart: opencost
       version: 1.27.0
