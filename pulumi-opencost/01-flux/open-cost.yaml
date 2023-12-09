@@ -29,11 +29,5 @@ spec:
       interval: 10m
   values:
     opencost:
-      prometheus:
-        internal:
-          enabled: false
-        external:
-          enabled: true
-          url: https://opencost-monitor-wk3d.westeurope.prometheus.monitor.azure.com
       ui:
         enabled: true

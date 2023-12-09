@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
 - open-cost.yaml
+- prometheus.yaml
