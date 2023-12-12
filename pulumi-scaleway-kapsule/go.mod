@@ -3,9 +3,9 @@ module pulumi-scaleway-kapsule
 go 1.20
 
 require (
-	github.com/dirien/pulumi-scaleway/sdk/v2 v2.33.0
+	github.com/dirien/pulumi-scaleway/sdk/v2 v2.34.0
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.1
-	github.com/pulumi/pulumi/sdk/v3 v3.96.1
+	github.com/pulumi/pulumi/sdk/v3 v3.96.2
 )
 
 require (
