@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-actix-web = "4.4.0"
-anyhow = "1.0.75"
+actix-web = "4.4.1"
+anyhow = "1.0.76"
 dotenvy = "0.15.7"
 mongodb = "2.8.0"
 serde = { version = "1.0.193", features = ["derive"] }
