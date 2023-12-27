@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.21.1
 
 require (
-	github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.25.0
+	github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.25.1
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.1
 	github.com/pulumi/pulumi-tls/sdk/v4 v4.11.1
 	github.com/pulumi/pulumi/sdk/v3 v3.99.0
