@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4.4.1"
-anyhow = "1.0.77"
+anyhow = "1.0.78"
 dotenvy = "0.15.7"
 mongodb = "2.8.0"
 serde = { version = "1.0.193", features = ["derive"] }
