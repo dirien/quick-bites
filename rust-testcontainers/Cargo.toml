@@ -7,8 +7,8 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4.5.1"
-anyhow = "1.0.79"
+anyhow = "1.0.80"
 dotenvy = "0.15.7"
-mongodb = "2.8.0"
-serde = { version = "1.0.196", features = ["derive"] }
+mongodb = "2.8.1"
+serde = { version = "1.0.197", features = ["derive"] }
 testcontainers = { version = "0.15.0", features = ["tokio", "async-trait"] }
