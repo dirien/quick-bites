@@ -3,9 +3,9 @@ module pulumi-ovh-kube
 go 1.18
 
 require (
-	github.com/pulumi/pulumi-kubernetes/sdk/v4 v4.8.0
-	github.com/pulumi/pulumi/sdk/v3 v3.107.0
-	github.com/scraly/pulumi-ovh/sdk v0.37.0
+	github.com/pulumi/pulumi-kubernetes/sdk/v4 v4.9.1
+	github.com/pulumi/pulumi/sdk/v3 v3.110.0
+	github.com/scraly/pulumi-ovh/sdk v0.39.1
 )
 
 require (
