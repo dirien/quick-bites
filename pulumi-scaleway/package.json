@@ -4,7 +4,7 @@
         "@types/node": "18.18.6"
     },
     "dependencies": {
-        "@pulumi/pulumi": "3.112.0",
+        "@pulumi/pulumi": "3.119.0",
         "@pulumiverse/scaleway": "0.4.0"
     }
 }

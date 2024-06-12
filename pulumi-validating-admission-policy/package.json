@@ -5,8 +5,8 @@
         "@types/node": "^16"
     },
     "dependencies": {
-        "@ediri/scaleway": "2.35.0",
-        "@pulumi/kubernetes": "4.9.1",
+        "@ediri/scaleway": "2.41.1",
+        "@pulumi/kubernetes": "4.13.1",
         "@pulumi/pulumi": "^3.0.0"
     }
 }
