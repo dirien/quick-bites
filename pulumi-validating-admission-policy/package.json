@@ -6,7 +6,7 @@
     },
     "dependencies": {
         "@ediri/scaleway": "2.41.1",
-        "@pulumi/kubernetes": "4.13.1",
+        "@pulumi/kubernetes": "4.14.0",
         "@pulumi/pulumi": "^3.0.0"
     }
 }
