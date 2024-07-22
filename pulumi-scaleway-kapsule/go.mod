@@ -3,13 +3,14 @@ module pulumi-scaleway-kapsule
 go 1.20
 
 require (
-	github.com/dirien/pulumi-scaleway/sdk/v2 v2.41.1
+	github.com/dirien/pulumi-scaleway/sdk/v2 v2.41.3
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.1
-	github.com/pulumi/pulumi/sdk/v3 v3.119.0
+	github.com/pulumi/pulumi/sdk/v3 v3.125.0
 )
 
 require (
 	dario.cat/mergo v1.0.0 // indirect
+	github.com/BurntSushi/toml v1.2.1 // indirect
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/ProtonMail/go-crypto v1.0.0 // indirect
 	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
