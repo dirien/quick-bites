@@ -11,4 +11,4 @@ anyhow = "1.0.81"
 dotenvy = "0.15.7"
 mongodb = "2.8.2"
 serde = { version = "1.0.197", features = ["derive"] }
-testcontainers = { version = "0.17.0", features = ["tokio", "async-trait"] }
+testcontainers = { version = "0.20.0", features = ["tokio", "async-trait"] }
