@@ -2,13 +2,13 @@ module pulumi-argocd-sealedsecrets
 
 go 1.21
 
-toolchain go1.22.5
+toolchain go1.23.0
 
 require (
-	github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.30.2
+	github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.31.0
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.1
 	github.com/pulumi/pulumi-tls/sdk/v4 v4.11.1
-	github.com/pulumi/pulumi/sdk/v3 v3.125.0
+	github.com/pulumi/pulumi/sdk/v3 v3.129.0
 )
 
 require (
