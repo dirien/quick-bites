@@ -3,9 +3,9 @@ module goreleaser-blob
 go 1.20
 
 require (
-	github.com/charmbracelet/bubbles v0.18.0
+	github.com/charmbracelet/bubbles v0.19.0
 	github.com/charmbracelet/bubbletea v0.27.0
-	github.com/charmbracelet/lipgloss v0.12.1
+	github.com/charmbracelet/lipgloss v0.13.0
 	gopkg.in/alecthomas/kingpin.v2 v2.4.0
 )
 
