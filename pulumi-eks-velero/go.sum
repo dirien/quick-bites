@@ -286,8 +286,8 @@ github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.2 h1:xJu48+RW+BHHnKtBni6Vj5vKqO
 github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.2/go.mod h1:7yCJFC/jnUwFs566f0FAY2iAzc4G1mQP8H6K+40FK4Y=
 github.com/pulumi/pulumi/sdk/v3 v3.16.0/go.mod h1:252ou/zAU1g6E8iTwe2Y9ht7pb5BDl2fJlOuAgZCHiA=
 github.com/pulumi/pulumi/sdk/v3 v3.50.1/go.mod h1:tqQ4z9ocyM/UI2VQ7ZReWR3w6dF5ffEozoHipOMcDh4=
-github.com/pulumi/pulumi/sdk/v3 v3.130.0 h1:gGJNd+akPqhZ+vrsZmAjSNJn6kGJkitjjkwrmIQMmn8=
-github.com/pulumi/pulumi/sdk/v3 v3.130.0/go.mod h1:p1U24en3zt51agx+WlNboSOV8eLlPWYAkxMzVEXKbnY=
+github.com/pulumi/pulumi/sdk/v3 v3.134.0 h1:jnkRmtB/2Swkdj6b6CdtbDlCVLZTPCqINi8slnN7I/I=
+github.com/pulumi/pulumi/sdk/v3 v3.134.0/go.mod h1:J5kQEX8v87aeUhk6NdQXnjCo1DbiOnOiL3Sf2DuDda8=
 github.com/rivo/uniseg v0.1.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rivo/uniseg v0.4.4 h1:8TfxU8dW6PdqD27gjM8MVNuicgxIjxpm4K7x4jp8sis=
@@ -345,7 +345,6 @@ github.com/texttheater/golang-levenshtein v0.0.0-20191208221605-eb6844b05fc6/go.
 github.com/texttheater/golang-levenshtein v1.0.1 h1:+cRNoVrfiwufQPhoMzB6N0Yf/Mqajr6t1lOv8GyGE2U=
 github.com/texttheater/golang-levenshtein v1.0.1/go.mod h1:PYAKrbF5sAiq9wd+H82hs7gNaen0CplQ9uvm6+enD/8=
 github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5/go.mod h1:ncp9v5uamzpCO7NfCPTXjqaC+bZgJeR0sMTm6dMHP7U=
-github.com/tweekmonster/luser v0.0.0-20161003172636-3fa38070dbd7 h1:X9dsIWPuuEJlPX//UmRKophhOKCGXc46RVIGuttks68=
 github.com/tweekmonster/luser v0.0.0-20161003172636-3fa38070dbd7/go.mod h1:UxoP3EypF8JfGEjAII8jx1q8rQyDnX8qdTCs/UQBVIE=
 github.com/uber/jaeger-client-go v2.22.1+incompatible/go.mod h1:WVhlPFC8FDjOFMMWRy2pZqQJSXxYSwNYOkTr/Z6d3Kk=
 github.com/uber/jaeger-client-go v2.30.0+incompatible h1:D6wyKGCecFaSRUpo8lCVbaOOb6ThwMmTEbhRwtKR97o=
