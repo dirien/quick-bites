@@ -6,7 +6,7 @@
     },
     "dependencies": {
         "@pulumi/pulumi": "^3.0.0",
-        "@pulumi/azure-native": "2.63.0",
+        "@pulumi/azure-native": "2.64.3",
         "@ediri/azapi": "1.12.2"
     }
 }
