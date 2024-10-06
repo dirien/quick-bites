@@ -14,7 +14,7 @@ dotenv = "0.15.0"
 serde = { version = "1.0.197", features = ["derive"] }
 uuid = { version = "1.8.0", features = ["v4"] }
 tracing = "0.1.40"
-opentelemetry = { version = "0.25.0", features = ["rt-tokio-current-thread","trace"] }
+opentelemetry = { version = "0.26.0", features = ["rt-tokio-current-thread","trace"] }
 opentelemetry-jaeger = { version = "0.22.0", features = ["rt-tokio-current-thread", "collector_client", "rt-tokio", "isahc_collector_client"] }
 tracing-opentelemetry = { version = "0.26.0"}
 tracing-subscriber = { version = "0.3", features = ["registry", "env-filter"] }

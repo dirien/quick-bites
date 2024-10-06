@@ -2,11 +2,11 @@ module pulumi-oci
 
 go 1.21
 
-toolchain go1.23.1
+toolchain go1.23.2
 
 require (
 	github.com/pulumi/pulumi-oci/sdk v0.20.1
-	github.com/pulumi/pulumi/sdk/v3 v3.134.0
+	github.com/pulumi/pulumi/sdk/v3 v3.135.1
 )
 
 require (

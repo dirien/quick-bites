@@ -2,13 +2,13 @@ module pulumi-azure-logic-apps
 
 go 1.21
 
-toolchain go1.23.1
+toolchain go1.23.2
 
 require (
 	github.com/pulumi/pulumi-azure-native-sdk/resources v1.103.0
 	github.com/pulumi/pulumi-azure-native-sdk/storage v1.103.0
 	github.com/pulumi/pulumi-azure-native-sdk/web v1.103.0
-	github.com/pulumi/pulumi/sdk/v3 v3.134.0
+	github.com/pulumi/pulumi/sdk/v3 v3.135.1
 )
 
 require (
