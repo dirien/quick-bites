@@ -46,6 +46,7 @@ Different type of projects, not big enough to warrant a separate repo.
 - [How to enable network policies in EKS using the AWS VPC CNI plugin with Pulumi](/pulumi-eks-vpc-cni-network-policies)
 - [Rust in the Cloud: Running Rust based functions in AWS](/rust-in-the-cloud-aws)
 - [Advanced Secret Management on Kubernetes with Pulumi: External Secrets Operator](/pulumi-external-secret-operator)
+- [Argo CD: Enable Helm Support in Kustomize](/argocd-kustomize-helms-support)
 
 Notes:
 

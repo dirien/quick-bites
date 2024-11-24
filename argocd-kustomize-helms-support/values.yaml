@@ -1,0 +1,9 @@
+configs:
+  cm:
+    kustomize.buildOptions: "--enable-helm"
+  # the rest of the values are only for demonstration purposes
+  secret:
+    argocdServerAdminPassword: "$2a$10$RjjTokiJSaTQt8jAMOUTK.O0VIZ3.0AEs3/JxtaFKGZir93yFPEOG"
+    argocdServerAdminPasswordMtime: "2023-11-13T09:23:16Z"
+  params:
+    "server.insecure": true
