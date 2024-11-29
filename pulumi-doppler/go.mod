@@ -2,12 +2,12 @@ module pulumi-doppler
 
 go 1.21
 
-toolchain go1.23.2
+toolchain go1.23.3
 
 require (
-	github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.33.0
+	github.com/pulumi/pulumi-digitalocean/sdk/v4 v4.35.1
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.1
-	github.com/pulumi/pulumi/sdk/v3 v3.135.1
+	github.com/pulumi/pulumi/sdk/v3 v3.142.0
 )
 
 require (
