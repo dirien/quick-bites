@@ -2,7 +2,7 @@ module pulumi-random-provider
 
 go 1.21
 
-toolchain go1.23.3
+toolchain go1.23.4
 
 require (
 	github.com/pulumi/pulumi-random/sdk/v4 v4.16.7

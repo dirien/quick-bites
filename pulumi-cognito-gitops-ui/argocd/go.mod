@@ -2,7 +2,7 @@ module pulumi-cognito-gitops-ui-argocd
 
 go 1.21
 
-toolchain go1.23.3
+toolchain go1.23.4
 
 require (
 	github.com/pulumi/pulumi-aws/sdk/v5 v5.42.0
