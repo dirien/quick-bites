@@ -2,7 +2,7 @@ module pulumi-hashnode-aws-amplify-hackathon
 
 go 1.21
 
-toolchain go1.23.3
+toolchain go1.23.4
 
 require (
 	github.com/pulumi/pulumi-aws-native/sdk v0.124.0

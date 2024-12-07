@@ -2,7 +2,7 @@ module pulumi-scaleway-kapsule
 
 go 1.21
 
-toolchain go1.23.3
+toolchain go1.23.4
 
 require (
 	github.com/dirien/pulumi-scaleway/sdk/v2 v2.47.0
