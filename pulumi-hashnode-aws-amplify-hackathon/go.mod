@@ -2,12 +2,12 @@ module pulumi-hashnode-aws-amplify-hackathon
 
 go 1.21
 
-toolchain go1.23.3
+toolchain go1.23.4
 
 require (
 	github.com/pulumi/pulumi-aws-native/sdk v0.124.0
 	github.com/pulumi/pulumi-github/sdk/v4 v4.17.0
-	github.com/pulumi/pulumi/sdk/v3 v3.142.0
+	github.com/pulumi/pulumi/sdk/v3 v3.144.1
 )
 
 require (
@@ -77,14 +77,14 @@ require (
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
 	github.com/zclconf/go-cty v1.13.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
-	golang.org/x/crypto v0.25.0 // indirect
+	golang.org/x/crypto v0.31.0 // indirect
 	golang.org/x/exp v0.0.0-20240604190554-fc45aab8b7f8 // indirect
 	golang.org/x/mod v0.18.0 // indirect
-	golang.org/x/net v0.27.0 // indirect
-	golang.org/x/sync v0.7.0 // indirect
-	golang.org/x/sys v0.22.0 // indirect
-	golang.org/x/term v0.22.0 // indirect
-	golang.org/x/text v0.16.0 // indirect
+	golang.org/x/net v0.33.0 // indirect
+	golang.org/x/sync v0.10.0 // indirect
+	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/term v0.27.0 // indirect
+	golang.org/x/text v0.21.0 // indirect
 	golang.org/x/tools v0.22.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240311173647-c811ad7063a7 // indirect
 	google.golang.org/grpc v1.63.2 // indirect
