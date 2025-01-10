@@ -6,7 +6,7 @@ toolchain go1.23.4
 
 require (
 	github.com/pulumi/pulumi-oci/sdk v0.20.1
-	github.com/pulumi/pulumi/sdk/v3 v3.144.1
+	github.com/pulumi/pulumi/sdk/v3 v3.145.0
 )
 
 require (
