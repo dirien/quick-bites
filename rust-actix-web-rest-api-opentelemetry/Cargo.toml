@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4.5.1"
-actix-web-opentelemetry = { version = "0.19.0", features = ["opentelemetry-prometheus", "metrics", "metrics-prometheus", "prometheus"] }
+actix-web-opentelemetry = { version = "0.20.0", features = ["opentelemetry-prometheus", "metrics", "metrics-prometheus", "prometheus"] }
 chrono = { version = "0.4.37", features = ["serde"] }
 diesel = { version = "2.1.5", features = ["postgres", "r2d2", "chrono", "uuid"] }
 dotenv = "0.15.0"

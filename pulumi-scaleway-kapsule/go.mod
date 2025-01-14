@@ -7,7 +7,7 @@ toolchain go1.23.4
 require (
 	github.com/dirien/pulumi-scaleway/sdk/v2 v2.48.1
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.1
-	github.com/pulumi/pulumi/sdk/v3 v3.144.1
+	github.com/pulumi/pulumi/sdk/v3 v3.145.0
 )
 
 require (
