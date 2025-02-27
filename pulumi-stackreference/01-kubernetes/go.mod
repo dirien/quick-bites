@@ -2,11 +2,11 @@ module 01-kubernetes
 
 go 1.22
 
-toolchain go1.23.6
+toolchain go1.24.0
 
 require (
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.1
-	github.com/pulumi/pulumi/sdk/v3 v3.149.0
+	github.com/pulumi/pulumi/sdk/v3 v3.153.0
 )
 
 require (
