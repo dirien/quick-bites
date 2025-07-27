@@ -10,7 +10,7 @@ helmCharts:
   - name: minecraft
     releaseName: my
     repo: https://itzg.github.io/minecraft-server-charts/
-    version: 4.23.7
+    version: 4.26.4
     valuesInline:
       minecraftServer:
         eula: "true"
