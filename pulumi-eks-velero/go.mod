@@ -2,13 +2,13 @@ module pulumi-eks-velero
 
 go 1.23.11
 
-toolchain go1.25.0
+toolchain go1.25.1
 
 require (
 	github.com/pulumi/pulumi-aws/sdk/v5 v5.42.0
 	github.com/pulumi/pulumi-eks/sdk v1.0.4
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.2
-	github.com/pulumi/pulumi/sdk/v3 v3.191.0
+	github.com/pulumi/pulumi/sdk/v3 v3.196.0
 )
 
 require (

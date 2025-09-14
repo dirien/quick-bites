@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/pulumi/pulumi-kubernetes/sdk/v4 v4.23.0
-	github.com/pulumi/pulumi/sdk/v3 v3.191.0
+	github.com/pulumi/pulumi/sdk/v3 v3.196.0
 	github.com/scraly/pulumi-ovh/sdk v0.50.1
 )
 
