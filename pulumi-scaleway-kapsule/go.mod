@@ -2,12 +2,12 @@ module pulumi-scaleway-kapsule
 
 go 1.23.11
 
-toolchain go1.25.0
+toolchain go1.25.1
 
 require (
 	github.com/dirien/pulumi-scaleway/sdk/v2 v2.48.1
 	github.com/pulumi/pulumi-kubernetes/sdk/v3 v3.30.1
-	github.com/pulumi/pulumi/sdk/v3 v3.191.0
+	github.com/pulumi/pulumi/sdk/v3 v3.196.0
 )
 
 require (
