@@ -6,7 +6,7 @@ use crate::{models::todo::Todo, repository::database::Database};
 pub async fn create_todo(db: web::Data<Database>, new_todo: web::Json<Todo>) -> HttpResponse {
     let todo = db.create_todo(new_todo.into_inner());
     match todo {
-        Ok(todo) => HttpResponse::Ok().json(todo),
+        Ok(todo) => HttpResponse::Created().json(todo), // 201 for new resources
         Err(err) => HttpResponse::InternalServerError().body(err.to_string()),
     }
 }

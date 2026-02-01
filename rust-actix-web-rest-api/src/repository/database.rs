@@ -8,10 +8,17 @@ pub struct Database {
     pub todos: Arc<Mutex<Vec<Todo>>>,
 }
 
+impl Default for Database {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Database {
     pub fn new() -> Self {
-        let todos = Arc::new(Mutex::new(vec![]));
-        Database { todos }
+        Database {
+            todos: Arc::new(Mutex::new(vec![])),
+        }
     }
 
     pub fn get_todos(&self) -> Vec<Todo> {
@@ -41,15 +48,17 @@ impl Database {
 
     pub fn update_todo_by_id(&self, id: &str, todo: Todo) -> Option<Todo> {
         let mut todos = self.todos.lock().unwrap();
-        let updated_at = Utc::now();
-        let todo = Todo {
+        let index = todos.iter().position(|t| t.id == Some(id.to_string()))?;
+        let existing_todo = &todos[index];
+        let updated_todo = Todo {
             id: Some(id.to_string()),
-            updated_at: Some(updated_at),
-            ..todo
+            title: todo.title,
+            description: todo.description,
+            created_at: existing_todo.created_at, // preserve original created_at
+            updated_at: Some(Utc::now()),
         };
-        let index = todos.iter().position(|todo| todo.id == Some(id.to_string()))?;
-        todos[index] = todo.clone();
-        Some(todo)
+        todos[index] = updated_todo.clone();
+        Some(updated_todo)
     }
 
     pub fn delete_todo_by_id(&self, id: &str) -> Option<Todo> {
