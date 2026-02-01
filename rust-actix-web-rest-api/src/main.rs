@@ -1,5 +1,5 @@
 use actix_web::{get, web, App, HttpResponse, HttpServer, Responder, Result};
-use serde::{Serialize};
+use serde::Serialize;
 
 mod api;
 mod models;
@@ -29,6 +29,8 @@ async fn not_found() -> Result<HttpResponse> {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    env_logger::init();
+
     let todo_db = repository::database::Database::new();
     let app_data = web::Data::new(todo_db);
 
